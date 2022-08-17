@@ -1,0 +1,26 @@
+#include<iostream>
+#include<string>
+#include<vector>
+
+using namespace std;
+
+class MST {
+
+  vector<int> mst;
+
+public:
+  MST::MST(int n) : mst(n,-1) {}
+  MST::~MST() {}
+  int print() {
+    for(auto::it = mst.begin(); it != mst.end(); ++it)
+      cout << *it << endl;
+  }
+};
+
+int main(int argc, char **argv) {
+
+  MST segtree(15);
+  segtree.print();
+  return 0;
+
+}

@@ -1,0 +1,14 @@
+class MinSegTree;
+
+class MinSegTree {
+
+  int la; // length of a[]
+  int lst; // length of segment tree t[]
+  int *a; // arr[]
+  int *mst; // mst[]
+
+ public:
+
+  MinSegTree(int[],int);
+  ~MinSegTree();
+}

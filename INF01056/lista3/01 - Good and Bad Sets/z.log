@@ -1,0 +1,858 @@
+--------------------------------------------------------------------------------
+Command:            ./test2
+Massif arguments:   --time-unit=B --pages-as-heap=yes
+ms_print arguments: massif.out.37411
+--------------------------------------------------------------------------------
+
+
+    MB
+91.18^                                                            #           
+     |                                                            #:::::::::: 
+     |                                                            #           
+     |                                                            #           
+     |                                                            #           
+     |                                                            #           
+     |                                                            #          :
+     |                                                            #          :
+     |                                                            #          :
+     |                                @:::::::::::::::::::::::::::#          :
+     |                                @                           #          :
+     |                                @                           #          :
+     |                                @                           #          :
+     |                                @                           #          :
+     |                  @:::::::::::::@                           #          :
+     |                  @             @                           #          :
+     |           @::::::@             @                           #          :
+     |       @:::@      @             @                           #          :
+     |   :@@@@   @      @             @                           #          :
+     |  :@@@@@   @      @             @                           #          :
+   0 +----------------------------------------------------------------------->MB
+     0                                                                   172.4
+
+Number of snapshots: 75
+ Detailed snapshots: [9, 14, 24, 34, 43, 48, 51, 54, 57, 60, 63, 66, 69, 72 (peak)]
+
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0          4,096            4,096            4,096             0            0
+  1         12,288           12,288           12,288             0            0
+  2         16,384           16,384           16,384             0            0
+  3         24,576           24,576           24,576             0            0
+  4         28,672           28,672           28,672             0            0
+  5        172,032          172,032          172,032             0            0
+  6        204,800          204,800          204,800             0            0
+  7        212,992          212,992          212,992             0            0
+  8        217,088          217,088          217,088             0            0
+  9        221,184          221,184          221,184             0            0
+100.00% (221,184B) (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+->100.00% (221,184B) 0x0: ???
+  
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 10        225,280          225,280          225,280             0            0
+ 11        237,568          237,568          237,568             0            0
+ 12        241,664          241,664          241,664             0            0
+ 13        245,760          245,760          245,760             0            0
+ 14        245,760          245,760          245,760             0            0
+100.00% (245,760B) (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+->98.33% (241,664B) 0x0: ???
+| 
+->01.67% (4,096B) 0x4001100: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+  
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 15        249,856          241,664          241,664             0            0
+ 16        249,856          241,664          241,664             0            0
+ 17        270,336          262,144          262,144             0            0
+ 18        274,432          266,240          266,240             0            0
+ 19        278,528          270,336          270,336             0            0
+ 20        286,720          278,528          278,528             0            0
+ 21        499,712          491,520          491,520             0            0
+ 22        507,904          499,712          499,712             0            0
+ 23      2,482,176        2,473,984        2,473,984             0            0
+ 24      3,469,312        3,461,120        3,461,120             0            0
+100.00% (3,461,120B) (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+->93.02% (3,219,456B) 0x401F2C6: __mmap64 (mmap64.c:59)
+| ->93.02% (3,219,456B) 0x401F2C6: mmap (mmap64.c:47)
+|   ->57.63% (1,994,752B) 0x40073B5: _dl_map_segments (dl-map-segments.h:56)
+|   | ->57.63% (1,994,752B) 0x40073B5: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->57.63% (1,994,752B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->57.04% (1,974,272B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->57.04% (1,974,272B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->57.04% (1,974,272B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->57.04% (1,974,272B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->57.04% (1,974,272B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->57.04% (1,974,272B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->57.04% (1,974,272B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->57.04% (1,974,272B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.59% (20,480B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->28.99% (1,003,520B) 0x4007521: _dl_map_segments (dl-map-segments.h:94)
+|   | ->28.99% (1,003,520B) 0x4007521: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->28.99% (1,003,520B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->28.52% (987,136B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->28.52% (987,136B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->28.52% (987,136B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->28.52% (987,136B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->28.52% (987,136B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->28.52% (987,136B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->28.52% (987,136B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->28.52% (987,136B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.47% (16,384B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->06.15% (212,992B) 0x4012A2C: _dl_sysdep_read_whole_file (dl-misc.c:57)
+|   | ->06.15% (212,992B) 0x4019CA7: _dl_load_cache_lookup (dl-cache.c:201)
+|   |   ->06.15% (212,992B) 0x400AA19: _dl_map_object (dl-load.c:2102)
+|   |     ->06.15% (212,992B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |       ->06.15% (212,992B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |         ->06.15% (212,992B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |           ->06.15% (212,992B) 0x40041C3: dl_main (rtld.c:1850)
+|   |             ->06.15% (212,992B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |               ->06.15% (212,992B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |                 ->06.15% (212,992B) 0x400216B: _dl_start (rtld.c:575)
+|   |                   ->06.15% (212,992B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |                     
+|   ->00.24% (8,192B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->06.98% (241,664B) 0x0: ???
+| 
+->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 25      3,768,320        3,760,128        3,760,128             0            0
+ 26      3,825,664        3,817,472        3,817,472             0            0
+ 27      3,837,952        3,829,760        3,829,760             0            0
+ 28      3,948,544        3,940,352        3,940,352             0            0
+ 29      4,022,272        4,014,080        4,014,080             0            0
+ 30      4,038,656        4,030,464        4,030,464             0            0
+ 31      4,046,848        4,038,656        4,038,656             0            0
+ 32      6,086,656        6,078,464        6,078,464             0            0
+ 33      7,626,752        7,618,560        7,618,560             0            0
+ 34      7,929,856        7,921,664        7,921,664             0            0
+100.00% (7,921,664B) (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+->96.95% (7,680,000B) 0x401F2C6: __mmap64 (mmap64.c:59)
+| ->96.95% (7,680,000B) 0x401F2C6: mmap (mmap64.c:47)
+|   ->52.33% (4,145,152B) 0x40073B5: _dl_map_segments (dl-map-segments.h:56)
+|   | ->52.33% (4,145,152B) 0x40073B5: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->52.33% (4,145,152B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->52.07% (4,124,672B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->52.07% (4,124,672B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->52.07% (4,124,672B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->52.07% (4,124,672B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->52.07% (4,124,672B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->52.07% (4,124,672B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->52.07% (4,124,672B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->52.07% (4,124,672B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.26% (20,480B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->41.68% (3,301,376B) 0x4007521: _dl_map_segments (dl-map-segments.h:94)
+|   | ->41.68% (3,301,376B) 0x4007521: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->41.68% (3,301,376B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->41.47% (3,284,992B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->41.47% (3,284,992B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->41.47% (3,284,992B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->41.47% (3,284,992B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->41.47% (3,284,992B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->41.47% (3,284,992B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->41.47% (3,284,992B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->41.47% (3,284,992B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.21% (16,384B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->02.69% (212,992B) 0x4012A2C: _dl_sysdep_read_whole_file (dl-misc.c:57)
+|   | ->02.69% (212,992B) 0x4019CA7: _dl_load_cache_lookup (dl-cache.c:201)
+|   |   ->02.69% (212,992B) 0x400AA19: _dl_map_object (dl-load.c:2102)
+|   |     ->02.69% (212,992B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |       ->02.69% (212,992B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |         ->02.69% (212,992B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |           ->02.69% (212,992B) 0x40041C3: dl_main (rtld.c:1850)
+|   |             ->02.69% (212,992B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |               ->02.69% (212,992B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |                 ->02.69% (212,992B) 0x400216B: _dl_start (rtld.c:575)
+|   |                   ->02.69% (212,992B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |                     
+|   ->00.26% (20,480B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->03.05% (241,664B) 0x0: ???
+| 
+->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 35      7,954,432        7,946,240        7,946,240             0            0
+ 36      7,970,816        7,962,624        7,962,624             0            0
+ 37      9,342,976        9,334,784        9,334,784             0            0
+ 38     10,027,008       10,018,816       10,018,816             0            0
+ 39     10,645,504       10,637,312       10,637,312             0            0
+ 40     10,653,696       10,645,504       10,645,504             0            0
+ 41     10,661,888       10,653,696       10,653,696             0            0
+ 42     10,670,080       10,661,888       10,661,888             0            0
+ 43     10,670,080       10,661,888       10,661,888             0            0
+100.00% (10,661,888B) (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+->97.73% (10,420,224B) 0x401F2C6: __mmap64 (mmap64.c:59)
+| ->97.73% (10,420,224B) 0x401F2C6: mmap (mmap64.c:47)
+|   ->51.75% (5,517,312B) 0x40073B5: _dl_map_segments (dl-map-segments.h:56)
+|   | ->51.75% (5,517,312B) 0x40073B5: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->51.75% (5,517,312B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->51.56% (5,496,832B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->51.56% (5,496,832B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->51.56% (5,496,832B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->51.56% (5,496,832B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->51.56% (5,496,832B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->51.56% (5,496,832B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->51.56% (5,496,832B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->51.56% (5,496,832B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.19% (20,480B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->43.49% (4,636,672B) 0x4007521: _dl_map_segments (dl-map-segments.h:94)
+|   | ->43.49% (4,636,672B) 0x4007521: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->43.49% (4,636,672B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->43.33% (4,620,288B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->43.33% (4,620,288B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->43.33% (4,620,288B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->43.33% (4,620,288B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->43.33% (4,620,288B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->43.33% (4,620,288B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->43.33% (4,620,288B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->43.33% (4,620,288B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.15% (16,384B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->02.00% (212,992B) 0x4012A2C: _dl_sysdep_read_whole_file (dl-misc.c:57)
+|   | ->02.00% (212,992B) 0x4019CA7: _dl_load_cache_lookup (dl-cache.c:201)
+|   |   ->02.00% (212,992B) 0x400AA19: _dl_map_object (dl-load.c:2102)
+|   |     ->02.00% (212,992B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |       ->02.00% (212,992B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |         ->02.00% (212,992B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |           ->02.00% (212,992B) 0x40041C3: dl_main (rtld.c:1850)
+|   |             ->02.00% (212,992B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |               ->02.00% (212,992B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |                 ->02.00% (212,992B) 0x400216B: _dl_start (rtld.c:575)
+|   |                   ->02.00% (212,992B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |                     
+|   ->00.50% (53,248B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->02.27% (241,664B) 0x0: ???
+| 
+->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 44     10,674,176       10,657,792       10,657,792             0            0
+ 45     11,018,240       10,584,064       10,584,064             0            0
+ 46     11,202,560       10,768,384       10,768,384             0            0
+ 47     11,427,840       10,993,664       10,993,664             0            0
+ 48     11,427,840       10,993,664       10,993,664             0            0
+100.00% (10,993,664B) (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+->92.85% (10,207,232B) 0x401F2C6: __mmap64 (mmap64.c:59)
+| ->92.85% (10,207,232B) 0x401F2C6: mmap (mmap64.c:47)
+|   ->50.19% (5,517,312B) 0x40073B5: _dl_map_segments (dl-map-segments.h:56)
+|   | ->50.19% (5,517,312B) 0x40073B5: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->50.19% (5,517,312B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->50.00% (5,496,832B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->50.00% (5,496,832B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->50.00% (5,496,832B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->50.00% (5,496,832B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->50.00% (5,496,832B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->50.00% (5,496,832B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->50.00% (5,496,832B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->50.00% (5,496,832B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.19% (20,480B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->42.18% (4,636,672B) 0x4007521: _dl_map_segments (dl-map-segments.h:94)
+|   | ->42.18% (4,636,672B) 0x4007521: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->42.18% (4,636,672B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->42.03% (4,620,288B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->42.03% (4,620,288B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->42.03% (4,620,288B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->42.03% (4,620,288B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->42.03% (4,620,288B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->42.03% (4,620,288B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->42.03% (4,620,288B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->42.03% (4,620,288B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.15% (16,384B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->00.48% (53,248B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->02.91% (319,488B) 0x4B7F3EB: brk (brk.c:31)
+| ->02.91% (319,488B) 0x4B7F4D0: __sbrk (sbrk.c:56)
+|   ->02.91% (319,488B) 0x4B7F4D0: sbrk (sbrk.c:31)
+|     ->02.91% (319,488B) 0x4B07D0C: __default_morecore (morecore.c:47)
+|       ->02.91% (319,488B) 0x4B026F4: sysmalloc (malloc.c:2470)
+|         ->02.91% (319,488B) 0x4B03912: _int_malloc (malloc.c:4141)
+|           ->01.68% (184,320B) 0x4B052D3: malloc (malloc.c:3058)
+|           | ->01.68% (184,320B) 0x4915B38: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|           |   ->01.68% (184,320B) 0x10AA39: __gnu_cxx::new_allocator<vertice>::allocate(unsigned long, void const*) (new_allocator.h:114)
+|           |     ->01.68% (184,320B) 0x10A88F: std::allocator_traits<std::allocator<vertice> >::allocate(std::allocator<vertice>&, unsigned long) (alloc_traits.h:444)
+|           |       ->01.68% (184,320B) 0x10A619: std::_Vector_base<vertice, std::allocator<vertice> >::_M_allocate(unsigned long) (stl_vector.h:343)
+|           |         ->01.68% (184,320B) 0x109F54: void std::vector<vertice, std::allocator<vertice> >::_M_realloc_insert<>(__gnu_cxx::__normal_iterator<vertice*, std::vector<vertice, std::allocator<vertice> > >) (vector.tcc:440)
+|           |           ->01.68% (184,320B) 0x109BE3: vertice& std::vector<vertice, std::allocator<vertice> >::emplace_back<>() (vector.tcc:121)
+|           |             ->01.68% (184,320B) 0x10946C: adiciona(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (test2.cpp:27)
+|           |               ->01.68% (184,320B) 0x109699: main (test2.cpp:65)
+|           |                 
+|           ->01.23% (135,168B) 0x4B03AFA: tcache_init.part.0 (malloc.c:2982)
+|             ->01.23% (135,168B) 0x4B04D8D: tcache_init (malloc.c:2978)
+|               ->01.23% (135,168B) 0x4B04D8D: __libc_malloc (malloc.c:3044)
+|                 ->01.23% (135,168B) 0x4B04D8D: malloc_hook_ini (hooks.c:32)
+|                   ->01.23% (135,168B) 0x4911A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|                     ->01.23% (135,168B) 0x4011C49: call_init.part.0 (dl-init.c:72)
+|                       ->01.23% (135,168B) 0x4011D50: call_init (dl-init.c:30)
+|                         ->01.23% (135,168B) 0x4011D50: _dl_init (dl-init.c:119)
+|                           ->01.23% (135,168B) 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|                             
+->02.20% (241,664B) 0x0: ???
+| 
+->02.05% (225,280B) 0x4B83A46: __mmap64 (mmap64.c:59)
+| ->02.05% (225,280B) 0x4B83A46: mmap (mmap64.c:47)
+|   ->02.05% (225,280B) 0x4B02AF8: sysmalloc (malloc.c:2310)
+|     ->02.05% (225,280B) 0x4B03912: _int_malloc (malloc.c:4141)
+|       ->02.05% (225,280B) 0x4B052D3: malloc (malloc.c:3058)
+|         ->02.05% (225,280B) 0x4915B38: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|           ->02.05% (225,280B) 0x10AA39: __gnu_cxx::new_allocator<vertice>::allocate(unsigned long, void const*) (new_allocator.h:114)
+|             ->02.05% (225,280B) 0x10A88F: std::allocator_traits<std::allocator<vertice> >::allocate(std::allocator<vertice>&, unsigned long) (alloc_traits.h:444)
+|               ->02.05% (225,280B) 0x10A619: std::_Vector_base<vertice, std::allocator<vertice> >::_M_allocate(unsigned long) (stl_vector.h:343)
+|                 ->02.05% (225,280B) 0x109F54: void std::vector<vertice, std::allocator<vertice> >::_M_realloc_insert<>(__gnu_cxx::__normal_iterator<vertice*, std::vector<vertice, std::allocator<vertice> > >) (vector.tcc:440)
+|                   ->02.05% (225,280B) 0x109BE3: vertice& std::vector<vertice, std::allocator<vertice> >::emplace_back<>() (vector.tcc:121)
+|                     ->02.05% (225,280B) 0x10946C: adiciona(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (test2.cpp:27)
+|                       ->02.05% (225,280B) 0x109699: main (test2.cpp:65)
+|                         
+->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 49     11,431,936       10,989,568       10,989,568             0            0
+ 50     11,980,800       11,333,632       11,333,632             0            0
+ 51     11,980,800       11,333,632       11,333,632             0            0
+100.00% (11,333,632B) (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+->90.06% (10,207,232B) 0x401F2C6: __mmap64 (mmap64.c:59)
+| ->90.06% (10,207,232B) 0x401F2C6: mmap (mmap64.c:47)
+|   ->48.68% (5,517,312B) 0x40073B5: _dl_map_segments (dl-map-segments.h:56)
+|   | ->48.68% (5,517,312B) 0x40073B5: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->48.68% (5,517,312B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->48.50% (5,496,832B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->48.50% (5,496,832B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->48.50% (5,496,832B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->48.50% (5,496,832B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->48.50% (5,496,832B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->48.50% (5,496,832B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->48.50% (5,496,832B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->48.50% (5,496,832B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.18% (20,480B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->40.91% (4,636,672B) 0x4007521: _dl_map_segments (dl-map-segments.h:94)
+|   | ->40.91% (4,636,672B) 0x4007521: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->40.91% (4,636,672B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->40.77% (4,620,288B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->40.77% (4,620,288B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->40.77% (4,620,288B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->40.77% (4,620,288B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->40.77% (4,620,288B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->40.77% (4,620,288B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->40.77% (4,620,288B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->40.77% (4,620,288B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.14% (16,384B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->00.47% (53,248B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->05.93% (671,744B) 0x4B83A46: __mmap64 (mmap64.c:59)
+| ->05.93% (671,744B) 0x4B83A46: mmap (mmap64.c:47)
+|   ->05.93% (671,744B) 0x4B02AF8: sysmalloc (malloc.c:2310)
+|     ->05.93% (671,744B) 0x4B03912: _int_malloc (malloc.c:4141)
+|       ->05.93% (671,744B) 0x4B052D3: malloc (malloc.c:3058)
+|         ->05.93% (671,744B) 0x4915B38: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|           ->05.93% (671,744B) 0x10AA39: __gnu_cxx::new_allocator<vertice>::allocate(unsigned long, void const*) (new_allocator.h:114)
+|             ->05.93% (671,744B) 0x10A88F: std::allocator_traits<std::allocator<vertice> >::allocate(std::allocator<vertice>&, unsigned long) (alloc_traits.h:444)
+|               ->05.93% (671,744B) 0x10A619: std::_Vector_base<vertice, std::allocator<vertice> >::_M_allocate(unsigned long) (stl_vector.h:343)
+|                 ->05.93% (671,744B) 0x109F54: void std::vector<vertice, std::allocator<vertice> >::_M_realloc_insert<>(__gnu_cxx::__normal_iterator<vertice*, std::vector<vertice, std::allocator<vertice> > >) (vector.tcc:440)
+|                   ->05.93% (671,744B) 0x109BE3: vertice& std::vector<vertice, std::allocator<vertice> >::emplace_back<>() (vector.tcc:121)
+|                     ->05.93% (671,744B) 0x10946C: adiciona(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (test2.cpp:27)
+|                       ->05.93% (671,744B) 0x109699: main (test2.cpp:65)
+|                         
+->02.13% (241,664B) 0x0: ???
+| 
+->01.88% (212,992B) 0x4B7F3EB: brk (brk.c:31)
+| ->01.88% (212,992B) 0x4B7F4D0: __sbrk (sbrk.c:56)
+|   ->01.88% (212,992B) 0x4B7F4D0: sbrk (sbrk.c:31)
+|     ->01.88% (212,992B) 0x4B07D0C: __default_morecore (morecore.c:47)
+|       ->01.88% (212,992B) 0x4B026F4: sysmalloc (malloc.c:2470)
+|         ->01.88% (212,992B) 0x4B03912: _int_malloc (malloc.c:4141)
+|           ->01.19% (135,168B) 0x4B03AFA: tcache_init.part.0 (malloc.c:2982)
+|           | ->01.19% (135,168B) 0x4B04D8D: tcache_init (malloc.c:2978)
+|           |   ->01.19% (135,168B) 0x4B04D8D: __libc_malloc (malloc.c:3044)
+|           |     ->01.19% (135,168B) 0x4B04D8D: malloc_hook_ini (hooks.c:32)
+|           |       ->01.19% (135,168B) 0x4911A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|           |         ->01.19% (135,168B) 0x4011C49: call_init.part.0 (dl-init.c:72)
+|           |           ->01.19% (135,168B) 0x4011D50: call_init (dl-init.c:30)
+|           |             ->01.19% (135,168B) 0x4011D50: _dl_init (dl-init.c:119)
+|           |               ->01.19% (135,168B) 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|           |                 
+|           ->00.69% (77,824B) in 1+ places, all below ms_print's threshold (01.00%)
+|           
+->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 52     11,984,896       11,329,536       11,329,536             0            0
+ 53     13,094,912       11,997,184       11,997,184             0            0
+ 54     13,094,912       11,997,184       11,997,184             0            0
+100.00% (11,997,184B) (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+->85.08% (10,207,232B) 0x401F2C6: __mmap64 (mmap64.c:59)
+| ->85.08% (10,207,232B) 0x401F2C6: mmap (mmap64.c:47)
+|   ->45.99% (5,517,312B) 0x40073B5: _dl_map_segments (dl-map-segments.h:56)
+|   | ->45.99% (5,517,312B) 0x40073B5: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->45.99% (5,517,312B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->45.82% (5,496,832B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->45.82% (5,496,832B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->45.82% (5,496,832B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->45.82% (5,496,832B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->45.82% (5,496,832B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->45.82% (5,496,832B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->45.82% (5,496,832B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->45.82% (5,496,832B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.17% (20,480B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->38.65% (4,636,672B) 0x4007521: _dl_map_segments (dl-map-segments.h:94)
+|   | ->38.65% (4,636,672B) 0x4007521: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->38.65% (4,636,672B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->38.51% (4,620,288B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->38.51% (4,620,288B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->38.51% (4,620,288B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->38.51% (4,620,288B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->38.51% (4,620,288B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->38.51% (4,620,288B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->38.51% (4,620,288B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->38.51% (4,620,288B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.14% (16,384B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->00.44% (53,248B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->11.13% (1,335,296B) 0x4B83A46: __mmap64 (mmap64.c:59)
+| ->11.13% (1,335,296B) 0x4B83A46: mmap (mmap64.c:47)
+|   ->11.13% (1,335,296B) 0x4B02AF8: sysmalloc (malloc.c:2310)
+|     ->11.13% (1,335,296B) 0x4B03912: _int_malloc (malloc.c:4141)
+|       ->11.13% (1,335,296B) 0x4B052D3: malloc (malloc.c:3058)
+|         ->11.13% (1,335,296B) 0x4915B38: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|           ->11.13% (1,335,296B) 0x10AA39: __gnu_cxx::new_allocator<vertice>::allocate(unsigned long, void const*) (new_allocator.h:114)
+|             ->11.13% (1,335,296B) 0x10A88F: std::allocator_traits<std::allocator<vertice> >::allocate(std::allocator<vertice>&, unsigned long) (alloc_traits.h:444)
+|               ->11.13% (1,335,296B) 0x10A619: std::_Vector_base<vertice, std::allocator<vertice> >::_M_allocate(unsigned long) (stl_vector.h:343)
+|                 ->11.13% (1,335,296B) 0x109F54: void std::vector<vertice, std::allocator<vertice> >::_M_realloc_insert<>(__gnu_cxx::__normal_iterator<vertice*, std::vector<vertice, std::allocator<vertice> > >) (vector.tcc:440)
+|                   ->11.13% (1,335,296B) 0x109BE3: vertice& std::vector<vertice, std::allocator<vertice> >::emplace_back<>() (vector.tcc:121)
+|                     ->11.13% (1,335,296B) 0x10946C: adiciona(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (test2.cpp:27)
+|                       ->11.13% (1,335,296B) 0x109699: main (test2.cpp:65)
+|                         
+->02.01% (241,664B) 0x0: ???
+| 
+->01.78% (212,992B) 0x4B7F3EB: brk (brk.c:31)
+| ->01.78% (212,992B) 0x4B7F4D0: __sbrk (sbrk.c:56)
+|   ->01.78% (212,992B) 0x4B7F4D0: sbrk (sbrk.c:31)
+|     ->01.78% (212,992B) 0x4B07D0C: __default_morecore (morecore.c:47)
+|       ->01.78% (212,992B) 0x4B026F4: sysmalloc (malloc.c:2470)
+|         ->01.78% (212,992B) 0x4B03912: _int_malloc (malloc.c:4141)
+|           ->01.13% (135,168B) 0x4B03AFA: tcache_init.part.0 (malloc.c:2982)
+|           | ->01.13% (135,168B) 0x4B04D8D: tcache_init (malloc.c:2978)
+|           |   ->01.13% (135,168B) 0x4B04D8D: __libc_malloc (malloc.c:3044)
+|           |     ->01.13% (135,168B) 0x4B04D8D: malloc_hook_ini (hooks.c:32)
+|           |       ->01.13% (135,168B) 0x4911A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|           |         ->01.13% (135,168B) 0x4011C49: call_init.part.0 (dl-init.c:72)
+|           |           ->01.13% (135,168B) 0x4011D50: call_init (dl-init.c:30)
+|           |             ->01.13% (135,168B) 0x4011D50: _dl_init (dl-init.c:119)
+|           |               ->01.13% (135,168B) 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|           |                 
+|           ->00.65% (77,824B) in 1+ places, all below ms_print's threshold (01.00%)
+|           
+->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 55     13,099,008       11,993,088       11,993,088             0            0
+ 56     15,314,944       13,324,288       13,324,288             0            0
+ 57     15,314,944       13,324,288       13,324,288             0            0
+100.00% (13,324,288B) (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+->76.61% (10,207,232B) 0x401F2C6: __mmap64 (mmap64.c:59)
+| ->76.61% (10,207,232B) 0x401F2C6: mmap (mmap64.c:47)
+|   ->41.41% (5,517,312B) 0x40073B5: _dl_map_segments (dl-map-segments.h:56)
+|   | ->41.41% (5,517,312B) 0x40073B5: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->41.41% (5,517,312B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->41.25% (5,496,832B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->41.25% (5,496,832B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->41.25% (5,496,832B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->41.25% (5,496,832B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->41.25% (5,496,832B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->41.25% (5,496,832B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->41.25% (5,496,832B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->41.25% (5,496,832B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.15% (20,480B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->34.80% (4,636,672B) 0x4007521: _dl_map_segments (dl-map-segments.h:94)
+|   | ->34.80% (4,636,672B) 0x4007521: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->34.80% (4,636,672B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->34.68% (4,620,288B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->34.68% (4,620,288B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->34.68% (4,620,288B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->34.68% (4,620,288B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->34.68% (4,620,288B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->34.68% (4,620,288B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->34.68% (4,620,288B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->34.68% (4,620,288B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.12% (16,384B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->00.40% (53,248B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->19.98% (2,662,400B) 0x4B83A46: __mmap64 (mmap64.c:59)
+| ->19.98% (2,662,400B) 0x4B83A46: mmap (mmap64.c:47)
+|   ->19.98% (2,662,400B) 0x4B02AF8: sysmalloc (malloc.c:2310)
+|     ->19.98% (2,662,400B) 0x4B03912: _int_malloc (malloc.c:4141)
+|       ->19.98% (2,662,400B) 0x4B052D3: malloc (malloc.c:3058)
+|         ->19.98% (2,662,400B) 0x4915B38: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|           ->19.98% (2,662,400B) 0x10AA39: __gnu_cxx::new_allocator<vertice>::allocate(unsigned long, void const*) (new_allocator.h:114)
+|             ->19.98% (2,662,400B) 0x10A88F: std::allocator_traits<std::allocator<vertice> >::allocate(std::allocator<vertice>&, unsigned long) (alloc_traits.h:444)
+|               ->19.98% (2,662,400B) 0x10A619: std::_Vector_base<vertice, std::allocator<vertice> >::_M_allocate(unsigned long) (stl_vector.h:343)
+|                 ->19.98% (2,662,400B) 0x109F54: void std::vector<vertice, std::allocator<vertice> >::_M_realloc_insert<>(__gnu_cxx::__normal_iterator<vertice*, std::vector<vertice, std::allocator<vertice> > >) (vector.tcc:440)
+|                   ->19.98% (2,662,400B) 0x109BE3: vertice& std::vector<vertice, std::allocator<vertice> >::emplace_back<>() (vector.tcc:121)
+|                     ->19.98% (2,662,400B) 0x10946C: adiciona(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (test2.cpp:27)
+|                       ->19.98% (2,662,400B) 0x109699: main (test2.cpp:65)
+|                         
+->01.81% (241,664B) 0x0: ???
+| 
+->01.60% (212,992B) 0x4B7F3EB: brk (brk.c:31)
+| ->01.60% (212,992B) 0x4B7F4D0: __sbrk (sbrk.c:56)
+|   ->01.60% (212,992B) 0x4B7F4D0: sbrk (sbrk.c:31)
+|     ->01.60% (212,992B) 0x4B07D0C: __default_morecore (morecore.c:47)
+|       ->01.60% (212,992B) 0x4B026F4: sysmalloc (malloc.c:2470)
+|         ->01.60% (212,992B) 0x4B03912: _int_malloc (malloc.c:4141)
+|           ->01.01% (135,168B) 0x4B03AFA: tcache_init.part.0 (malloc.c:2982)
+|           | ->01.01% (135,168B) 0x4B04D8D: tcache_init (malloc.c:2978)
+|           |   ->01.01% (135,168B) 0x4B04D8D: __libc_malloc (malloc.c:3044)
+|           |     ->01.01% (135,168B) 0x4B04D8D: malloc_hook_ini (hooks.c:32)
+|           |       ->01.01% (135,168B) 0x4911A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|           |         ->01.01% (135,168B) 0x4011C49: call_init.part.0 (dl-init.c:72)
+|           |           ->01.01% (135,168B) 0x4011D50: call_init (dl-init.c:30)
+|           |             ->01.01% (135,168B) 0x4011D50: _dl_init (dl-init.c:119)
+|           |               ->01.01% (135,168B) 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|           |                 
+|           ->00.58% (77,824B) in 1+ places, all below ms_print's threshold (01.00%)
+|           
+->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 58     15,319,040       13,320,192       13,320,192             0            0
+ 59     19,746,816       15,978,496       15,978,496             0            0
+ 60     19,746,816       15,978,496       15,978,496             0            0
+100.00% (15,978,496B) (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+->63.88% (10,207,232B) 0x401F2C6: __mmap64 (mmap64.c:59)
+| ->63.88% (10,207,232B) 0x401F2C6: mmap (mmap64.c:47)
+|   ->34.53% (5,517,312B) 0x40073B5: _dl_map_segments (dl-map-segments.h:56)
+|   | ->34.53% (5,517,312B) 0x40073B5: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->34.53% (5,517,312B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->34.40% (5,496,832B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->34.40% (5,496,832B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->34.40% (5,496,832B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->34.40% (5,496,832B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->34.40% (5,496,832B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->34.40% (5,496,832B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->34.40% (5,496,832B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->34.40% (5,496,832B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.13% (20,480B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->29.02% (4,636,672B) 0x4007521: _dl_map_segments (dl-map-segments.h:94)
+|   | ->29.02% (4,636,672B) 0x4007521: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->29.02% (4,636,672B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->28.92% (4,620,288B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->28.92% (4,620,288B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->28.92% (4,620,288B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->28.92% (4,620,288B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->28.92% (4,620,288B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->28.92% (4,620,288B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->28.92% (4,620,288B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->28.92% (4,620,288B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.10% (16,384B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->00.33% (53,248B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->33.27% (5,316,608B) 0x4B83A46: __mmap64 (mmap64.c:59)
+| ->33.27% (5,316,608B) 0x4B83A46: mmap (mmap64.c:47)
+|   ->33.27% (5,316,608B) 0x4B02AF8: sysmalloc (malloc.c:2310)
+|     ->33.27% (5,316,608B) 0x4B03912: _int_malloc (malloc.c:4141)
+|       ->33.27% (5,316,608B) 0x4B052D3: malloc (malloc.c:3058)
+|         ->33.27% (5,316,608B) 0x4915B38: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|           ->33.27% (5,316,608B) 0x10AA39: __gnu_cxx::new_allocator<vertice>::allocate(unsigned long, void const*) (new_allocator.h:114)
+|             ->33.27% (5,316,608B) 0x10A88F: std::allocator_traits<std::allocator<vertice> >::allocate(std::allocator<vertice>&, unsigned long) (alloc_traits.h:444)
+|               ->33.27% (5,316,608B) 0x10A619: std::_Vector_base<vertice, std::allocator<vertice> >::_M_allocate(unsigned long) (stl_vector.h:343)
+|                 ->33.27% (5,316,608B) 0x109F54: void std::vector<vertice, std::allocator<vertice> >::_M_realloc_insert<>(__gnu_cxx::__normal_iterator<vertice*, std::vector<vertice, std::allocator<vertice> > >) (vector.tcc:440)
+|                   ->33.27% (5,316,608B) 0x109BE3: vertice& std::vector<vertice, std::allocator<vertice> >::emplace_back<>() (vector.tcc:121)
+|                     ->33.27% (5,316,608B) 0x10946C: adiciona(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (test2.cpp:27)
+|                       ->33.27% (5,316,608B) 0x109699: main (test2.cpp:65)
+|                         
+->01.51% (241,664B) 0x0: ???
+| 
+->01.33% (212,992B) 0x4B7F3EB: brk (brk.c:31)
+| ->01.33% (212,992B) 0x4B7F4D0: __sbrk (sbrk.c:56)
+|   ->01.33% (212,992B) 0x4B7F4D0: sbrk (sbrk.c:31)
+|     ->01.33% (212,992B) 0x4B07D0C: __default_morecore (morecore.c:47)
+|       ->01.33% (212,992B) 0x4B026F4: sysmalloc (malloc.c:2470)
+|         ->01.33% (212,992B) 0x4B03912: _int_malloc (malloc.c:4141)
+|           ->01.33% (212,992B) in 2 places, all below massif's threshold (1.00%)
+|             
+->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 61     19,750,912       15,974,400       15,974,400             0            0
+ 62     28,602,368       21,286,912       21,286,912             0            0
+ 63     28,602,368       21,286,912       21,286,912             0            0
+100.00% (21,286,912B) (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+->49.91% (10,625,024B) 0x4B83A46: __mmap64 (mmap64.c:59)
+| ->49.91% (10,625,024B) 0x4B83A46: mmap (mmap64.c:47)
+|   ->49.91% (10,625,024B) 0x4B02AF8: sysmalloc (malloc.c:2310)
+|     ->49.91% (10,625,024B) 0x4B03912: _int_malloc (malloc.c:4141)
+|       ->49.91% (10,625,024B) 0x4B052D3: malloc (malloc.c:3058)
+|         ->49.91% (10,625,024B) 0x4915B38: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|           ->49.91% (10,625,024B) 0x10AA39: __gnu_cxx::new_allocator<vertice>::allocate(unsigned long, void const*) (new_allocator.h:114)
+|             ->49.91% (10,625,024B) 0x10A88F: std::allocator_traits<std::allocator<vertice> >::allocate(std::allocator<vertice>&, unsigned long) (alloc_traits.h:444)
+|               ->49.91% (10,625,024B) 0x10A619: std::_Vector_base<vertice, std::allocator<vertice> >::_M_allocate(unsigned long) (stl_vector.h:343)
+|                 ->49.91% (10,625,024B) 0x109F54: void std::vector<vertice, std::allocator<vertice> >::_M_realloc_insert<>(__gnu_cxx::__normal_iterator<vertice*, std::vector<vertice, std::allocator<vertice> > >) (vector.tcc:440)
+|                   ->49.91% (10,625,024B) 0x109BE3: vertice& std::vector<vertice, std::allocator<vertice> >::emplace_back<>() (vector.tcc:121)
+|                     ->49.91% (10,625,024B) 0x10946C: adiciona(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (test2.cpp:27)
+|                       ->49.91% (10,625,024B) 0x109699: main (test2.cpp:65)
+|                         
+->47.95% (10,207,232B) 0x401F2C6: __mmap64 (mmap64.c:59)
+| ->47.95% (10,207,232B) 0x401F2C6: mmap (mmap64.c:47)
+|   ->25.92% (5,517,312B) 0x40073B5: _dl_map_segments (dl-map-segments.h:56)
+|   | ->25.92% (5,517,312B) 0x40073B5: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->25.92% (5,517,312B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->25.82% (5,496,832B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->25.82% (5,496,832B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->25.82% (5,496,832B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->25.82% (5,496,832B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->25.82% (5,496,832B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->25.82% (5,496,832B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->25.82% (5,496,832B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->25.82% (5,496,832B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.10% (20,480B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->21.78% (4,636,672B) 0x4007521: _dl_map_segments (dl-map-segments.h:94)
+|   | ->21.78% (4,636,672B) 0x4007521: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->21.78% (4,636,672B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->21.70% (4,620,288B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->21.70% (4,620,288B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->21.70% (4,620,288B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->21.70% (4,620,288B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->21.70% (4,620,288B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->21.70% (4,620,288B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->21.70% (4,620,288B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->21.70% (4,620,288B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.08% (16,384B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->00.25% (53,248B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->01.14% (241,664B) 0x0: ???
+| 
+->01.00% (212,992B) 0x4B7F3EB: brk (brk.c:31)
+| ->01.00% (212,992B) 0x4B7F4D0: __sbrk (sbrk.c:56)
+|   ->01.00% (212,992B) 0x4B7F4D0: sbrk (sbrk.c:31)
+|     ->01.00% (212,992B) 0x4B07D0C: __default_morecore (morecore.c:47)
+|       ->01.00% (212,992B) 0x4B026F4: sysmalloc (malloc.c:2470)
+|         ->01.00% (212,992B) 0x4B03912: _int_malloc (malloc.c:4141)
+|           ->01.00% (212,992B) in 2 places, all below massif's threshold (1.00%)
+|             
+->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 64     28,606,464       21,282,816       21,282,816             0            0
+ 65     46,305,280       31,903,744       31,903,744             0            0
+ 66     46,305,280       31,903,744       31,903,744             0            0
+100.00% (31,903,744B) (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+->66.58% (21,241,856B) 0x4B83A46: __mmap64 (mmap64.c:59)
+| ->66.58% (21,241,856B) 0x4B83A46: mmap (mmap64.c:47)
+|   ->66.58% (21,241,856B) 0x4B02AF8: sysmalloc (malloc.c:2310)
+|     ->66.58% (21,241,856B) 0x4B03912: _int_malloc (malloc.c:4141)
+|       ->66.58% (21,241,856B) 0x4B052D3: malloc (malloc.c:3058)
+|         ->66.58% (21,241,856B) 0x4915B38: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|           ->66.58% (21,241,856B) 0x10AA39: __gnu_cxx::new_allocator<vertice>::allocate(unsigned long, void const*) (new_allocator.h:114)
+|             ->66.58% (21,241,856B) 0x10A88F: std::allocator_traits<std::allocator<vertice> >::allocate(std::allocator<vertice>&, unsigned long) (alloc_traits.h:444)
+|               ->66.58% (21,241,856B) 0x10A619: std::_Vector_base<vertice, std::allocator<vertice> >::_M_allocate(unsigned long) (stl_vector.h:343)
+|                 ->66.58% (21,241,856B) 0x109F54: void std::vector<vertice, std::allocator<vertice> >::_M_realloc_insert<>(__gnu_cxx::__normal_iterator<vertice*, std::vector<vertice, std::allocator<vertice> > >) (vector.tcc:440)
+|                   ->66.58% (21,241,856B) 0x109BE3: vertice& std::vector<vertice, std::allocator<vertice> >::emplace_back<>() (vector.tcc:121)
+|                     ->66.58% (21,241,856B) 0x10946C: adiciona(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (test2.cpp:27)
+|                       ->66.58% (21,241,856B) 0x109699: main (test2.cpp:65)
+|                         
+->31.99% (10,207,232B) 0x401F2C6: __mmap64 (mmap64.c:59)
+| ->31.99% (10,207,232B) 0x401F2C6: mmap (mmap64.c:47)
+|   ->17.29% (5,517,312B) 0x40073B5: _dl_map_segments (dl-map-segments.h:56)
+|   | ->17.29% (5,517,312B) 0x40073B5: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->17.29% (5,517,312B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->17.23% (5,496,832B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->17.23% (5,496,832B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->17.23% (5,496,832B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->17.23% (5,496,832B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->17.23% (5,496,832B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->17.23% (5,496,832B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->17.23% (5,496,832B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->17.23% (5,496,832B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.06% (20,480B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->14.53% (4,636,672B) 0x4007521: _dl_map_segments (dl-map-segments.h:94)
+|   | ->14.53% (4,636,672B) 0x4007521: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->14.53% (4,636,672B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->14.48% (4,620,288B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->14.48% (4,620,288B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->14.48% (4,620,288B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->14.48% (4,620,288B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->14.48% (4,620,288B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->14.48% (4,620,288B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->14.48% (4,620,288B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->14.48% (4,620,288B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.05% (16,384B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->00.17% (53,248B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->01.43% (454,656B) in 3 places, all below massif's threshold (1.00%)
+  
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 67     46,309,376       31,899,648       31,899,648             0            0
+ 68     81,702,912       53,137,408       53,137,408             0            0
+ 69     81,702,912       53,137,408       53,137,408             0            0
+100.00% (53,137,408B) (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+->79.94% (42,475,520B) 0x4B83A46: __mmap64 (mmap64.c:59)
+| ->79.94% (42,475,520B) 0x4B83A46: mmap (mmap64.c:47)
+|   ->79.94% (42,475,520B) 0x4B02AF8: sysmalloc (malloc.c:2310)
+|     ->79.94% (42,475,520B) 0x4B03912: _int_malloc (malloc.c:4141)
+|       ->79.94% (42,475,520B) 0x4B052D3: malloc (malloc.c:3058)
+|         ->79.94% (42,475,520B) 0x4915B38: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|           ->79.94% (42,475,520B) 0x10AA39: __gnu_cxx::new_allocator<vertice>::allocate(unsigned long, void const*) (new_allocator.h:114)
+|             ->79.94% (42,475,520B) 0x10A88F: std::allocator_traits<std::allocator<vertice> >::allocate(std::allocator<vertice>&, unsigned long) (alloc_traits.h:444)
+|               ->79.94% (42,475,520B) 0x10A619: std::_Vector_base<vertice, std::allocator<vertice> >::_M_allocate(unsigned long) (stl_vector.h:343)
+|                 ->79.94% (42,475,520B) 0x109F54: void std::vector<vertice, std::allocator<vertice> >::_M_realloc_insert<>(__gnu_cxx::__normal_iterator<vertice*, std::vector<vertice, std::allocator<vertice> > >) (vector.tcc:440)
+|                   ->79.94% (42,475,520B) 0x109BE3: vertice& std::vector<vertice, std::allocator<vertice> >::emplace_back<>() (vector.tcc:121)
+|                     ->79.94% (42,475,520B) 0x10946C: adiciona(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (test2.cpp:27)
+|                       ->79.94% (42,475,520B) 0x109699: main (test2.cpp:65)
+|                         
+->19.21% (10,207,232B) 0x401F2C6: __mmap64 (mmap64.c:59)
+| ->19.21% (10,207,232B) 0x401F2C6: mmap (mmap64.c:47)
+|   ->10.38% (5,517,312B) 0x40073B5: _dl_map_segments (dl-map-segments.h:56)
+|   | ->10.38% (5,517,312B) 0x40073B5: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->10.38% (5,517,312B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->10.34% (5,496,832B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->10.34% (5,496,832B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->10.34% (5,496,832B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->10.34% (5,496,832B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->10.34% (5,496,832B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->10.34% (5,496,832B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->10.34% (5,496,832B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->10.34% (5,496,832B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.04% (20,480B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->08.73% (4,636,672B) 0x4007521: _dl_map_segments (dl-map-segments.h:94)
+|   | ->08.73% (4,636,672B) 0x4007521: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->08.73% (4,636,672B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->08.69% (4,620,288B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->08.69% (4,620,288B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->08.69% (4,620,288B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->08.69% (4,620,288B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->08.69% (4,620,288B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->08.69% (4,620,288B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->08.69% (4,620,288B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->08.69% (4,620,288B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.03% (16,384B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->00.10% (53,248B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->00.86% (454,656B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 70     81,707,008       53,133,312       53,133,312             0            0
+ 71    152,489,984       95,604,736       95,604,736             0            0
+ 72    152,489,984       95,604,736       95,604,736             0            0
+100.00% (95,604,736B) (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+->88.85% (84,942,848B) 0x4B83A46: __mmap64 (mmap64.c:59)
+| ->88.85% (84,942,848B) 0x4B83A46: mmap (mmap64.c:47)
+|   ->88.85% (84,942,848B) 0x4B02AF8: sysmalloc (malloc.c:2310)
+|     ->88.85% (84,942,848B) 0x4B03912: _int_malloc (malloc.c:4141)
+|       ->88.85% (84,942,848B) 0x4B052D3: malloc (malloc.c:3058)
+|         ->88.85% (84,942,848B) 0x4915B38: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|           ->88.85% (84,942,848B) 0x10AA39: __gnu_cxx::new_allocator<vertice>::allocate(unsigned long, void const*) (new_allocator.h:114)
+|             ->88.85% (84,942,848B) 0x10A88F: std::allocator_traits<std::allocator<vertice> >::allocate(std::allocator<vertice>&, unsigned long) (alloc_traits.h:444)
+|               ->88.85% (84,942,848B) 0x10A619: std::_Vector_base<vertice, std::allocator<vertice> >::_M_allocate(unsigned long) (stl_vector.h:343)
+|                 ->88.85% (84,942,848B) 0x109F54: void std::vector<vertice, std::allocator<vertice> >::_M_realloc_insert<>(__gnu_cxx::__normal_iterator<vertice*, std::vector<vertice, std::allocator<vertice> > >) (vector.tcc:440)
+|                   ->88.85% (84,942,848B) 0x109BE3: vertice& std::vector<vertice, std::allocator<vertice> >::emplace_back<>() (vector.tcc:121)
+|                     ->88.85% (84,942,848B) 0x10946C: adiciona(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (test2.cpp:27)
+|                       ->88.85% (84,942,848B) 0x109699: main (test2.cpp:65)
+|                         
+->10.68% (10,207,232B) 0x401F2C6: __mmap64 (mmap64.c:59)
+| ->10.68% (10,207,232B) 0x401F2C6: mmap (mmap64.c:47)
+|   ->05.77% (5,517,312B) 0x40073B5: _dl_map_segments (dl-map-segments.h:56)
+|   | ->05.77% (5,517,312B) 0x40073B5: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->05.77% (5,517,312B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->05.75% (5,496,832B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->05.75% (5,496,832B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->05.75% (5,496,832B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->05.75% (5,496,832B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->05.75% (5,496,832B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->05.75% (5,496,832B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->05.75% (5,496,832B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->05.75% (5,496,832B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.02% (20,480B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->04.85% (4,636,672B) 0x4007521: _dl_map_segments (dl-map-segments.h:94)
+|   | ->04.85% (4,636,672B) 0x4007521: _dl_map_object_from_fd (dl-load.c:1186)
+|   |   ->04.85% (4,636,672B) 0x400A6AA: _dl_map_object (dl-load.c:2236)
+|   |     ->04.83% (4,620,288B) 0x400F5C4: openaux (dl-deps.c:64)
+|   |     | ->04.83% (4,620,288B) 0x401DDF9: _dl_catch_exception (dl-error-skeleton.c:208)
+|   |     |   ->04.83% (4,620,288B) 0x400FA12: _dl_map_object_deps (dl-deps.c:248)
+|   |     |     ->04.83% (4,620,288B) 0x40041C3: dl_main (rtld.c:1850)
+|   |     |       ->04.83% (4,620,288B) 0x401CD8A: _dl_sysdep_start (dl-sysdep.c:252)
+|   |     |         ->04.83% (4,620,288B) 0x400216B: _dl_start_final (rtld.c:485)
+|   |     |           ->04.83% (4,620,288B) 0x400216B: _dl_start (rtld.c:575)
+|   |     |             ->04.83% (4,620,288B) 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|   |     |               
+|   |     ->00.02% (16,384B) in 1+ places, all below ms_print's threshold (01.00%)
+|   |     
+|   ->00.06% (53,248B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->00.48% (454,656B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(B)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 73    152,494,080       95,600,640       95,600,640             0            0
+ 74    180,809,728       67,284,992       67,284,992             0            0

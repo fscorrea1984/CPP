@@ -1,0 +1,4 @@
+up
+printf "v = %d , tl = %d , tr = %d", v, tl, tr
+echo \n
+down

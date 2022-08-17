@@ -1,0 +1,50 @@
+The program is not being run.
+Starting program: /home/fscorrea/C++/INF01056/lista3/01 - Good and Bad Sets/test2 <z.file 
+[Inferior 1 (process 23954) exited normally]
+Temporary breakpoint 1 at 0x5555555555f4: file test2.cpp, line 48.
+Starting program: /home/fscorrea/C++/INF01056/lista3/01 - Good and Bad Sets/test2 <z.file 
+
+Temporary breakpoint 1, main () at test2.cpp:48
+1: x/i $pc
+=> 0x5555555555f4 <main()>:	endbr64 
+rax            0x5555555555f4      93824992237044
+rbx            0x555555556d60      93824992243040
+rcx            0x120               288
+rdx            0x7fffffffdd98      140737488346520
+rsi            0x7fffffffdd88      140737488346504
+rdi            0x1                 1
+rbp            0x0                 0x0
+rsp            0x7fffffffdc98      0x7fffffffdc98
+r8             0x0                 0
+r9             0x7ffff7f83ec0      140737353629376
+r10            0x7ffff7e061d5      140737352065493
+r11            0x7ffff7d8ebe0      140737351576544
+r12            0x5555555552a0      93824992236192
+r13            0x7fffffffdd80      140737488346496
+r14            0x0                 0
+r15            0x0                 0
+rip            0x5555555555f4      0x5555555555f4 <main()>
+eflags         0x246               [ PF ZF IF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+Not confirmed.
+Step one instruction, but proceed through subroutine calls.
+Usage: nexti [N]
+Argument N means step N times (or till program stops for another reason).
+Step program, proceeding through subroutine calls.
+Usage: next [N]
+Unlike "step", if the current source line calls a subroutine,
+this command does not enter the subroutine, but instead steps over
+the call, in effect treating it as a single source line.
+Step program until it reaches a different source line.
+Usage: step [N]
+Argument N means step N times (or till program stops for another reason).
+Step one instruction exactly.
+Usage: stepi [N]
+Argument N means step N times (or till program stops for another reason).
+Continuing.
+[Inferior 1 (process 23968) exited normally]

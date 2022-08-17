@@ -1,0 +1,19 @@
+#set history filename hist.log
+#set history filename save
+#set args 16
+set args <input.file
+set pagination off
+set logging file log.log
+set logging overwrite
+set logging on
+echo \n\n
+set prompt
+start
+# run
+# info source
+# set verbose 1
+# set debug expression 1
+# show convenience
+#start
+#next 100
+set logging off

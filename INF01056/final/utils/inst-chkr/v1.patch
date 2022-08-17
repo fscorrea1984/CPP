@@ -1,0 +1,133 @@
+--- inst-chkr.cpp	2017-03-10 04:30:28.045894117 -0300
++++ inst-chkrv1.cpp	2016-07-06 13:58:24.000000000 -0300
+@@ -1,91 +1,89 @@
+-/** -- Test whether a given instance (usually, a file ".in" in "inst" folder) satisfies "agreeable release and due dates" or not  -- **/
++/**-- 
+ 
+-/** -- The name "inst-chkr" comes from "INSTance-CHecKeR" -- **/
++Test whether a given instance (usually, a .dat in test folder) satisfies "agreeable release and due dates" or not  
++
++The name "inst-chkr" comes from "INSTance-CHecKeR"
++
++--**/
+ 
+ #include <iostream>
+-#include <fstream>
+ #include <string>
+ #include <sstream>
+ #include <vector>
+ #include <algorithm>
++#include <chrono>
++#include <limits>
+ 
+ using namespace std;
+ 
++const unsigned undef = numeric_limits<unsigned>::max();
++
+ class Job {
+ 
+ public:
+ 
+-  void setr (int x) { r = x; }
+-  void setd (int x) { d = x; }
+-  void setw (int x) { w = x; }
+-
+-  int getr () const { return r; } 
+-  int getd () const { return d; }
+-  int getw () const { return w; }
+-  
++  unsigned r, d, w;
++
+   Job ();
+-  Job (int, int, int);
++  Job (unsigned, unsigned, unsigned);
+   ~Job () {}
+-  
+-private:
+-  int r, d, w;
+-  
++
+ };
+ 
++
+ Job::Job () : r(0), d(0), w(0) {};
+ 
+-Job::Job (int a, int b, int c) : r(a), d(b), w(c) {};
++Job::Job (unsigned a, unsigned b, unsigned c) : r(a), d(b), w(c) {};
+ 
+ int main (int argc, char **argv) {
+ 
++  unsigned n = 0;
++  unsigned p = 0;
++  unsigned t = 0;
++  unsigned i = 1;
++  unsigned l = 1;
++
+   string line = "", dummy;
+-  string filename;
+   char ac;
+-  int a, b, c;
+-
+-    if (argc == 2) filename = argv[1];
+-    else {
+-      cerr << "usage: inst-chkr FILE" << endl;
+-      terminate();
+-    }
+-  
+-  ifstream ifile;
+-
+-  ifile.open(filename);
++  unsigned a, b, c;
+ 
+   while (line.substr(0,3) != "n p")
+-    getline (ifile, line);
++    getline (cin, line);
+   stringstream linestr(line);
+   linestr >> dummy >> dummy >> n >> p;
+ 
+   vector<Job> J;
+   J.push_back(Job());
+ 
+-  for (int i = 1; i <= n; i++) {
+-    getline (ifile, line);
++  //chrono::system_clock::time_point t0 = chrono::system_clock::now();
++
++  while (i <= n) {
++    getline (cin, line);
+     if (line.substr(0,2) == "j ") {
+       stringstream job(line);
+       job >> ac >> a >> b >> c;
+-      J.push_back(Job(a, b, c));
++      if (a + p < b) { //check for feasibility
++	J.push_back(Job(a, b, c));
++	i++;
++      }
++      else n--; //Job is not feasible then skip and update n = n-1
+     }
+   }
+ 
+-  sort (J.begin(), J.end(), [] (const Job & a, const Job & b) -> bool { return a.getd() < b.getd(); } );
+-
+-  ifile.close();
++  sort (J.begin(), J.end(), [] (const Job & a, const Job & b) -> bool { return a.d < b.d; } );
+ 
+   //after this, J is already sorted by due date, so just iterate over release dates:
+-  for (int k = 2; k <= n; k++){
++  for (unsigned index = 2; index <= n; index++){
+ 
+-    if ( (J[k-1].getr() > J[k].getr()) && (J[k-1].getd() != J[k].getd()) ) {
++    if ( (J.at(index - 1).r > J.at(index).r) && (J.at(index - 1).d != J.at(index).d) ) {
+ 	cout << "This set of jobs has \"non-agreeable\" release and due dates." << endl;
+ 	return 0;
+-    } //end if
++    }
+     
+-  } // end for
++  }
+ 
+   cout << "This set of jobs has \"agreeable\" release and due dates." << endl;
+-  
+   return 0;
+ 
+ }
++ 

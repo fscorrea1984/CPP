@@ -1,0 +1,6 @@
+
+
+Temporary breakpoint 1 at 0x5783: file test4.cpp, line 12.
+
+Temporary breakpoint 1, main (argc=-1, argv=0xffffffffffffffff) at test4.cpp:12
+12	int main(int argc,char **argv) {

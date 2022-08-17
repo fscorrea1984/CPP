@@ -1,0 +1,1747 @@
+$1 = 32
+$2 = 143
+$3 = 92
+$4 = 16
+$5 = 40
+$6 = 41
+$7 = 165
+$8 = 66
+$9 = 53
+$10 = 186
+$11 = 12
+$12 = 39
+$13 = 149
+$14 = 85
+$15 = 114
+$16 = 77
+$17 = 151
+$18 = 61
+$19 = 96
+$20 = 69
+$21 = 55
+$22 = 129
+$23 = 142
+$24 = 167
+$25 = 158
+$26 = 162
+$27 = 79
+$28 = 72
+$29 = 137
+$30 = 8
+$31 = 81
+$32 = 200
+$33 = 40
+$34 = 130
+$35 = 12
+$36 = 190
+t[0] : { key = 31 , val = 200 , lazy = 0 }
+t[1] : { key = 9 , val = 186 , lazy = 0 }
+t[2] : { key = 31 , val = 200 , lazy = 0 }
+t[3] : { key = 6 , val = 165 , lazy = 0 }
+t[4] : { key = 9 , val = 186 , lazy = 0 }
+t[5] : { key = 23 , val = 167 , lazy = 0 }
+t[6] : { key = 31 , val = 200 , lazy = 0 }
+t[7] : { key = 1 , val = 143 , lazy = 0 }
+t[8] : { key = 6 , val = 165 , lazy = 0 }
+t[9] : { key = 9 , val = 186 , lazy = 0 }
+t[10] : { key = 16 , val = 151 , lazy = 0 }
+t[11] : { key = 22 , val = 142 , lazy = 0 }
+t[12] : { key = 23 , val = 167 , lazy = 0 }
+t[13] : { key = 31 , val = 200 , lazy = 0 }
+t[14] : { key = 35 , val = 190 , lazy = 0 }
+t[15] : { key = 1 , val = 143 , lazy = 0 }
+t[16] : { key = 4 , val = 40 , lazy = 0 }
+t[17] : { key = 6 , val = 165 , lazy = 0 }
+t[18] : { key = 7 , val = 66 , lazy = 0 }
+t[19] : { key = 9 , val = 186 , lazy = 0 }
+t[20] : { key = 12 , val = 149 , lazy = 0 }
+t[21] : { key = 14 , val = 114 , lazy = 0 }
+t[22] : { key = 16 , val = 151 , lazy = 0 }
+t[23] : { key = 18 , val = 96 , lazy = 0 }
+t[24] : { key = 22 , val = 142 , lazy = 0 }
+t[25] : { key = 23 , val = 167 , lazy = 0 }
+t[26] : { key = 25 , val = 162 , lazy = 0 }
+t[27] : { key = 28 , val = 137 , lazy = 0 }
+t[28] : { key = 31 , val = 200 , lazy = 0 }
+t[29] : { key = 33 , val = 130 , lazy = 0 }
+t[30] : { key = 35 , val = 190 , lazy = 0 }
+t[31] : { key = 1 , val = 143 , lazy = 0 }
+t[32] : { key = 2 , val = 92 , lazy = 0 }
+t[33] : { key = 3 , val = 16 , lazy = 0 }
+t[34] : { key = 4 , val = 40 , lazy = 0 }
+t[35] : { key = 5 , val = 41 , lazy = 0 }
+t[36] : { key = 6 , val = 165 , lazy = 0 }
+t[37] : { key = 7 , val = 66 , lazy = 0 }
+t[38] : { key = 8 , val = 53 , lazy = 0 }
+t[39] : { key = 9 , val = 186 , lazy = 0 }
+t[40] : { key = 11 , val = 39 , lazy = 0 }
+t[41] : { key = 12 , val = 149 , lazy = 0 }
+t[42] : { key = 13 , val = 85 , lazy = 0 }
+t[43] : { key = 14 , val = 114 , lazy = 0 }
+t[44] : { key = 15 , val = 77 , lazy = 0 }
+t[45] : { key = 16 , val = 151 , lazy = 0 }
+t[46] : { key = 17 , val = 61 , lazy = 0 }
+t[47] : { key = 18 , val = 96 , lazy = 0 }
+t[48] : { key = 20 , val = 55 , lazy = 0 }
+t[49] : { key = 21 , val = 129 , lazy = 0 }
+t[50] : { key = 22 , val = 142 , lazy = 0 }
+t[51] : { key = 23 , val = 167 , lazy = 0 }
+t[52] : { key = 24 , val = 158 , lazy = 0 }
+t[53] : { key = 25 , val = 162 , lazy = 0 }
+t[54] : { key = 26 , val = 79 , lazy = 0 }
+t[55] : { key = 28 , val = 137 , lazy = 0 }
+t[56] : { key = 29 , val = 8 , lazy = 0 }
+t[57] : { key = 30 , val = 81 , lazy = 0 }
+t[58] : { key = 31 , val = 200 , lazy = 0 }
+t[59] : { key = 32 , val = 40 , lazy = 0 }
+t[60] : { key = 33 , val = 130 , lazy = 0 }
+t[61] : { key = 34 , val = 12 , lazy = 0 }
+t[62] : { key = 35 , val = 190 , lazy = 0 }
+t[63] : { key = 0 , val = 32 , lazy = 0 }
+t[64] : { key = 1 , val = 143 , lazy = 0 }
+t[65] : { key = -1 , val = -1 , lazy = 0 }
+t[66] : { key = -1 , val = -1 , lazy = 0 }
+t[67] : { key = -1 , val = -1 , lazy = 0 }
+t[68] : { key = -1 , val = -1 , lazy = 0 }
+t[69] : { key = -1 , val = -1 , lazy = 0 }
+t[70] : { key = -1 , val = -1 , lazy = 0 }
+t[71] : { key = -1 , val = -1 , lazy = 0 }
+t[72] : { key = -1 , val = -1 , lazy = 0 }
+t[73] : { key = -1 , val = -1 , lazy = 0 }
+t[74] : { key = -1 , val = -1 , lazy = 0 }
+t[75] : { key = -1 , val = -1 , lazy = 0 }
+t[76] : { key = -1 , val = -1 , lazy = 0 }
+t[77] : { key = -1 , val = -1 , lazy = 0 }
+t[78] : { key = -1 , val = -1 , lazy = 0 }
+t[79] : { key = 9 , val = 186 , lazy = 0 }
+t[80] : { key = 10 , val = 12 , lazy = 0 }
+t[81] : { key = -1 , val = -1 , lazy = 0 }
+t[82] : { key = -1 , val = -1 , lazy = 0 }
+t[83] : { key = -1 , val = -1 , lazy = 0 }
+t[84] : { key = -1 , val = -1 , lazy = 0 }
+t[85] : { key = -1 , val = -1 , lazy = 0 }
+t[86] : { key = -1 , val = -1 , lazy = 0 }
+t[87] : { key = -1 , val = -1 , lazy = 0 }
+t[88] : { key = -1 , val = -1 , lazy = 0 }
+t[89] : { key = -1 , val = -1 , lazy = 0 }
+t[90] : { key = -1 , val = -1 , lazy = 0 }
+t[91] : { key = -1 , val = -1 , lazy = 0 }
+t[92] : { key = -1 , val = -1 , lazy = 0 }
+t[93] : { key = -1 , val = -1 , lazy = 0 }
+t[94] : { key = -1 , val = -1 , lazy = 0 }
+t[95] : { key = 18 , val = 96 , lazy = 0 }
+t[96] : { key = 19 , val = 69 , lazy = 0 }
+t[97] : { key = -1 , val = -1 , lazy = 0 }
+t[98] : { key = -1 , val = -1 , lazy = 0 }
+t[99] : { key = -1 , val = -1 , lazy = 0 }
+t[100] : { key = -1 , val = -1 , lazy = 0 }
+t[101] : { key = -1 , val = -1 , lazy = 0 }
+t[102] : { key = -1 , val = -1 , lazy = 0 }
+t[103] : { key = -1 , val = -1 , lazy = 0 }
+t[104] : { key = -1 , val = -1 , lazy = 0 }
+t[105] : { key = -1 , val = -1 , lazy = 0 }
+t[106] : { key = -1 , val = -1 , lazy = 0 }
+t[107] : { key = -1 , val = -1 , lazy = 0 }
+t[108] : { key = -1 , val = -1 , lazy = 0 }
+t[109] : { key = -1 , val = -1 , lazy = 0 }
+t[110] : { key = -1 , val = -1 , lazy = 0 }
+t[111] : { key = 27 , val = 72 , lazy = 0 }
+t[112] : { key = 28 , val = 137 , lazy = 0 }
+t[113] : { key = -1 , val = -1 , lazy = 0 }
+t[114] : { key = -1 , val = -1 , lazy = 0 }
+t[115] : { key = -1 , val = -1 , lazy = 0 }
+t[116] : { key = -1 , val = -1 , lazy = 0 }
+t[117] : { key = -1 , val = -1 , lazy = 0 }
+t[118] : { key = -1 , val = -1 , lazy = 0 }
+t[119] : { key = -1 , val = -1 , lazy = 0 }
+t[120] : { key = -1 , val = -1 , lazy = 0 }
+t[121] : { key = -1 , val = -1 , lazy = 0 }
+t[122] : { key = -1 , val = -1 , lazy = 0 }
+t[123] : { key = -1 , val = -1 , lazy = 0 }
+t[124] : { key = -1 , val = -1 , lazy = 0 }
+t[125] : { key = -1 , val = -1 , lazy = 0 }
+t[126] : { key = -1 , val = -1 , lazy = 0 }
+t[127] : { key = -1 , val = -1 , lazy = 0 }
+t[128] : { key = -1 , val = -1 , lazy = 0 }
+t[129] : { key = -1 , val = -1 , lazy = 0 }
+t[130] : { key = -1 , val = -1 , lazy = 0 }
+t[131] : { key = -1 , val = -1 , lazy = 0 }
+t[132] : { key = -1 , val = -1 , lazy = 0 }
+t[133] : { key = -1 , val = -1 , lazy = 0 }
+t[134] : { key = -1 , val = -1 , lazy = 0 }
+t[135] : { key = -1 , val = -1 , lazy = 0 }
+t[136] : { key = -1 , val = -1 , lazy = 0 }
+t[137] : { key = -1 , val = -1 , lazy = 0 }
+t[138] : { key = -1 , val = -1 , lazy = 0 }
+t[139] : { key = -1 , val = -1 , lazy = 0 }
+t[140] : { key = -1 , val = -1 , lazy = 0 }
+t[141] : { key = -1 , val = -1 , lazy = 0 }
+t[142] : { key = -1 , val = -1 , lazy = 0 }
+t[143] : { key = -1 , val = -1 , lazy = 0 }
+Continuing.
+
+Breakpoint 3, main (argc=1, argv=0x7fffffffd9b8) at main.cpp:140
+140	      cin >> a;
+Continuing.
+
+Breakpoint 3, main (argc=1, argv=0x7fffffffd9b8) at main.cpp:140
+140	      cin >> a;
+Hardware watchpoint 4: *t
+t[0] : { key = 31 , val = 200 , lazy = 0 }
+t[1] : { key = 9 , val = 186 , lazy = 0 }
+t[2] : { key = 31 , val = 200 , lazy = 0 }
+t[3] : { key = 6 , val = 165 , lazy = 0 }
+t[4] : { key = 9 , val = 186 , lazy = 0 }
+t[5] : { key = 23 , val = 167 , lazy = 0 }
+t[6] : { key = 31 , val = 200 , lazy = 0 }
+t[7] : { key = 1 , val = 143 , lazy = 0 }
+t[8] : { key = 6 , val = 165 , lazy = 0 }
+t[9] : { key = 9 , val = 186 , lazy = 0 }
+t[10] : { key = 16 , val = 151 , lazy = 0 }
+t[11] : { key = 22 , val = 142 , lazy = 0 }
+t[12] : { key = 23 , val = 167 , lazy = 0 }
+t[13] : { key = 31 , val = 200 , lazy = 0 }
+t[14] : { key = 35 , val = 190 , lazy = 0 }
+t[15] : { key = 1 , val = 143 , lazy = 0 }
+t[16] : { key = 4 , val = 40 , lazy = 0 }
+t[17] : { key = 6 , val = 165 , lazy = 0 }
+t[18] : { key = 7 , val = 66 , lazy = 0 }
+t[19] : { key = 9 , val = 186 , lazy = 0 }
+t[20] : { key = 12 , val = 149 , lazy = 0 }
+t[21] : { key = 14 , val = 114 , lazy = 0 }
+t[22] : { key = 16 , val = 151 , lazy = 0 }
+t[23] : { key = 18 , val = 96 , lazy = 0 }
+t[24] : { key = 22 , val = 142 , lazy = 0 }
+t[25] : { key = 23 , val = 167 , lazy = 0 }
+t[26] : { key = 25 , val = 162 , lazy = 0 }
+t[27] : { key = 28 , val = 137 , lazy = 0 }
+t[28] : { key = 31 , val = 200 , lazy = 0 }
+t[29] : { key = 33 , val = 130 , lazy = 0 }
+t[30] : { key = 35 , val = 190 , lazy = 0 }
+t[31] : { key = 1 , val = 143 , lazy = 0 }
+t[32] : { key = 2 , val = 92 , lazy = 0 }
+t[33] : { key = 3 , val = 16 , lazy = 0 }
+t[34] : { key = 4 , val = 40 , lazy = 0 }
+t[35] : { key = 5 , val = 41 , lazy = 0 }
+t[36] : { key = 6 , val = 165 , lazy = 0 }
+t[37] : { key = 7 , val = 66 , lazy = 0 }
+t[38] : { key = 8 , val = 53 , lazy = 0 }
+t[39] : { key = 9 , val = 186 , lazy = 0 }
+t[40] : { key = 11 , val = 39 , lazy = 0 }
+t[41] : { key = 12 , val = 149 , lazy = 0 }
+t[42] : { key = 13 , val = 85 , lazy = 0 }
+t[43] : { key = 14 , val = 114 , lazy = 0 }
+t[44] : { key = 15 , val = 77 , lazy = 0 }
+t[45] : { key = 16 , val = 151 , lazy = 0 }
+t[46] : { key = 17 , val = 61 , lazy = 0 }
+t[47] : { key = 18 , val = 96 , lazy = 0 }
+t[48] : { key = 20 , val = 55 , lazy = 0 }
+t[49] : { key = 21 , val = 129 , lazy = 0 }
+t[50] : { key = 22 , val = 142 , lazy = 0 }
+t[51] : { key = 23 , val = 167 , lazy = 0 }
+t[52] : { key = 24 , val = 158 , lazy = 0 }
+t[53] : { key = 25 , val = 162 , lazy = 0 }
+t[54] : { key = 26 , val = 79 , lazy = 0 }
+t[55] : { key = 28 , val = 137 , lazy = 0 }
+t[56] : { key = 29 , val = 8 , lazy = 0 }
+t[57] : { key = 30 , val = 81 , lazy = 0 }
+t[58] : { key = 31 , val = 200 , lazy = 0 }
+t[59] : { key = 32 , val = 40 , lazy = 0 }
+t[60] : { key = 33 , val = 130 , lazy = 0 }
+t[61] : { key = 34 , val = 12 , lazy = 0 }
+t[62] : { key = 35 , val = 190 , lazy = 0 }
+t[63] : { key = 0 , val = 32 , lazy = 0 }
+t[64] : { key = 1 , val = 143 , lazy = 0 }
+t[65] : { key = -1 , val = -1 , lazy = 0 }
+t[66] : { key = -1 , val = -1 , lazy = 0 }
+t[67] : { key = -1 , val = -1 , lazy = 0 }
+t[68] : { key = -1 , val = -1 , lazy = 0 }
+t[69] : { key = -1 , val = -1 , lazy = 0 }
+t[70] : { key = -1 , val = -1 , lazy = 0 }
+t[71] : { key = -1 , val = -1 , lazy = 0 }
+t[72] : { key = -1 , val = -1 , lazy = 0 }
+t[73] : { key = -1 , val = -1 , lazy = 0 }
+t[74] : { key = -1 , val = -1 , lazy = 0 }
+t[75] : { key = -1 , val = -1 , lazy = 0 }
+t[76] : { key = -1 , val = -1 , lazy = 0 }
+t[77] : { key = -1 , val = -1 , lazy = 0 }
+t[78] : { key = -1 , val = -1 , lazy = 0 }
+t[79] : { key = 9 , val = 186 , lazy = 0 }
+t[80] : { key = 10 , val = 12 , lazy = 0 }
+t[81] : { key = -1 , val = -1 , lazy = 0 }
+t[82] : { key = -1 , val = -1 , lazy = 0 }
+t[83] : { key = -1 , val = -1 , lazy = 0 }
+t[84] : { key = -1 , val = -1 , lazy = 0 }
+t[85] : { key = -1 , val = -1 , lazy = 0 }
+t[86] : { key = -1 , val = -1 , lazy = 0 }
+t[87] : { key = -1 , val = -1 , lazy = 0 }
+t[88] : { key = -1 , val = -1 , lazy = 0 }
+t[89] : { key = -1 , val = -1 , lazy = 0 }
+t[90] : { key = -1 , val = -1 , lazy = 0 }
+t[91] : { key = -1 , val = -1 , lazy = 0 }
+t[92] : { key = -1 , val = -1 , lazy = 0 }
+t[93] : { key = -1 , val = -1 , lazy = 0 }
+t[94] : { key = -1 , val = -1 , lazy = 0 }
+t[95] : { key = 18 , val = 96 , lazy = 0 }
+t[96] : { key = 19 , val = 69 , lazy = 0 }
+t[97] : { key = -1 , val = -1 , lazy = 0 }
+t[98] : { key = -1 , val = -1 , lazy = 0 }
+t[99] : { key = -1 , val = -1 , lazy = 0 }
+t[100] : { key = -1 , val = -1 , lazy = 0 }
+t[101] : { key = -1 , val = -1 , lazy = 0 }
+t[102] : { key = -1 , val = -1 , lazy = 0 }
+t[103] : { key = -1 , val = -1 , lazy = 0 }
+t[104] : { key = -1 , val = -1 , lazy = 0 }
+t[105] : { key = -1 , val = -1 , lazy = 0 }
+t[106] : { key = -1 , val = -1 , lazy = 0 }
+t[107] : { key = -1 , val = -1 , lazy = 0 }
+t[108] : { key = -1 , val = -1 , lazy = 0 }
+t[109] : { key = -1 , val = -1 , lazy = 0 }
+t[110] : { key = -1 , val = -1 , lazy = 0 }
+t[111] : { key = 27 , val = 72 , lazy = 0 }
+t[112] : { key = 28 , val = 137 , lazy = 0 }
+t[113] : { key = -1 , val = -1 , lazy = 0 }
+t[114] : { key = -1 , val = -1 , lazy = 0 }
+t[115] : { key = -1 , val = -1 , lazy = 0 }
+t[116] : { key = -1 , val = -1 , lazy = 0 }
+t[117] : { key = -1 , val = -1 , lazy = 0 }
+t[118] : { key = -1 , val = -1 , lazy = 0 }
+t[119] : { key = -1 , val = -1 , lazy = 0 }
+t[120] : { key = -1 , val = -1 , lazy = 0 }
+t[121] : { key = -1 , val = -1 , lazy = 0 }
+t[122] : { key = -1 , val = -1 , lazy = 0 }
+t[123] : { key = -1 , val = -1 , lazy = 0 }
+t[124] : { key = -1 , val = -1 , lazy = 0 }
+t[125] : { key = -1 , val = -1 , lazy = 0 }
+t[126] : { key = -1 , val = -1 , lazy = 0 }
+t[127] : { key = -1 , val = -1 , lazy = 0 }
+t[128] : { key = -1 , val = -1 , lazy = 0 }
+t[129] : { key = -1 , val = -1 , lazy = 0 }
+t[130] : { key = -1 , val = -1 , lazy = 0 }
+t[131] : { key = -1 , val = -1 , lazy = 0 }
+t[132] : { key = -1 , val = -1 , lazy = 0 }
+t[133] : { key = -1 , val = -1 , lazy = 0 }
+t[134] : { key = -1 , val = -1 , lazy = 0 }
+t[135] : { key = -1 , val = -1 , lazy = 0 }
+t[136] : { key = -1 , val = -1 , lazy = 0 }
+t[137] : { key = -1 , val = -1 , lazy = 0 }
+t[138] : { key = -1 , val = -1 , lazy = 0 }
+t[139] : { key = -1 , val = -1 , lazy = 0 }
+t[140] : { key = -1 , val = -1 , lazy = 0 }
+t[141] : { key = -1 , val = -1 , lazy = 0 }
+t[142] : { key = -1 , val = -1 , lazy = 0 }
+t[143] : { key = -1 , val = -1 , lazy = 0 }
+Continuing.
+
+Hardware watchpoint 4: *t
+
+Old value = {key = 31, val = 200, lazy = 0}
+New value = {key = 31, val = 356, lazy = 0}
+0x0000555555555b0e in update (t=0x55555556cf60, v=0, tl=0, tr=35, l=18, r=35, addend=156) at main.cpp:78
+78	      t[v] = (t[L].val > t[R].val) ? t[L] : t[R];
+Continuing.
+
+Hardware watchpoint 4: *t
+
+Old value = {key = 31, val = 356, lazy = 0}
+New value = {key = 31, val = 356, lazy = 156}
+0x0000555555555b14 in update (t=0x55555556cf60, v=0, tl=0, tr=35, l=18, r=35, addend=156) at main.cpp:78
+78	      t[v] = (t[L].val > t[R].val) ? t[L] : t[R];
+Continuing.
+
+Breakpoint 3, main (argc=1, argv=0x7fffffffd9b8) at main.cpp:140
+140	      cin >> a;
+t[0] : { key = 31 , val = 356 , lazy = 156 }
+t[1] : { key = 9 , val = 186 , lazy = 0 }
+t[2] : { key = 31 , val = 356 , lazy = 156 }
+t[3] : { key = 6 , val = 165 , lazy = 0 }
+t[4] : { key = 9 , val = 186 , lazy = 0 }
+t[5] : { key = 23 , val = 167 , lazy = 0 }
+t[6] : { key = 31 , val = 200 , lazy = 0 }
+t[7] : { key = 1 , val = 143 , lazy = 0 }
+t[8] : { key = 6 , val = 165 , lazy = 0 }
+t[9] : { key = 9 , val = 186 , lazy = 0 }
+t[10] : { key = 16 , val = 151 , lazy = 0 }
+t[11] : { key = 22 , val = 142 , lazy = 0 }
+t[12] : { key = 23 , val = 167 , lazy = 0 }
+t[13] : { key = 31 , val = 200 , lazy = 0 }
+t[14] : { key = 35 , val = 190 , lazy = 0 }
+t[15] : { key = 1 , val = 143 , lazy = 0 }
+t[16] : { key = 4 , val = 40 , lazy = 0 }
+t[17] : { key = 6 , val = 165 , lazy = 0 }
+t[18] : { key = 7 , val = 66 , lazy = 0 }
+t[19] : { key = 9 , val = 186 , lazy = 0 }
+t[20] : { key = 12 , val = 149 , lazy = 0 }
+t[21] : { key = 14 , val = 114 , lazy = 0 }
+t[22] : { key = 16 , val = 151 , lazy = 0 }
+t[23] : { key = 18 , val = 96 , lazy = 0 }
+t[24] : { key = 22 , val = 142 , lazy = 0 }
+t[25] : { key = 23 , val = 167 , lazy = 0 }
+t[26] : { key = 25 , val = 162 , lazy = 0 }
+t[27] : { key = 28 , val = 137 , lazy = 0 }
+t[28] : { key = 31 , val = 200 , lazy = 0 }
+t[29] : { key = 33 , val = 130 , lazy = 0 }
+t[30] : { key = 35 , val = 190 , lazy = 0 }
+t[31] : { key = 1 , val = 143 , lazy = 0 }
+t[32] : { key = 2 , val = 92 , lazy = 0 }
+t[33] : { key = 3 , val = 16 , lazy = 0 }
+t[34] : { key = 4 , val = 40 , lazy = 0 }
+t[35] : { key = 5 , val = 41 , lazy = 0 }
+t[36] : { key = 6 , val = 165 , lazy = 0 }
+t[37] : { key = 7 , val = 66 , lazy = 0 }
+t[38] : { key = 8 , val = 53 , lazy = 0 }
+t[39] : { key = 9 , val = 186 , lazy = 0 }
+t[40] : { key = 11 , val = 39 , lazy = 0 }
+t[41] : { key = 12 , val = 149 , lazy = 0 }
+t[42] : { key = 13 , val = 85 , lazy = 0 }
+t[43] : { key = 14 , val = 114 , lazy = 0 }
+t[44] : { key = 15 , val = 77 , lazy = 0 }
+t[45] : { key = 16 , val = 151 , lazy = 0 }
+t[46] : { key = 17 , val = 61 , lazy = 0 }
+t[47] : { key = 18 , val = 96 , lazy = 0 }
+t[48] : { key = 20 , val = 55 , lazy = 0 }
+t[49] : { key = 21 , val = 129 , lazy = 0 }
+t[50] : { key = 22 , val = 142 , lazy = 0 }
+t[51] : { key = 23 , val = 167 , lazy = 0 }
+t[52] : { key = 24 , val = 158 , lazy = 0 }
+t[53] : { key = 25 , val = 162 , lazy = 0 }
+t[54] : { key = 26 , val = 79 , lazy = 0 }
+t[55] : { key = 28 , val = 137 , lazy = 0 }
+t[56] : { key = 29 , val = 8 , lazy = 0 }
+t[57] : { key = 30 , val = 81 , lazy = 0 }
+t[58] : { key = 31 , val = 200 , lazy = 0 }
+t[59] : { key = 32 , val = 40 , lazy = 0 }
+t[60] : { key = 33 , val = 130 , lazy = 0 }
+t[61] : { key = 34 , val = 12 , lazy = 0 }
+t[62] : { key = 35 , val = 190 , lazy = 0 }
+t[63] : { key = 0 , val = 32 , lazy = 0 }
+t[64] : { key = 1 , val = 143 , lazy = 0 }
+t[65] : { key = -1 , val = -1 , lazy = 0 }
+t[66] : { key = -1 , val = -1 , lazy = 0 }
+t[67] : { key = -1 , val = -1 , lazy = 0 }
+t[68] : { key = -1 , val = -1 , lazy = 0 }
+t[69] : { key = -1 , val = -1 , lazy = 0 }
+t[70] : { key = -1 , val = -1 , lazy = 0 }
+t[71] : { key = -1 , val = -1 , lazy = 0 }
+t[72] : { key = -1 , val = -1 , lazy = 0 }
+t[73] : { key = -1 , val = -1 , lazy = 0 }
+t[74] : { key = -1 , val = -1 , lazy = 0 }
+t[75] : { key = -1 , val = -1 , lazy = 0 }
+t[76] : { key = -1 , val = -1 , lazy = 0 }
+t[77] : { key = -1 , val = -1 , lazy = 0 }
+t[78] : { key = -1 , val = -1 , lazy = 0 }
+t[79] : { key = 9 , val = 186 , lazy = 0 }
+t[80] : { key = 10 , val = 12 , lazy = 0 }
+t[81] : { key = -1 , val = -1 , lazy = 0 }
+t[82] : { key = -1 , val = -1 , lazy = 0 }
+t[83] : { key = -1 , val = -1 , lazy = 0 }
+t[84] : { key = -1 , val = -1 , lazy = 0 }
+t[85] : { key = -1 , val = -1 , lazy = 0 }
+t[86] : { key = -1 , val = -1 , lazy = 0 }
+t[87] : { key = -1 , val = -1 , lazy = 0 }
+t[88] : { key = -1 , val = -1 , lazy = 0 }
+t[89] : { key = -1 , val = -1 , lazy = 0 }
+t[90] : { key = -1 , val = -1 , lazy = 0 }
+t[91] : { key = -1 , val = -1 , lazy = 0 }
+t[92] : { key = -1 , val = -1 , lazy = 0 }
+t[93] : { key = -1 , val = -1 , lazy = 0 }
+t[94] : { key = -1 , val = -1 , lazy = 0 }
+t[95] : { key = 18 , val = 96 , lazy = 0 }
+t[96] : { key = 19 , val = 69 , lazy = 0 }
+t[97] : { key = -1 , val = -1 , lazy = 0 }
+t[98] : { key = -1 , val = -1 , lazy = 0 }
+t[99] : { key = -1 , val = -1 , lazy = 0 }
+t[100] : { key = -1 , val = -1 , lazy = 0 }
+t[101] : { key = -1 , val = -1 , lazy = 0 }
+t[102] : { key = -1 , val = -1 , lazy = 0 }
+t[103] : { key = -1 , val = -1 , lazy = 0 }
+t[104] : { key = -1 , val = -1 , lazy = 0 }
+t[105] : { key = -1 , val = -1 , lazy = 0 }
+t[106] : { key = -1 , val = -1 , lazy = 0 }
+t[107] : { key = -1 , val = -1 , lazy = 0 }
+t[108] : { key = -1 , val = -1 , lazy = 0 }
+t[109] : { key = -1 , val = -1 , lazy = 0 }
+t[110] : { key = -1 , val = -1 , lazy = 0 }
+t[111] : { key = 27 , val = 72 , lazy = 0 }
+t[112] : { key = 28 , val = 137 , lazy = 0 }
+t[113] : { key = -1 , val = -1 , lazy = 0 }
+t[114] : { key = -1 , val = -1 , lazy = 0 }
+t[115] : { key = -1 , val = -1 , lazy = 0 }
+t[116] : { key = -1 , val = -1 , lazy = 0 }
+t[117] : { key = -1 , val = -1 , lazy = 0 }
+t[118] : { key = -1 , val = -1 , lazy = 0 }
+t[119] : { key = -1 , val = -1 , lazy = 0 }
+t[120] : { key = -1 , val = -1 , lazy = 0 }
+t[121] : { key = -1 , val = -1 , lazy = 0 }
+t[122] : { key = -1 , val = -1 , lazy = 0 }
+t[123] : { key = -1 , val = -1 , lazy = 0 }
+t[124] : { key = -1 , val = -1 , lazy = 0 }
+t[125] : { key = -1 , val = -1 , lazy = 0 }
+t[126] : { key = -1 , val = -1 , lazy = 0 }
+t[127] : { key = -1 , val = -1 , lazy = 0 }
+t[128] : { key = -1 , val = -1 , lazy = 0 }
+t[129] : { key = -1 , val = -1 , lazy = 0 }
+t[130] : { key = -1 , val = -1 , lazy = 0 }
+t[131] : { key = -1 , val = -1 , lazy = 0 }
+t[132] : { key = -1 , val = -1 , lazy = 0 }
+t[133] : { key = -1 , val = -1 , lazy = 0 }
+t[134] : { key = -1 , val = -1 , lazy = 0 }
+t[135] : { key = -1 , val = -1 , lazy = 0 }
+t[136] : { key = -1 , val = -1 , lazy = 0 }
+t[137] : { key = -1 , val = -1 , lazy = 0 }
+t[138] : { key = -1 , val = -1 , lazy = 0 }
+t[139] : { key = -1 , val = -1 , lazy = 0 }
+t[140] : { key = -1 , val = -1 , lazy = 0 }
+t[141] : { key = -1 , val = -1 , lazy = 0 }
+t[142] : { key = -1 , val = -1 , lazy = 0 }
+t[143] : { key = -1 , val = -1 , lazy = 0 }
+Continuing.
+
+Hardware watchpoint 4: *t
+
+Old value = {key = 31, val = 356, lazy = 156}
+New value = {key = 31, val = 356, lazy = 0}
+push (t=0x55555556cf60, v=0) at main.cpp:55
+55	}
+update (t=0x55555556cf60, v=0, tl=0, tr=35, l=17, r=20, addend=20) at main.cpp:68
+68	    int L = v*2+1;
+t[0] : { key = 31 , val = 356 , lazy = 0 }
+t[1] : { key = 9 , val = 342 , lazy = 156 }
+t[2] : { key = 31 , val = 512 , lazy = 312 }
+t[3] : { key = 6 , val = 165 , lazy = 0 }
+t[4] : { key = 9 , val = 186 , lazy = 0 }
+t[5] : { key = 23 , val = 167 , lazy = 0 }
+t[6] : { key = 31 , val = 200 , lazy = 0 }
+t[7] : { key = 1 , val = 143 , lazy = 0 }
+t[8] : { key = 6 , val = 165 , lazy = 0 }
+t[9] : { key = 9 , val = 186 , lazy = 0 }
+t[10] : { key = 16 , val = 151 , lazy = 0 }
+t[11] : { key = 22 , val = 142 , lazy = 0 }
+t[12] : { key = 23 , val = 167 , lazy = 0 }
+t[13] : { key = 31 , val = 200 , lazy = 0 }
+t[14] : { key = 35 , val = 190 , lazy = 0 }
+t[15] : { key = 1 , val = 143 , lazy = 0 }
+t[16] : { key = 4 , val = 40 , lazy = 0 }
+t[17] : { key = 6 , val = 165 , lazy = 0 }
+t[18] : { key = 7 , val = 66 , lazy = 0 }
+t[19] : { key = 9 , val = 186 , lazy = 0 }
+t[20] : { key = 12 , val = 149 , lazy = 0 }
+t[21] : { key = 14 , val = 114 , lazy = 0 }
+t[22] : { key = 16 , val = 151 , lazy = 0 }
+t[23] : { key = 18 , val = 96 , lazy = 0 }
+t[24] : { key = 22 , val = 142 , lazy = 0 }
+t[25] : { key = 23 , val = 167 , lazy = 0 }
+t[26] : { key = 25 , val = 162 , lazy = 0 }
+t[27] : { key = 28 , val = 137 , lazy = 0 }
+t[28] : { key = 31 , val = 200 , lazy = 0 }
+t[29] : { key = 33 , val = 130 , lazy = 0 }
+t[30] : { key = 35 , val = 190 , lazy = 0 }
+t[31] : { key = 1 , val = 143 , lazy = 0 }
+t[32] : { key = 2 , val = 92 , lazy = 0 }
+t[33] : { key = 3 , val = 16 , lazy = 0 }
+t[34] : { key = 4 , val = 40 , lazy = 0 }
+t[35] : { key = 5 , val = 41 , lazy = 0 }
+t[36] : { key = 6 , val = 165 , lazy = 0 }
+t[37] : { key = 7 , val = 66 , lazy = 0 }
+t[38] : { key = 8 , val = 53 , lazy = 0 }
+t[39] : { key = 9 , val = 186 , lazy = 0 }
+t[40] : { key = 11 , val = 39 , lazy = 0 }
+t[41] : { key = 12 , val = 149 , lazy = 0 }
+t[42] : { key = 13 , val = 85 , lazy = 0 }
+t[43] : { key = 14 , val = 114 , lazy = 0 }
+t[44] : { key = 15 , val = 77 , lazy = 0 }
+t[45] : { key = 16 , val = 151 , lazy = 0 }
+t[46] : { key = 17 , val = 61 , lazy = 0 }
+t[47] : { key = 18 , val = 96 , lazy = 0 }
+t[48] : { key = 20 , val = 55 , lazy = 0 }
+t[49] : { key = 21 , val = 129 , lazy = 0 }
+t[50] : { key = 22 , val = 142 , lazy = 0 }
+t[51] : { key = 23 , val = 167 , lazy = 0 }
+t[52] : { key = 24 , val = 158 , lazy = 0 }
+t[53] : { key = 25 , val = 162 , lazy = 0 }
+t[54] : { key = 26 , val = 79 , lazy = 0 }
+t[55] : { key = 28 , val = 137 , lazy = 0 }
+t[56] : { key = 29 , val = 8 , lazy = 0 }
+t[57] : { key = 30 , val = 81 , lazy = 0 }
+t[58] : { key = 31 , val = 200 , lazy = 0 }
+t[59] : { key = 32 , val = 40 , lazy = 0 }
+t[60] : { key = 33 , val = 130 , lazy = 0 }
+t[61] : { key = 34 , val = 12 , lazy = 0 }
+t[62] : { key = 35 , val = 190 , lazy = 0 }
+t[63] : { key = 0 , val = 32 , lazy = 0 }
+t[64] : { key = 1 , val = 143 , lazy = 0 }
+t[65] : { key = -1 , val = -1 , lazy = 0 }
+t[66] : { key = -1 , val = -1 , lazy = 0 }
+t[67] : { key = -1 , val = -1 , lazy = 0 }
+t[68] : { key = -1 , val = -1 , lazy = 0 }
+t[69] : { key = -1 , val = -1 , lazy = 0 }
+t[70] : { key = -1 , val = -1 , lazy = 0 }
+t[71] : { key = -1 , val = -1 , lazy = 0 }
+t[72] : { key = -1 , val = -1 , lazy = 0 }
+t[73] : { key = -1 , val = -1 , lazy = 0 }
+t[74] : { key = -1 , val = -1 , lazy = 0 }
+t[75] : { key = -1 , val = -1 , lazy = 0 }
+t[76] : { key = -1 , val = -1 , lazy = 0 }
+t[77] : { key = -1 , val = -1 , lazy = 0 }
+t[78] : { key = -1 , val = -1 , lazy = 0 }
+t[79] : { key = 9 , val = 186 , lazy = 0 }
+t[80] : { key = 10 , val = 12 , lazy = 0 }
+t[81] : { key = -1 , val = -1 , lazy = 0 }
+t[82] : { key = -1 , val = -1 , lazy = 0 }
+t[83] : { key = -1 , val = -1 , lazy = 0 }
+t[84] : { key = -1 , val = -1 , lazy = 0 }
+t[85] : { key = -1 , val = -1 , lazy = 0 }
+t[86] : { key = -1 , val = -1 , lazy = 0 }
+t[87] : { key = -1 , val = -1 , lazy = 0 }
+t[88] : { key = -1 , val = -1 , lazy = 0 }
+t[89] : { key = -1 , val = -1 , lazy = 0 }
+t[90] : { key = -1 , val = -1 , lazy = 0 }
+t[91] : { key = -1 , val = -1 , lazy = 0 }
+t[92] : { key = -1 , val = -1 , lazy = 0 }
+t[93] : { key = -1 , val = -1 , lazy = 0 }
+t[94] : { key = -1 , val = -1 , lazy = 0 }
+t[95] : { key = 18 , val = 96 , lazy = 0 }
+t[96] : { key = 19 , val = 69 , lazy = 0 }
+t[97] : { key = -1 , val = -1 , lazy = 0 }
+t[98] : { key = -1 , val = -1 , lazy = 0 }
+t[99] : { key = -1 , val = -1 , lazy = 0 }
+t[100] : { key = -1 , val = -1 , lazy = 0 }
+t[101] : { key = -1 , val = -1 , lazy = 0 }
+t[102] : { key = -1 , val = -1 , lazy = 0 }
+t[103] : { key = -1 , val = -1 , lazy = 0 }
+t[104] : { key = -1 , val = -1 , lazy = 0 }
+t[105] : { key = -1 , val = -1 , lazy = 0 }
+t[106] : { key = -1 , val = -1 , lazy = 0 }
+t[107] : { key = -1 , val = -1 , lazy = 0 }
+t[108] : { key = -1 , val = -1 , lazy = 0 }
+t[109] : { key = -1 , val = -1 , lazy = 0 }
+t[110] : { key = -1 , val = -1 , lazy = 0 }
+t[111] : { key = 27 , val = 72 , lazy = 0 }
+t[112] : { key = 28 , val = 137 , lazy = 0 }
+t[113] : { key = -1 , val = -1 , lazy = 0 }
+t[114] : { key = -1 , val = -1 , lazy = 0 }
+t[115] : { key = -1 , val = -1 , lazy = 0 }
+t[116] : { key = -1 , val = -1 , lazy = 0 }
+t[117] : { key = -1 , val = -1 , lazy = 0 }
+t[118] : { key = -1 , val = -1 , lazy = 0 }
+t[119] : { key = -1 , val = -1 , lazy = 0 }
+t[120] : { key = -1 , val = -1 , lazy = 0 }
+t[121] : { key = -1 , val = -1 , lazy = 0 }
+t[122] : { key = -1 , val = -1 , lazy = 0 }
+t[123] : { key = -1 , val = -1 , lazy = 0 }
+t[124] : { key = -1 , val = -1 , lazy = 0 }
+t[125] : { key = -1 , val = -1 , lazy = 0 }
+t[126] : { key = -1 , val = -1 , lazy = 0 }
+t[127] : { key = -1 , val = -1 , lazy = 0 }
+t[128] : { key = -1 , val = -1 , lazy = 0 }
+t[129] : { key = -1 , val = -1 , lazy = 0 }
+t[130] : { key = -1 , val = -1 , lazy = 0 }
+t[131] : { key = -1 , val = -1 , lazy = 0 }
+t[132] : { key = -1 , val = -1 , lazy = 0 }
+t[133] : { key = -1 , val = -1 , lazy = 0 }
+t[134] : { key = -1 , val = -1 , lazy = 0 }
+t[135] : { key = -1 , val = -1 , lazy = 0 }
+t[136] : { key = -1 , val = -1 , lazy = 0 }
+t[137] : { key = -1 , val = -1 , lazy = 0 }
+t[138] : { key = -1 , val = -1 , lazy = 0 }
+t[139] : { key = -1 , val = -1 , lazy = 0 }
+t[140] : { key = -1 , val = -1 , lazy = 0 }
+t[141] : { key = -1 , val = -1 , lazy = 0 }
+t[142] : { key = -1 , val = -1 , lazy = 0 }
+t[143] : { key = -1 , val = -1 , lazy = 0 }
+69	    int R = v*2+2;
+70	    int tm = (tl+tr)/2;
+72	    update(t, v*2+1, tl, tm, l, min(r,tm), addend);
+Continuing.
+
+Hardware watchpoint 4: *t
+
+Old value = {key = 31, val = 356, lazy = 0}
+New value = {key = 31, val = 512, lazy = 0}
+0x0000555555555b0e in update (t=0x55555556cf60, v=0, tl=0, tr=35, l=17, r=20, addend=20) at main.cpp:78
+78	      t[v] = (t[L].val > t[R].val) ? t[L] : t[R];
+#0  0x0000555555555b0e in update (t=0x55555556cf60, v=0, tl=0, tr=35, l=17, r=20, addend=20) at main.cpp:78
+#1  0x0000555555555f9e in main (argc=1, argv=0x7fffffffd9b8) at main.cpp:144
+Continuing.
+
+Hardware watchpoint 4: *t
+
+Old value = {key = 31, val = 512, lazy = 0}
+New value = {key = 31, val = 512, lazy = 312}
+0x0000555555555b14 in update (t=0x55555556cf60, v=0, tl=0, tr=35, l=17, r=20, addend=20) at main.cpp:78
+78	      t[v] = (t[L].val > t[R].val) ? t[L] : t[R];
+Dump of assembler code for function update(node*, int, int, int, int, int, int):
+   0x00005555555557c3 <+0>:	endbr64 
+   0x00005555555557c7 <+4>:	push   %rbp
+   0x00005555555557c8 <+5>:	mov    %rsp,%rbp
+   0x00005555555557cb <+8>:	push   %rbx
+   0x00005555555557cc <+9>:	sub    $0x48,%rsp
+   0x00005555555557d0 <+13>:	mov    %rdi,-0x38(%rbp)
+   0x00005555555557d4 <+17>:	mov    %esi,-0x3c(%rbp)
+   0x00005555555557d7 <+20>:	mov    %edx,-0x40(%rbp)
+   0x00005555555557da <+23>:	mov    %ecx,-0x44(%rbp)
+   0x00005555555557dd <+26>:	mov    %r8d,-0x48(%rbp)
+   0x00005555555557e1 <+30>:	mov    %r9d,-0x4c(%rbp)
+   0x00005555555557e5 <+34>:	mov    %fs:0x28,%rax
+   0x00005555555557ee <+43>:	mov    %rax,-0x18(%rbp)
+   0x00005555555557f2 <+47>:	xor    %eax,%eax
+   0x00005555555557f4 <+49>:	mov    -0x48(%rbp),%edx
+   0x00005555555557f7 <+52>:	mov    -0x4c(%rbp),%eax
+   0x00005555555557fa <+55>:	cmp    %eax,%edx
+   0x00005555555557fc <+57>:	jg     0x555555555b16 <update(node*, int, int, int, int, int, int)+851>
+   0x0000555555555802 <+63>:	mov    -0x48(%rbp),%eax
+   0x0000555555555805 <+66>:	cmp    %eax,-0x40(%rbp)
+   0x0000555555555808 <+69>:	jne    0x5555555558a9 <update(node*, int, int, int, int, int, int)+230>
+   0x000055555555580e <+75>:	mov    -0x4c(%rbp),%eax
+   0x0000555555555811 <+78>:	cmp    %eax,-0x44(%rbp)
+   0x0000555555555814 <+81>:	jne    0x5555555558a9 <update(node*, int, int, int, int, int, int)+230>
+   0x000055555555581a <+87>:	mov    -0x3c(%rbp),%eax
+   0x000055555555581d <+90>:	movslq %eax,%rdx
+   0x0000555555555820 <+93>:	mov    %rdx,%rax
+   0x0000555555555823 <+96>:	add    %rax,%rax
+   0x0000555555555826 <+99>:	add    %rdx,%rax
+   0x0000555555555829 <+102>:	shl    $0x2,%rax
+   0x000055555555582d <+106>:	mov    %rax,%rdx
+   0x0000555555555830 <+109>:	mov    -0x38(%rbp),%rax
+   0x0000555555555834 <+113>:	add    %rdx,%rax
+   0x0000555555555837 <+116>:	mov    0x4(%rax),%ecx
+   0x000055555555583a <+119>:	mov    -0x3c(%rbp),%eax
+   0x000055555555583d <+122>:	movslq %eax,%rdx
+   0x0000555555555840 <+125>:	mov    %rdx,%rax
+   0x0000555555555843 <+128>:	add    %rax,%rax
+   0x0000555555555846 <+131>:	add    %rdx,%rax
+   0x0000555555555849 <+134>:	shl    $0x2,%rax
+   0x000055555555584d <+138>:	mov    %rax,%rdx
+   0x0000555555555850 <+141>:	mov    -0x38(%rbp),%rax
+   0x0000555555555854 <+145>:	add    %rdx,%rax
+   0x0000555555555857 <+148>:	mov    0x10(%rbp),%edx
+   0x000055555555585a <+151>:	add    %ecx,%edx
+   0x000055555555585c <+153>:	mov    %edx,0x4(%rax)
+   0x000055555555585f <+156>:	mov    -0x3c(%rbp),%eax
+   0x0000555555555862 <+159>:	movslq %eax,%rdx
+   0x0000555555555865 <+162>:	mov    %rdx,%rax
+   0x0000555555555868 <+165>:	add    %rax,%rax
+   0x000055555555586b <+168>:	add    %rdx,%rax
+   0x000055555555586e <+171>:	shl    $0x2,%rax
+   0x0000555555555872 <+175>:	mov    %rax,%rdx
+   0x0000555555555875 <+178>:	mov    -0x38(%rbp),%rax
+   0x0000555555555879 <+182>:	add    %rdx,%rax
+   0x000055555555587c <+185>:	mov    0x8(%rax),%ecx
+   0x000055555555587f <+188>:	mov    -0x3c(%rbp),%eax
+   0x0000555555555882 <+191>:	movslq %eax,%rdx
+   0x0000555555555885 <+194>:	mov    %rdx,%rax
+   0x0000555555555888 <+197>:	add    %rax,%rax
+   0x000055555555588b <+200>:	add    %rdx,%rax
+   0x000055555555588e <+203>:	shl    $0x2,%rax
+   0x0000555555555892 <+207>:	mov    %rax,%rdx
+   0x0000555555555895 <+210>:	mov    -0x38(%rbp),%rax
+   0x0000555555555899 <+214>:	add    %rdx,%rax
+   0x000055555555589c <+217>:	mov    0x10(%rbp),%edx
+   0x000055555555589f <+220>:	add    %ecx,%edx
+   0x00005555555558a1 <+222>:	mov    %edx,0x8(%rax)
+   0x00005555555558a4 <+225>:	jmpq   0x555555555b17 <update(node*, int, int, int, int, int, int)+852>
+   0x00005555555558a9 <+230>:	mov    -0x3c(%rbp),%edx
+   0x00005555555558ac <+233>:	mov    -0x38(%rbp),%rax
+   0x00005555555558b0 <+237>:	mov    %edx,%esi
+   0x00005555555558b2 <+239>:	mov    %rax,%rdi
+   0x00005555555558b5 <+242>:	callq  0x5555555555e1 <push(node*, int)>
+   0x00005555555558ba <+247>:	mov    -0x3c(%rbp),%eax
+   0x00005555555558bd <+250>:	add    %eax,%eax
+   0x00005555555558bf <+252>:	add    $0x1,%eax
+   0x00005555555558c2 <+255>:	mov    %eax,-0x20(%rbp)
+   0x00005555555558c5 <+258>:	mov    -0x3c(%rbp),%eax
+   0x00005555555558c8 <+261>:	add    $0x1,%eax
+   0x00005555555558cb <+264>:	add    %eax,%eax
+   0x00005555555558cd <+266>:	mov    %eax,-0x1c(%rbp)
+   0x00005555555558d0 <+269>:	mov    -0x40(%rbp),%edx
+   0x00005555555558d3 <+272>:	mov    -0x44(%rbp),%eax
+   0x00005555555558d6 <+275>:	add    %edx,%eax
+   0x00005555555558d8 <+277>:	mov    %eax,%edx
+   0x00005555555558da <+279>:	shr    $0x1f,%edx
+   0x00005555555558dd <+282>:	add    %edx,%eax
+   0x00005555555558df <+284>:	sar    %eax
+   0x00005555555558e1 <+286>:	mov    %eax,-0x28(%rbp)
+   0x00005555555558e4 <+289>:	lea    -0x28(%rbp),%rdx
+   0x00005555555558e8 <+293>:	lea    -0x4c(%rbp),%rax
+   0x00005555555558ec <+297>:	mov    %rdx,%rsi
+   0x00005555555558ef <+300>:	mov    %rax,%rdi
+   0x00005555555558f2 <+303>:	callq  0x5555555561d7 <std::min<int>(int const&, int const&)>
+   0x00005555555558f7 <+308>:	mov    (%rax),%r9d
+   0x00005555555558fa <+311>:	mov    -0x48(%rbp),%r8d
+   0x00005555555558fe <+315>:	mov    -0x28(%rbp),%ecx
+   0x0000555555555901 <+318>:	mov    -0x3c(%rbp),%eax
+   0x0000555555555904 <+321>:	add    %eax,%eax
+   0x0000555555555906 <+323>:	lea    0x1(%rax),%esi
+   0x0000555555555909 <+326>:	mov    -0x40(%rbp),%edx
+   0x000055555555590c <+329>:	mov    -0x38(%rbp),%rax
+   0x0000555555555910 <+333>:	sub    $0x8,%rsp
+   0x0000555555555914 <+337>:	mov    0x10(%rbp),%edi
+   0x0000555555555917 <+340>:	push   %rdi
+   0x0000555555555918 <+341>:	mov    %rax,%rdi
+   0x000055555555591b <+344>:	callq  0x5555555557c3 <update(node*, int, int, int, int, int, int)>
+   0x0000555555555920 <+349>:	add    $0x10,%rsp
+   0x0000555555555924 <+353>:	mov    -0x4c(%rbp),%ebx
+   0x0000555555555927 <+356>:	mov    -0x28(%rbp),%eax
+   0x000055555555592a <+359>:	add    $0x1,%eax
+   0x000055555555592d <+362>:	mov    %eax,-0x24(%rbp)
+   0x0000555555555930 <+365>:	lea    -0x24(%rbp),%rdx
+   0x0000555555555934 <+369>:	lea    -0x48(%rbp),%rax
+   0x0000555555555938 <+373>:	mov    %rdx,%rsi
+   0x000055555555593b <+376>:	mov    %rax,%rdi
+   0x000055555555593e <+379>:	callq  0x555555556203 <std::max<int>(int const&, int const&)>
+   0x0000555555555943 <+384>:	mov    (%rax),%r8d
+   0x0000555555555946 <+387>:	mov    -0x28(%rbp),%eax
+   0x0000555555555949 <+390>:	lea    0x1(%rax),%edi
+   0x000055555555594c <+393>:	mov    -0x3c(%rbp),%eax
+   0x000055555555594f <+396>:	add    $0x1,%eax
+   0x0000555555555952 <+399>:	lea    (%rax,%rax,1),%esi
+   0x0000555555555955 <+402>:	mov    -0x44(%rbp),%edx
+   0x0000555555555958 <+405>:	mov    -0x38(%rbp),%rax
+   0x000055555555595c <+409>:	sub    $0x8,%rsp
+   0x0000555555555960 <+413>:	mov    0x10(%rbp),%ecx
+   0x0000555555555963 <+416>:	push   %rcx
+   0x0000555555555964 <+417>:	mov    %ebx,%r9d
+   0x0000555555555967 <+420>:	mov    %edx,%ecx
+   0x0000555555555969 <+422>:	mov    %edi,%edx
+   0x000055555555596b <+424>:	mov    %rax,%rdi
+   0x000055555555596e <+427>:	callq  0x5555555557c3 <update(node*, int, int, int, int, int, int)>
+   0x0000555555555973 <+432>:	add    $0x10,%rsp
+   0x0000555555555977 <+436>:	mov    -0x20(%rbp),%eax
+   0x000055555555597a <+439>:	movslq %eax,%rdx
+   0x000055555555597d <+442>:	mov    %rdx,%rax
+   0x0000555555555980 <+445>:	add    %rax,%rax
+   0x0000555555555983 <+448>:	add    %rdx,%rax
+   0x0000555555555986 <+451>:	shl    $0x2,%rax
+   0x000055555555598a <+455>:	mov    %rax,%rdx
+   0x000055555555598d <+458>:	mov    -0x38(%rbp),%rax
+   0x0000555555555991 <+462>:	add    %rdx,%rax
+   0x0000555555555994 <+465>:	mov    0x4(%rax),%ecx
+   0x0000555555555997 <+468>:	mov    -0x1c(%rbp),%eax
+   0x000055555555599a <+471>:	movslq %eax,%rdx
+   0x000055555555599d <+474>:	mov    %rdx,%rax
+   0x00005555555559a0 <+477>:	add    %rax,%rax
+   0x00005555555559a3 <+480>:	add    %rdx,%rax
+   0x00005555555559a6 <+483>:	shl    $0x2,%rax
+   0x00005555555559aa <+487>:	mov    %rax,%rdx
+   0x00005555555559ad <+490>:	mov    -0x38(%rbp),%rax
+   0x00005555555559b1 <+494>:	add    %rdx,%rax
+   0x00005555555559b4 <+497>:	mov    0x4(%rax),%eax
+   0x00005555555559b7 <+500>:	cmp    %eax,%ecx
+   0x00005555555559b9 <+502>:	jne    0x555555555a6b <update(node*, int, int, int, int, int, int)+680>
+   0x00005555555559bf <+508>:	mov    -0x20(%rbp),%eax
+   0x00005555555559c2 <+511>:	movslq %eax,%rdx
+   0x00005555555559c5 <+514>:	mov    %rdx,%rax
+   0x00005555555559c8 <+517>:	add    %rax,%rax
+   0x00005555555559cb <+520>:	add    %rdx,%rax
+   0x00005555555559ce <+523>:	shl    $0x2,%rax
+   0x00005555555559d2 <+527>:	mov    %rax,%rdx
+   0x00005555555559d5 <+530>:	mov    -0x38(%rbp),%rax
+   0x00005555555559d9 <+534>:	add    %rdx,%rax
+   0x00005555555559dc <+537>:	mov    (%rax),%ecx
+   0x00005555555559de <+539>:	mov    -0x1c(%rbp),%eax
+   0x00005555555559e1 <+542>:	movslq %eax,%rdx
+   0x00005555555559e4 <+545>:	mov    %rdx,%rax
+   0x00005555555559e7 <+548>:	add    %rax,%rax
+   0x00005555555559ea <+551>:	add    %rdx,%rax
+   0x00005555555559ed <+554>:	shl    $0x2,%rax
+   0x00005555555559f1 <+558>:	mov    %rax,%rdx
+   0x00005555555559f4 <+561>:	mov    -0x38(%rbp),%rax
+   0x00005555555559f8 <+565>:	add    %rdx,%rax
+   0x00005555555559fb <+568>:	mov    (%rax),%eax
+   0x00005555555559fd <+570>:	cmp    %eax,%ecx
+   0x00005555555559ff <+572>:	jge    0x555555555a20 <update(node*, int, int, int, int, int, int)+605>
+   0x0000555555555a01 <+574>:	mov    -0x20(%rbp),%eax
+   0x0000555555555a04 <+577>:	movslq %eax,%rdx
+   0x0000555555555a07 <+580>:	mov    %rdx,%rax
+   0x0000555555555a0a <+583>:	add    %rax,%rax
+   0x0000555555555a0d <+586>:	add    %rdx,%rax
+   0x0000555555555a10 <+589>:	shl    $0x2,%rax
+   0x0000555555555a14 <+593>:	mov    %rax,%rdx
+   0x0000555555555a17 <+596>:	mov    -0x38(%rbp),%rax
+   0x0000555555555a1b <+600>:	add    %rax,%rdx
+   0x0000555555555a1e <+603>:	jmp    0x555555555a3d <update(node*, int, int, int, int, int, int)+634>
+   0x0000555555555a20 <+605>:	mov    -0x1c(%rbp),%eax
+   0x0000555555555a23 <+608>:	movslq %eax,%rdx
+   0x0000555555555a26 <+611>:	mov    %rdx,%rax
+   0x0000555555555a29 <+614>:	add    %rax,%rax
+   0x0000555555555a2c <+617>:	add    %rdx,%rax
+   0x0000555555555a2f <+620>:	shl    $0x2,%rax
+   0x0000555555555a33 <+624>:	mov    %rax,%rdx
+   0x0000555555555a36 <+627>:	mov    -0x38(%rbp),%rax
+   0x0000555555555a3a <+631>:	add    %rax,%rdx
+   0x0000555555555a3d <+634>:	mov    -0x3c(%rbp),%eax
+   0x0000555555555a40 <+637>:	movslq %eax,%rcx
+   0x0000555555555a43 <+640>:	mov    %rcx,%rax
+   0x0000555555555a46 <+643>:	add    %rax,%rax
+   0x0000555555555a49 <+646>:	add    %rcx,%rax
+   0x0000555555555a4c <+649>:	shl    $0x2,%rax
+   0x0000555555555a50 <+653>:	mov    %rax,%rcx
+   0x0000555555555a53 <+656>:	mov    -0x38(%rbp),%rax
+   0x0000555555555a57 <+660>:	add    %rcx,%rax
+   0x0000555555555a5a <+663>:	mov    (%rdx),%rcx
+   0x0000555555555a5d <+666>:	mov    %rcx,(%rax)
+   0x0000555555555a60 <+669>:	mov    0x8(%rdx),%edx
+   0x0000555555555a63 <+672>:	mov    %edx,0x8(%rax)
+   0x0000555555555a66 <+675>:	jmpq   0x555555555b17 <update(node*, int, int, int, int, int, int)+852>
+   0x0000555555555a6b <+680>:	mov    -0x20(%rbp),%eax
+   0x0000555555555a6e <+683>:	movslq %eax,%rdx
+   0x0000555555555a71 <+686>:	mov    %rdx,%rax
+   0x0000555555555a74 <+689>:	add    %rax,%rax
+   0x0000555555555a77 <+692>:	add    %rdx,%rax
+   0x0000555555555a7a <+695>:	shl    $0x2,%rax
+   0x0000555555555a7e <+699>:	mov    %rax,%rdx
+   0x0000555555555a81 <+702>:	mov    -0x38(%rbp),%rax
+   0x0000555555555a85 <+706>:	add    %rdx,%rax
+   0x0000555555555a88 <+709>:	mov    0x4(%rax),%ecx
+   0x0000555555555a8b <+712>:	mov    -0x1c(%rbp),%eax
+   0x0000555555555a8e <+715>:	movslq %eax,%rdx
+   0x0000555555555a91 <+718>:	mov    %rdx,%rax
+   0x0000555555555a94 <+721>:	add    %rax,%rax
+   0x0000555555555a97 <+724>:	add    %rdx,%rax
+   0x0000555555555a9a <+727>:	shl    $0x2,%rax
+   0x0000555555555a9e <+731>:	mov    %rax,%rdx
+   0x0000555555555aa1 <+734>:	mov    -0x38(%rbp),%rax
+   0x0000555555555aa5 <+738>:	add    %rdx,%rax
+   0x0000555555555aa8 <+741>:	mov    0x4(%rax),%eax
+   0x0000555555555aab <+744>:	cmp    %eax,%ecx
+   0x0000555555555aad <+746>:	jle    0x555555555ace <update(node*, int, int, int, int, int, int)+779>
+   0x0000555555555aaf <+748>:	mov    -0x20(%rbp),%eax
+   0x0000555555555ab2 <+751>:	movslq %eax,%rdx
+   0x0000555555555ab5 <+754>:	mov    %rdx,%rax
+   0x0000555555555ab8 <+757>:	add    %rax,%rax
+   0x0000555555555abb <+760>:	add    %rdx,%rax
+   0x0000555555555abe <+763>:	shl    $0x2,%rax
+   0x0000555555555ac2 <+767>:	mov    %rax,%rdx
+   0x0000555555555ac5 <+770>:	mov    -0x38(%rbp),%rax
+   0x0000555555555ac9 <+774>:	add    %rax,%rdx
+   0x0000555555555acc <+777>:	jmp    0x555555555aeb <update(node*, int, int, int, int, int, int)+808>
+   0x0000555555555ace <+779>:	mov    -0x1c(%rbp),%eax
+   0x0000555555555ad1 <+782>:	movslq %eax,%rdx
+   0x0000555555555ad4 <+785>:	mov    %rdx,%rax
+   0x0000555555555ad7 <+788>:	add    %rax,%rax
+   0x0000555555555ada <+791>:	add    %rdx,%rax
+   0x0000555555555add <+794>:	shl    $0x2,%rax
+   0x0000555555555ae1 <+798>:	mov    %rax,%rdx
+   0x0000555555555ae4 <+801>:	mov    -0x38(%rbp),%rax
+   0x0000555555555ae8 <+805>:	add    %rax,%rdx
+   0x0000555555555aeb <+808>:	mov    -0x3c(%rbp),%eax
+   0x0000555555555aee <+811>:	movslq %eax,%rcx
+   0x0000555555555af1 <+814>:	mov    %rcx,%rax
+   0x0000555555555af4 <+817>:	add    %rax,%rax
+   0x0000555555555af7 <+820>:	add    %rcx,%rax
+   0x0000555555555afa <+823>:	shl    $0x2,%rax
+   0x0000555555555afe <+827>:	mov    %rax,%rcx
+   0x0000555555555b01 <+830>:	mov    -0x38(%rbp),%rax
+   0x0000555555555b05 <+834>:	add    %rcx,%rax
+   0x0000555555555b08 <+837>:	mov    (%rdx),%rcx
+   0x0000555555555b0b <+840>:	mov    %rcx,(%rax)
+   0x0000555555555b0e <+843>:	mov    0x8(%rdx),%edx
+   0x0000555555555b11 <+846>:	mov    %edx,0x8(%rax)
+=> 0x0000555555555b14 <+849>:	jmp    0x555555555b17 <update(node*, int, int, int, int, int, int)+852>
+   0x0000555555555b16 <+851>:	nop
+   0x0000555555555b17 <+852>:	mov    -0x18(%rbp),%rax
+   0x0000555555555b1b <+856>:	xor    %fs:0x28,%rax
+   0x0000555555555b24 <+865>:	je     0x555555555b2b <update(node*, int, int, int, int, int, int)+872>
+   0x0000555555555b26 <+867>:	callq  0x5555555551c0 <__stack_chk_fail@plt>
+   0x0000555555555b2b <+872>:	mov    -0x8(%rbp),%rbx
+   0x0000555555555b2f <+876>:	leaveq 
+   0x0000555555555b30 <+877>:	retq   
+End of assembler dump.
+$37 = 0
+$38 = 1
+Continuing.
+
+Breakpoint 3, main (argc=1, argv=0x7fffffffd9b8) at main.cpp:140
+140	      cin >> a;
+Continuing.
+
+Hardware watchpoint 4: *t
+
+Old value = {key = 31, val = 512, lazy = 312}
+New value = {key = 31, val = 512, lazy = 0}
+push (t=0x55555556cf60, v=0) at main.cpp:55
+55	}
+t[0] : { key = 31 , val = 512 , lazy = 0 }
+t[1] : { key = 9 , val = 654 , lazy = 468 }
+t[2] : { key = 31 , val = 824 , lazy = 624 }
+t[3] : { key = 6 , val = 321 , lazy = 156 }
+t[4] : { key = 9 , val = 342 , lazy = 156 }
+t[5] : { key = 23 , val = 479 , lazy = 312 }
+t[6] : { key = 31 , val = 512 , lazy = 312 }
+t[7] : { key = 1 , val = 143 , lazy = 0 }
+t[8] : { key = 6 , val = 165 , lazy = 0 }
+t[9] : { key = 9 , val = 342 , lazy = 156 }
+t[10] : { key = 16 , val = 307 , lazy = 156 }
+t[11] : { key = 22 , val = 454 , lazy = 312 }
+t[12] : { key = 23 , val = 479 , lazy = 312 }
+t[13] : { key = 31 , val = 200 , lazy = 0 }
+t[14] : { key = 35 , val = 190 , lazy = 0 }
+t[15] : { key = 1 , val = 143 , lazy = 0 }
+t[16] : { key = 4 , val = 40 , lazy = 0 }
+t[17] : { key = 6 , val = 165 , lazy = 0 }
+t[18] : { key = 7 , val = 66 , lazy = 0 }
+t[19] : { key = 9 , val = 186 , lazy = 0 }
+t[20] : { key = 12 , val = 149 , lazy = 0 }
+t[21] : { key = 14 , val = 270 , lazy = 156 }
+t[22] : { key = 16 , val = 307 , lazy = 156 }
+t[23] : { key = 18 , val = 428 , lazy = 332 }
+t[24] : { key = 22 , val = 454 , lazy = 312 }
+t[25] : { key = 23 , val = 167 , lazy = 0 }
+t[26] : { key = 25 , val = 162 , lazy = 0 }
+t[27] : { key = 28 , val = 137 , lazy = 0 }
+t[28] : { key = 31 , val = 200 , lazy = 0 }
+t[29] : { key = 33 , val = 130 , lazy = 0 }
+t[30] : { key = 35 , val = 190 , lazy = 0 }
+t[31] : { key = 1 , val = 143 , lazy = 0 }
+t[32] : { key = 2 , val = 92 , lazy = 0 }
+t[33] : { key = 3 , val = 16 , lazy = 0 }
+t[34] : { key = 4 , val = 40 , lazy = 0 }
+t[35] : { key = 5 , val = 41 , lazy = 0 }
+t[36] : { key = 6 , val = 165 , lazy = 0 }
+t[37] : { key = 7 , val = 66 , lazy = 0 }
+t[38] : { key = 8 , val = 53 , lazy = 0 }
+t[39] : { key = 9 , val = 186 , lazy = 0 }
+t[40] : { key = 11 , val = 39 , lazy = 0 }
+t[41] : { key = 12 , val = 149 , lazy = 0 }
+t[42] : { key = 13 , val = 85 , lazy = 0 }
+t[43] : { key = 14 , val = 114 , lazy = 0 }
+t[44] : { key = 15 , val = 77 , lazy = 0 }
+t[45] : { key = 16 , val = 307 , lazy = 156 }
+t[46] : { key = 17 , val = 237 , lazy = 176 }
+t[47] : { key = 18 , val = 96 , lazy = 0 }
+t[48] : { key = 20 , val = 55 , lazy = 0 }
+t[49] : { key = 21 , val = 129 , lazy = 0 }
+t[50] : { key = 22 , val = 142 , lazy = 0 }
+t[51] : { key = 23 , val = 167 , lazy = 0 }
+t[52] : { key = 24 , val = 158 , lazy = 0 }
+t[53] : { key = 25 , val = 162 , lazy = 0 }
+t[54] : { key = 26 , val = 79 , lazy = 0 }
+t[55] : { key = 28 , val = 137 , lazy = 0 }
+t[56] : { key = 29 , val = 8 , lazy = 0 }
+t[57] : { key = 30 , val = 81 , lazy = 0 }
+t[58] : { key = 31 , val = 200 , lazy = 0 }
+t[59] : { key = 32 , val = 40 , lazy = 0 }
+t[60] : { key = 33 , val = 130 , lazy = 0 }
+t[61] : { key = 34 , val = 12 , lazy = 0 }
+t[62] : { key = 35 , val = 190 , lazy = 0 }
+t[63] : { key = 0 , val = 32 , lazy = 0 }
+t[64] : { key = 1 , val = 143 , lazy = 0 }
+t[65] : { key = -1 , val = -1 , lazy = 0 }
+t[66] : { key = -1 , val = -1 , lazy = 0 }
+t[67] : { key = -1 , val = -1 , lazy = 0 }
+t[68] : { key = -1 , val = -1 , lazy = 0 }
+t[69] : { key = -1 , val = -1 , lazy = 0 }
+t[70] : { key = -1 , val = -1 , lazy = 0 }
+t[71] : { key = -1 , val = -1 , lazy = 0 }
+t[72] : { key = -1 , val = -1 , lazy = 0 }
+t[73] : { key = -1 , val = -1 , lazy = 0 }
+t[74] : { key = -1 , val = -1 , lazy = 0 }
+t[75] : { key = -1 , val = -1 , lazy = 0 }
+t[76] : { key = -1 , val = -1 , lazy = 0 }
+t[77] : { key = -1 , val = -1 , lazy = 0 }
+t[78] : { key = -1 , val = -1 , lazy = 0 }
+t[79] : { key = 9 , val = 186 , lazy = 0 }
+t[80] : { key = 10 , val = 12 , lazy = 0 }
+t[81] : { key = -1 , val = -1 , lazy = 0 }
+t[82] : { key = -1 , val = -1 , lazy = 0 }
+t[83] : { key = -1 , val = -1 , lazy = 0 }
+t[84] : { key = -1 , val = -1 , lazy = 0 }
+t[85] : { key = -1 , val = -1 , lazy = 0 }
+t[86] : { key = -1 , val = -1 , lazy = 0 }
+t[87] : { key = -1 , val = -1 , lazy = 0 }
+t[88] : { key = -1 , val = -1 , lazy = 0 }
+t[89] : { key = -1 , val = -1 , lazy = 0 }
+t[90] : { key = -1 , val = -1 , lazy = 0 }
+t[91] : { key = -1 , val = -1 , lazy = 0 }
+t[92] : { key = -1 , val = -1 , lazy = 0 }
+t[93] : { key = -1 , val = -1 , lazy = 0 }
+t[94] : { key = -1 , val = -1 , lazy = 0 }
+t[95] : { key = 18 , val = 96 , lazy = 0 }
+t[96] : { key = 19 , val = 69 , lazy = 0 }
+t[97] : { key = -1 , val = -1 , lazy = 0 }
+t[98] : { key = -1 , val = -1 , lazy = 0 }
+t[99] : { key = -1 , val = -1 , lazy = 0 }
+t[100] : { key = -1 , val = -1 , lazy = 0 }
+t[101] : { key = -1 , val = -1 , lazy = 0 }
+t[102] : { key = -1 , val = -1 , lazy = 0 }
+t[103] : { key = -1 , val = -1 , lazy = 0 }
+t[104] : { key = -1 , val = -1 , lazy = 0 }
+t[105] : { key = -1 , val = -1 , lazy = 0 }
+t[106] : { key = -1 , val = -1 , lazy = 0 }
+t[107] : { key = -1 , val = -1 , lazy = 0 }
+t[108] : { key = -1 , val = -1 , lazy = 0 }
+t[109] : { key = -1 , val = -1 , lazy = 0 }
+t[110] : { key = -1 , val = -1 , lazy = 0 }
+t[111] : { key = 27 , val = 72 , lazy = 0 }
+t[112] : { key = 28 , val = 137 , lazy = 0 }
+t[113] : { key = -1 , val = -1 , lazy = 0 }
+t[114] : { key = -1 , val = -1 , lazy = 0 }
+t[115] : { key = -1 , val = -1 , lazy = 0 }
+t[116] : { key = -1 , val = -1 , lazy = 0 }
+t[117] : { key = -1 , val = -1 , lazy = 0 }
+t[118] : { key = -1 , val = -1 , lazy = 0 }
+t[119] : { key = -1 , val = -1 , lazy = 0 }
+t[120] : { key = -1 , val = -1 , lazy = 0 }
+t[121] : { key = -1 , val = -1 , lazy = 0 }
+t[122] : { key = -1 , val = -1 , lazy = 0 }
+t[123] : { key = -1 , val = -1 , lazy = 0 }
+t[124] : { key = -1 , val = -1 , lazy = 0 }
+t[125] : { key = -1 , val = -1 , lazy = 0 }
+t[126] : { key = -1 , val = -1 , lazy = 0 }
+t[127] : { key = -1 , val = -1 , lazy = 0 }
+t[128] : { key = -1 , val = -1 , lazy = 0 }
+t[129] : { key = -1 , val = -1 , lazy = 0 }
+t[130] : { key = -1 , val = -1 , lazy = 0 }
+t[131] : { key = -1 , val = -1 , lazy = 0 }
+t[132] : { key = -1 , val = -1 , lazy = 0 }
+t[133] : { key = -1 , val = -1 , lazy = 0 }
+t[134] : { key = -1 , val = -1 , lazy = 0 }
+t[135] : { key = -1 , val = -1 , lazy = 0 }
+t[136] : { key = -1 , val = -1 , lazy = 0 }
+t[137] : { key = -1 , val = -1 , lazy = 0 }
+t[138] : { key = -1 , val = -1 , lazy = 0 }
+t[139] : { key = -1 , val = -1 , lazy = 0 }
+t[140] : { key = -1 , val = -1 , lazy = 0 }
+t[141] : { key = -1 , val = -1 , lazy = 0 }
+t[142] : { key = -1 , val = -1 , lazy = 0 }
+t[143] : { key = -1 , val = -1 , lazy = 0 }
+#0  push (t=0x55555556cf60, v=0) at main.cpp:55
+#1  0x00005555555558ba in update (t=0x55555556cf60, v=0, tl=0, tr=35, l=5, r=28, addend=155) at main.cpp:66
+#2  0x0000555555555f9e in main (argc=1, argv=0x7fffffffd9b8) at main.cpp:144
+Continuing.
+
+Hardware watchpoint 4: *t
+
+Old value = {key = 31, val = 512, lazy = 0}
+New value = {key = 23, val = 1258, lazy = 0}
+0x0000555555555b0e in update (t=0x55555556cf60, v=0, tl=0, tr=35, l=5, r=28, addend=155) at main.cpp:78
+78	      t[v] = (t[L].val > t[R].val) ? t[L] : t[R];
+$39 = {key = 9, val = 965, lazy = 779}
+$40 = {key = 23, val = 1258, lazy = 1091}
+$41 = 0
+$42 = 1
+t[0] : { key = 23 , val = 1258 , lazy = 0 }
+t[1] : { key = 9 , val = 965 , lazy = 779 }
+t[2] : { key = 23 , val = 1258 , lazy = 1091 }
+t[3] : { key = 6 , val = 944 , lazy = 779 }
+t[4] : { key = 9 , val = 965 , lazy = 779 }
+t[5] : { key = 23 , val = 1258 , lazy = 1091 }
+t[6] : { key = 28 , val = 1228 , lazy = 1091 }
+t[7] : { key = 1 , val = 767 , lazy = 624 }
+t[8] : { key = 6 , val = 944 , lazy = 779 }
+t[9] : { key = 9 , val = 342 , lazy = 156 }
+t[10] : { key = 16 , val = 307 , lazy = 156 }
+t[11] : { key = 22 , val = 454 , lazy = 312 }
+t[12] : { key = 23 , val = 479 , lazy = 312 }
+t[13] : { key = 28 , val = 1228 , lazy = 1091 }
+t[14] : { key = 35 , val = 1126 , lazy = 936 }
+t[15] : { key = 1 , val = 143 , lazy = 0 }
+t[16] : { key = 4 , val = 40 , lazy = 0 }
+t[17] : { key = 6 , val = 165 , lazy = 0 }
+t[18] : { key = 7 , val = 66 , lazy = 0 }
+t[19] : { key = 9 , val = 186 , lazy = 0 }
+t[20] : { key = 12 , val = 149 , lazy = 0 }
+t[21] : { key = 14 , val = 270 , lazy = 156 }
+t[22] : { key = 16 , val = 307 , lazy = 156 }
+t[23] : { key = 18 , val = 428 , lazy = 332 }
+t[24] : { key = 22 , val = 454 , lazy = 312 }
+t[25] : { key = 23 , val = 167 , lazy = 0 }
+t[26] : { key = 25 , val = 162 , lazy = 0 }
+t[27] : { key = 28 , val = 1228 , lazy = 1091 }
+t[28] : { key = 31 , val = 1136 , lazy = 936 }
+t[29] : { key = 33 , val = 130 , lazy = 0 }
+t[30] : { key = 35 , val = 190 , lazy = 0 }
+t[31] : { key = 1 , val = 143 , lazy = 0 }
+t[32] : { key = 2 , val = 92 , lazy = 0 }
+t[33] : { key = 3 , val = 16 , lazy = 0 }
+t[34] : { key = 4 , val = 40 , lazy = 0 }
+t[35] : { key = 5 , val = 41 , lazy = 0 }
+t[36] : { key = 6 , val = 165 , lazy = 0 }
+t[37] : { key = 7 , val = 66 , lazy = 0 }
+t[38] : { key = 8 , val = 53 , lazy = 0 }
+t[39] : { key = 9 , val = 186 , lazy = 0 }
+t[40] : { key = 11 , val = 39 , lazy = 0 }
+t[41] : { key = 12 , val = 149 , lazy = 0 }
+t[42] : { key = 13 , val = 85 , lazy = 0 }
+t[43] : { key = 14 , val = 114 , lazy = 0 }
+t[44] : { key = 15 , val = 77 , lazy = 0 }
+t[45] : { key = 16 , val = 307 , lazy = 156 }
+t[46] : { key = 17 , val = 237 , lazy = 176 }
+t[47] : { key = 18 , val = 96 , lazy = 0 }
+t[48] : { key = 20 , val = 55 , lazy = 0 }
+t[49] : { key = 21 , val = 129 , lazy = 0 }
+t[50] : { key = 22 , val = 142 , lazy = 0 }
+t[51] : { key = 23 , val = 167 , lazy = 0 }
+t[52] : { key = 24 , val = 158 , lazy = 0 }
+t[53] : { key = 25 , val = 162 , lazy = 0 }
+t[54] : { key = 26 , val = 79 , lazy = 0 }
+t[55] : { key = 28 , val = 1228 , lazy = 1091 }
+t[56] : { key = 29 , val = 944 , lazy = 936 }
+t[57] : { key = 30 , val = 81 , lazy = 0 }
+t[58] : { key = 31 , val = 200 , lazy = 0 }
+t[59] : { key = 32 , val = 40 , lazy = 0 }
+t[60] : { key = 33 , val = 130 , lazy = 0 }
+t[61] : { key = 34 , val = 12 , lazy = 0 }
+t[62] : { key = 35 , val = 190 , lazy = 0 }
+t[63] : { key = 0 , val = 32 , lazy = 0 }
+t[64] : { key = 1 , val = 143 , lazy = 0 }
+t[65] : { key = -1 , val = -1 , lazy = 0 }
+t[66] : { key = -1 , val = -1 , lazy = 0 }
+t[67] : { key = -1 , val = -1 , lazy = 0 }
+t[68] : { key = -1 , val = -1 , lazy = 0 }
+t[69] : { key = -1 , val = -1 , lazy = 0 }
+t[70] : { key = -1 , val = -1 , lazy = 0 }
+t[71] : { key = -1 , val = -1 , lazy = 0 }
+t[72] : { key = -1 , val = -1 , lazy = 0 }
+t[73] : { key = -1 , val = -1 , lazy = 0 }
+t[74] : { key = -1 , val = -1 , lazy = 0 }
+t[75] : { key = -1 , val = -1 , lazy = 0 }
+t[76] : { key = -1 , val = -1 , lazy = 0 }
+t[77] : { key = -1 , val = -1 , lazy = 0 }
+t[78] : { key = -1 , val = -1 , lazy = 0 }
+t[79] : { key = 9 , val = 186 , lazy = 0 }
+t[80] : { key = 10 , val = 12 , lazy = 0 }
+t[81] : { key = -1 , val = -1 , lazy = 0 }
+t[82] : { key = -1 , val = -1 , lazy = 0 }
+t[83] : { key = -1 , val = -1 , lazy = 0 }
+t[84] : { key = -1 , val = -1 , lazy = 0 }
+t[85] : { key = -1 , val = -1 , lazy = 0 }
+t[86] : { key = -1 , val = -1 , lazy = 0 }
+t[87] : { key = -1 , val = -1 , lazy = 0 }
+t[88] : { key = -1 , val = -1 , lazy = 0 }
+t[89] : { key = -1 , val = -1 , lazy = 0 }
+t[90] : { key = -1 , val = -1 , lazy = 0 }
+t[91] : { key = -1 , val = -1 , lazy = 0 }
+t[92] : { key = -1 , val = -1 , lazy = 0 }
+t[93] : { key = -1 , val = -1 , lazy = 0 }
+t[94] : { key = -1 , val = -1 , lazy = 0 }
+t[95] : { key = 18 , val = 96 , lazy = 0 }
+t[96] : { key = 19 , val = 69 , lazy = 0 }
+t[97] : { key = -1 , val = -1 , lazy = 0 }
+t[98] : { key = -1 , val = -1 , lazy = 0 }
+t[99] : { key = -1 , val = -1 , lazy = 0 }
+t[100] : { key = -1 , val = -1 , lazy = 0 }
+t[101] : { key = -1 , val = -1 , lazy = 0 }
+t[102] : { key = -1 , val = -1 , lazy = 0 }
+t[103] : { key = -1 , val = -1 , lazy = 0 }
+t[104] : { key = -1 , val = -1 , lazy = 0 }
+t[105] : { key = -1 , val = -1 , lazy = 0 }
+t[106] : { key = -1 , val = -1 , lazy = 0 }
+t[107] : { key = -1 , val = -1 , lazy = 0 }
+t[108] : { key = -1 , val = -1 , lazy = 0 }
+t[109] : { key = -1 , val = -1 , lazy = 0 }
+t[110] : { key = -1 , val = -1 , lazy = 0 }
+t[111] : { key = 27 , val = 72 , lazy = 0 }
+t[112] : { key = 28 , val = 137 , lazy = 0 }
+t[113] : { key = -1 , val = -1 , lazy = 0 }
+t[114] : { key = -1 , val = -1 , lazy = 0 }
+t[115] : { key = -1 , val = -1 , lazy = 0 }
+t[116] : { key = -1 , val = -1 , lazy = 0 }
+t[117] : { key = -1 , val = -1 , lazy = 0 }
+t[118] : { key = -1 , val = -1 , lazy = 0 }
+t[119] : { key = -1 , val = -1 , lazy = 0 }
+t[120] : { key = -1 , val = -1 , lazy = 0 }
+t[121] : { key = -1 , val = -1 , lazy = 0 }
+t[122] : { key = -1 , val = -1 , lazy = 0 }
+t[123] : { key = -1 , val = -1 , lazy = 0 }
+t[124] : { key = -1 , val = -1 , lazy = 0 }
+t[125] : { key = -1 , val = -1 , lazy = 0 }
+t[126] : { key = -1 , val = -1 , lazy = 0 }
+t[127] : { key = -1 , val = -1 , lazy = 0 }
+t[128] : { key = -1 , val = -1 , lazy = 0 }
+t[129] : { key = -1 , val = -1 , lazy = 0 }
+t[130] : { key = -1 , val = -1 , lazy = 0 }
+t[131] : { key = -1 , val = -1 , lazy = 0 }
+t[132] : { key = -1 , val = -1 , lazy = 0 }
+t[133] : { key = -1 , val = -1 , lazy = 0 }
+t[134] : { key = -1 , val = -1 , lazy = 0 }
+t[135] : { key = -1 , val = -1 , lazy = 0 }
+t[136] : { key = -1 , val = -1 , lazy = 0 }
+t[137] : { key = -1 , val = -1 , lazy = 0 }
+t[138] : { key = -1 , val = -1 , lazy = 0 }
+t[139] : { key = -1 , val = -1 , lazy = 0 }
+t[140] : { key = -1 , val = -1 , lazy = 0 }
+t[141] : { key = -1 , val = -1 , lazy = 0 }
+t[142] : { key = -1 , val = -1 , lazy = 0 }
+t[143] : { key = -1 , val = -1 , lazy = 0 }
+Continuing.
+
+Hardware watchpoint 4: *t
+
+Old value = {key = 23, val = 1258, lazy = 0}
+New value = {key = 23, val = 1258, lazy = 1091}
+0x0000555555555b14 in update (t=0x55555556cf60, v=0, tl=0, tr=35, l=5, r=28, addend=155) at main.cpp:78
+78	      t[v] = (t[L].val > t[R].val) ? t[L] : t[R];
+Continuing.
+
+Breakpoint 3, main (argc=1, argv=0x7fffffffd9b8) at main.cpp:140
+140	      cin >> a;
+t[0] : { key = 23 , val = 1258 , lazy = 1091 }
+t[1] : { key = 9 , val = 965 , lazy = 779 }
+t[2] : { key = 23 , val = 1258 , lazy = 1091 }
+t[3] : { key = 6 , val = 944 , lazy = 779 }
+t[4] : { key = 9 , val = 965 , lazy = 779 }
+t[5] : { key = 23 , val = 1258 , lazy = 1091 }
+t[6] : { key = 28 , val = 1228 , lazy = 1091 }
+t[7] : { key = 1 , val = 767 , lazy = 624 }
+t[8] : { key = 6 , val = 944 , lazy = 779 }
+t[9] : { key = 9 , val = 342 , lazy = 156 }
+t[10] : { key = 16 , val = 307 , lazy = 156 }
+t[11] : { key = 22 , val = 454 , lazy = 312 }
+t[12] : { key = 23 , val = 479 , lazy = 312 }
+t[13] : { key = 28 , val = 1228 , lazy = 1091 }
+t[14] : { key = 35 , val = 1126 , lazy = 936 }
+t[15] : { key = 1 , val = 143 , lazy = 0 }
+t[16] : { key = 4 , val = 40 , lazy = 0 }
+t[17] : { key = 6 , val = 165 , lazy = 0 }
+t[18] : { key = 7 , val = 66 , lazy = 0 }
+t[19] : { key = 9 , val = 186 , lazy = 0 }
+t[20] : { key = 12 , val = 149 , lazy = 0 }
+t[21] : { key = 14 , val = 270 , lazy = 156 }
+t[22] : { key = 16 , val = 307 , lazy = 156 }
+t[23] : { key = 18 , val = 428 , lazy = 332 }
+t[24] : { key = 22 , val = 454 , lazy = 312 }
+t[25] : { key = 23 , val = 167 , lazy = 0 }
+t[26] : { key = 25 , val = 162 , lazy = 0 }
+t[27] : { key = 28 , val = 1228 , lazy = 1091 }
+t[28] : { key = 31 , val = 1136 , lazy = 936 }
+t[29] : { key = 33 , val = 130 , lazy = 0 }
+t[30] : { key = 35 , val = 190 , lazy = 0 }
+t[31] : { key = 1 , val = 143 , lazy = 0 }
+t[32] : { key = 2 , val = 92 , lazy = 0 }
+t[33] : { key = 3 , val = 16 , lazy = 0 }
+t[34] : { key = 4 , val = 40 , lazy = 0 }
+t[35] : { key = 5 , val = 41 , lazy = 0 }
+t[36] : { key = 6 , val = 165 , lazy = 0 }
+t[37] : { key = 7 , val = 66 , lazy = 0 }
+t[38] : { key = 8 , val = 53 , lazy = 0 }
+t[39] : { key = 9 , val = 186 , lazy = 0 }
+t[40] : { key = 11 , val = 39 , lazy = 0 }
+t[41] : { key = 12 , val = 149 , lazy = 0 }
+t[42] : { key = 13 , val = 85 , lazy = 0 }
+t[43] : { key = 14 , val = 114 , lazy = 0 }
+t[44] : { key = 15 , val = 77 , lazy = 0 }
+t[45] : { key = 16 , val = 307 , lazy = 156 }
+t[46] : { key = 17 , val = 237 , lazy = 176 }
+t[47] : { key = 18 , val = 96 , lazy = 0 }
+t[48] : { key = 20 , val = 55 , lazy = 0 }
+t[49] : { key = 21 , val = 129 , lazy = 0 }
+t[50] : { key = 22 , val = 142 , lazy = 0 }
+t[51] : { key = 23 , val = 167 , lazy = 0 }
+t[52] : { key = 24 , val = 158 , lazy = 0 }
+t[53] : { key = 25 , val = 162 , lazy = 0 }
+t[54] : { key = 26 , val = 79 , lazy = 0 }
+t[55] : { key = 28 , val = 1228 , lazy = 1091 }
+t[56] : { key = 29 , val = 944 , lazy = 936 }
+t[57] : { key = 30 , val = 81 , lazy = 0 }
+t[58] : { key = 31 , val = 200 , lazy = 0 }
+t[59] : { key = 32 , val = 40 , lazy = 0 }
+t[60] : { key = 33 , val = 130 , lazy = 0 }
+t[61] : { key = 34 , val = 12 , lazy = 0 }
+t[62] : { key = 35 , val = 190 , lazy = 0 }
+t[63] : { key = 0 , val = 32 , lazy = 0 }
+t[64] : { key = 1 , val = 143 , lazy = 0 }
+t[65] : { key = -1 , val = -1 , lazy = 0 }
+t[66] : { key = -1 , val = -1 , lazy = 0 }
+t[67] : { key = -1 , val = -1 , lazy = 0 }
+t[68] : { key = -1 , val = -1 , lazy = 0 }
+t[69] : { key = -1 , val = -1 , lazy = 0 }
+t[70] : { key = -1 , val = -1 , lazy = 0 }
+t[71] : { key = -1 , val = -1 , lazy = 0 }
+t[72] : { key = -1 , val = -1 , lazy = 0 }
+t[73] : { key = -1 , val = -1 , lazy = 0 }
+t[74] : { key = -1 , val = -1 , lazy = 0 }
+t[75] : { key = -1 , val = -1 , lazy = 0 }
+t[76] : { key = -1 , val = -1 , lazy = 0 }
+t[77] : { key = -1 , val = -1 , lazy = 0 }
+t[78] : { key = -1 , val = -1 , lazy = 0 }
+t[79] : { key = 9 , val = 186 , lazy = 0 }
+t[80] : { key = 10 , val = 12 , lazy = 0 }
+t[81] : { key = -1 , val = -1 , lazy = 0 }
+t[82] : { key = -1 , val = -1 , lazy = 0 }
+t[83] : { key = -1 , val = -1 , lazy = 0 }
+t[84] : { key = -1 , val = -1 , lazy = 0 }
+t[85] : { key = -1 , val = -1 , lazy = 0 }
+t[86] : { key = -1 , val = -1 , lazy = 0 }
+t[87] : { key = -1 , val = -1 , lazy = 0 }
+t[88] : { key = -1 , val = -1 , lazy = 0 }
+t[89] : { key = -1 , val = -1 , lazy = 0 }
+t[90] : { key = -1 , val = -1 , lazy = 0 }
+t[91] : { key = -1 , val = -1 , lazy = 0 }
+t[92] : { key = -1 , val = -1 , lazy = 0 }
+t[93] : { key = -1 , val = -1 , lazy = 0 }
+t[94] : { key = -1 , val = -1 , lazy = 0 }
+t[95] : { key = 18 , val = 96 , lazy = 0 }
+t[96] : { key = 19 , val = 69 , lazy = 0 }
+t[97] : { key = -1 , val = -1 , lazy = 0 }
+t[98] : { key = -1 , val = -1 , lazy = 0 }
+t[99] : { key = -1 , val = -1 , lazy = 0 }
+t[100] : { key = -1 , val = -1 , lazy = 0 }
+t[101] : { key = -1 , val = -1 , lazy = 0 }
+t[102] : { key = -1 , val = -1 , lazy = 0 }
+t[103] : { key = -1 , val = -1 , lazy = 0 }
+t[104] : { key = -1 , val = -1 , lazy = 0 }
+t[105] : { key = -1 , val = -1 , lazy = 0 }
+t[106] : { key = -1 , val = -1 , lazy = 0 }
+t[107] : { key = -1 , val = -1 , lazy = 0 }
+t[108] : { key = -1 , val = -1 , lazy = 0 }
+t[109] : { key = -1 , val = -1 , lazy = 0 }
+t[110] : { key = -1 , val = -1 , lazy = 0 }
+t[111] : { key = 27 , val = 72 , lazy = 0 }
+t[112] : { key = 28 , val = 137 , lazy = 0 }
+t[113] : { key = -1 , val = -1 , lazy = 0 }
+t[114] : { key = -1 , val = -1 , lazy = 0 }
+t[115] : { key = -1 , val = -1 , lazy = 0 }
+t[116] : { key = -1 , val = -1 , lazy = 0 }
+t[117] : { key = -1 , val = -1 , lazy = 0 }
+t[118] : { key = -1 , val = -1 , lazy = 0 }
+t[119] : { key = -1 , val = -1 , lazy = 0 }
+t[120] : { key = -1 , val = -1 , lazy = 0 }
+t[121] : { key = -1 , val = -1 , lazy = 0 }
+t[122] : { key = -1 , val = -1 , lazy = 0 }
+t[123] : { key = -1 , val = -1 , lazy = 0 }
+t[124] : { key = -1 , val = -1 , lazy = 0 }
+t[125] : { key = -1 , val = -1 , lazy = 0 }
+t[126] : { key = -1 , val = -1 , lazy = 0 }
+t[127] : { key = -1 , val = -1 , lazy = 0 }
+t[128] : { key = -1 , val = -1 , lazy = 0 }
+t[129] : { key = -1 , val = -1 , lazy = 0 }
+t[130] : { key = -1 , val = -1 , lazy = 0 }
+t[131] : { key = -1 , val = -1 , lazy = 0 }
+t[132] : { key = -1 , val = -1 , lazy = 0 }
+t[133] : { key = -1 , val = -1 , lazy = 0 }
+t[134] : { key = -1 , val = -1 , lazy = 0 }
+t[135] : { key = -1 , val = -1 , lazy = 0 }
+t[136] : { key = -1 , val = -1 , lazy = 0 }
+t[137] : { key = -1 , val = -1 , lazy = 0 }
+t[138] : { key = -1 , val = -1 , lazy = 0 }
+t[139] : { key = -1 , val = -1 , lazy = 0 }
+t[140] : { key = -1 , val = -1 , lazy = 0 }
+t[141] : { key = -1 , val = -1 , lazy = 0 }
+t[142] : { key = -1 , val = -1 , lazy = 0 }
+t[143] : { key = -1 , val = -1 , lazy = 0 }
+Continuing.
+
+Hardware watchpoint 4: *t
+
+Old value = {key = 23, val = 1258, lazy = 1091}
+New value = {key = 23, val = 1258, lazy = 0}
+push (t=0x55555556cf60, v=0) at main.cpp:55
+55	}
+t[0] : { key = 23 , val = 1258 , lazy = 0 }
+t[1] : { key = 9 , val = 2056 , lazy = 1870 }
+t[2] : { key = 23 , val = 2349 , lazy = 2182 }
+t[3] : { key = 6 , val = 944 , lazy = 779 }
+t[4] : { key = 9 , val = 965 , lazy = 779 }
+t[5] : { key = 23 , val = 1258 , lazy = 1091 }
+t[6] : { key = 28 , val = 1228 , lazy = 1091 }
+t[7] : { key = 1 , val = 767 , lazy = 624 }
+t[8] : { key = 6 , val = 944 , lazy = 779 }
+t[9] : { key = 9 , val = 342 , lazy = 156 }
+t[10] : { key = 16 , val = 307 , lazy = 156 }
+t[11] : { key = 22 , val = 454 , lazy = 312 }
+t[12] : { key = 23 , val = 479 , lazy = 312 }
+t[13] : { key = 28 , val = 1228 , lazy = 1091 }
+t[14] : { key = 35 , val = 1126 , lazy = 936 }
+t[15] : { key = 1 , val = 143 , lazy = 0 }
+t[16] : { key = 4 , val = 40 , lazy = 0 }
+t[17] : { key = 6 , val = 165 , lazy = 0 }
+t[18] : { key = 7 , val = 66 , lazy = 0 }
+t[19] : { key = 9 , val = 186 , lazy = 0 }
+t[20] : { key = 12 , val = 149 , lazy = 0 }
+t[21] : { key = 14 , val = 270 , lazy = 156 }
+t[22] : { key = 16 , val = 307 , lazy = 156 }
+t[23] : { key = 18 , val = 428 , lazy = 332 }
+t[24] : { key = 22 , val = 454 , lazy = 312 }
+t[25] : { key = 23 , val = 167 , lazy = 0 }
+t[26] : { key = 25 , val = 162 , lazy = 0 }
+t[27] : { key = 28 , val = 1228 , lazy = 1091 }
+t[28] : { key = 31 , val = 1136 , lazy = 936 }
+t[29] : { key = 33 , val = 130 , lazy = 0 }
+t[30] : { key = 35 , val = 190 , lazy = 0 }
+t[31] : { key = 1 , val = 143 , lazy = 0 }
+t[32] : { key = 2 , val = 92 , lazy = 0 }
+t[33] : { key = 3 , val = 16 , lazy = 0 }
+t[34] : { key = 4 , val = 40 , lazy = 0 }
+t[35] : { key = 5 , val = 41 , lazy = 0 }
+t[36] : { key = 6 , val = 165 , lazy = 0 }
+t[37] : { key = 7 , val = 66 , lazy = 0 }
+t[38] : { key = 8 , val = 53 , lazy = 0 }
+t[39] : { key = 9 , val = 186 , lazy = 0 }
+t[40] : { key = 11 , val = 39 , lazy = 0 }
+t[41] : { key = 12 , val = 149 , lazy = 0 }
+t[42] : { key = 13 , val = 85 , lazy = 0 }
+t[43] : { key = 14 , val = 114 , lazy = 0 }
+t[44] : { key = 15 , val = 77 , lazy = 0 }
+t[45] : { key = 16 , val = 307 , lazy = 156 }
+t[46] : { key = 17 , val = 237 , lazy = 176 }
+t[47] : { key = 18 , val = 96 , lazy = 0 }
+t[48] : { key = 20 , val = 55 , lazy = 0 }
+t[49] : { key = 21 , val = 129 , lazy = 0 }
+t[50] : { key = 22 , val = 142 , lazy = 0 }
+t[51] : { key = 23 , val = 167 , lazy = 0 }
+t[52] : { key = 24 , val = 158 , lazy = 0 }
+t[53] : { key = 25 , val = 162 , lazy = 0 }
+t[54] : { key = 26 , val = 79 , lazy = 0 }
+t[55] : { key = 28 , val = 1228 , lazy = 1091 }
+t[56] : { key = 29 , val = 944 , lazy = 936 }
+t[57] : { key = 30 , val = 81 , lazy = 0 }
+t[58] : { key = 31 , val = 200 , lazy = 0 }
+t[59] : { key = 32 , val = 40 , lazy = 0 }
+t[60] : { key = 33 , val = 130 , lazy = 0 }
+t[61] : { key = 34 , val = 12 , lazy = 0 }
+t[62] : { key = 35 , val = 190 , lazy = 0 }
+t[63] : { key = 0 , val = 32 , lazy = 0 }
+t[64] : { key = 1 , val = 143 , lazy = 0 }
+t[65] : { key = -1 , val = -1 , lazy = 0 }
+t[66] : { key = -1 , val = -1 , lazy = 0 }
+t[67] : { key = -1 , val = -1 , lazy = 0 }
+t[68] : { key = -1 , val = -1 , lazy = 0 }
+t[69] : { key = -1 , val = -1 , lazy = 0 }
+t[70] : { key = -1 , val = -1 , lazy = 0 }
+t[71] : { key = -1 , val = -1 , lazy = 0 }
+t[72] : { key = -1 , val = -1 , lazy = 0 }
+t[73] : { key = -1 , val = -1 , lazy = 0 }
+t[74] : { key = -1 , val = -1 , lazy = 0 }
+t[75] : { key = -1 , val = -1 , lazy = 0 }
+t[76] : { key = -1 , val = -1 , lazy = 0 }
+t[77] : { key = -1 , val = -1 , lazy = 0 }
+t[78] : { key = -1 , val = -1 , lazy = 0 }
+t[79] : { key = 9 , val = 186 , lazy = 0 }
+t[80] : { key = 10 , val = 12 , lazy = 0 }
+t[81] : { key = -1 , val = -1 , lazy = 0 }
+t[82] : { key = -1 , val = -1 , lazy = 0 }
+t[83] : { key = -1 , val = -1 , lazy = 0 }
+t[84] : { key = -1 , val = -1 , lazy = 0 }
+t[85] : { key = -1 , val = -1 , lazy = 0 }
+t[86] : { key = -1 , val = -1 , lazy = 0 }
+t[87] : { key = -1 , val = -1 , lazy = 0 }
+t[88] : { key = -1 , val = -1 , lazy = 0 }
+t[89] : { key = -1 , val = -1 , lazy = 0 }
+t[90] : { key = -1 , val = -1 , lazy = 0 }
+t[91] : { key = -1 , val = -1 , lazy = 0 }
+t[92] : { key = -1 , val = -1 , lazy = 0 }
+t[93] : { key = -1 , val = -1 , lazy = 0 }
+t[94] : { key = -1 , val = -1 , lazy = 0 }
+t[95] : { key = 18 , val = 96 , lazy = 0 }
+t[96] : { key = 19 , val = 69 , lazy = 0 }
+t[97] : { key = -1 , val = -1 , lazy = 0 }
+t[98] : { key = -1 , val = -1 , lazy = 0 }
+t[99] : { key = -1 , val = -1 , lazy = 0 }
+t[100] : { key = -1 , val = -1 , lazy = 0 }
+t[101] : { key = -1 , val = -1 , lazy = 0 }
+t[102] : { key = -1 , val = -1 , lazy = 0 }
+t[103] : { key = -1 , val = -1 , lazy = 0 }
+t[104] : { key = -1 , val = -1 , lazy = 0 }
+t[105] : { key = -1 , val = -1 , lazy = 0 }
+t[106] : { key = -1 , val = -1 , lazy = 0 }
+t[107] : { key = -1 , val = -1 , lazy = 0 }
+t[108] : { key = -1 , val = -1 , lazy = 0 }
+t[109] : { key = -1 , val = -1 , lazy = 0 }
+t[110] : { key = -1 , val = -1 , lazy = 0 }
+t[111] : { key = 27 , val = 72 , lazy = 0 }
+t[112] : { key = 28 , val = 137 , lazy = 0 }
+t[113] : { key = -1 , val = -1 , lazy = 0 }
+t[114] : { key = -1 , val = -1 , lazy = 0 }
+t[115] : { key = -1 , val = -1 , lazy = 0 }
+t[116] : { key = -1 , val = -1 , lazy = 0 }
+t[117] : { key = -1 , val = -1 , lazy = 0 }
+t[118] : { key = -1 , val = -1 , lazy = 0 }
+t[119] : { key = -1 , val = -1 , lazy = 0 }
+t[120] : { key = -1 , val = -1 , lazy = 0 }
+t[121] : { key = -1 , val = -1 , lazy = 0 }
+t[122] : { key = -1 , val = -1 , lazy = 0 }
+t[123] : { key = -1 , val = -1 , lazy = 0 }
+t[124] : { key = -1 , val = -1 , lazy = 0 }
+t[125] : { key = -1 , val = -1 , lazy = 0 }
+t[126] : { key = -1 , val = -1 , lazy = 0 }
+t[127] : { key = -1 , val = -1 , lazy = 0 }
+t[128] : { key = -1 , val = -1 , lazy = 0 }
+t[129] : { key = -1 , val = -1 , lazy = 0 }
+t[130] : { key = -1 , val = -1 , lazy = 0 }
+t[131] : { key = -1 , val = -1 , lazy = 0 }
+t[132] : { key = -1 , val = -1 , lazy = 0 }
+t[133] : { key = -1 , val = -1 , lazy = 0 }
+t[134] : { key = -1 , val = -1 , lazy = 0 }
+t[135] : { key = -1 , val = -1 , lazy = 0 }
+t[136] : { key = -1 , val = -1 , lazy = 0 }
+t[137] : { key = -1 , val = -1 , lazy = 0 }
+t[138] : { key = -1 , val = -1 , lazy = 0 }
+t[139] : { key = -1 , val = -1 , lazy = 0 }
+t[140] : { key = -1 , val = -1 , lazy = 0 }
+t[141] : { key = -1 , val = -1 , lazy = 0 }
+t[142] : { key = -1 , val = -1 , lazy = 0 }
+t[143] : { key = -1 , val = -1 , lazy = 0 }
+query (t=0x55555556cf60, v=0, tl=0, tr=35, l=0, r=15) at main.cpp:93
+93	  int tm = (tl+tr)/2;
+95	  pair<int,int> ql = query(t, v*2+1, tl, tm, l, min(r,tm));
+std::min<int> (__a=@0x55555556cf60: 23, __b=<error reading variable>) at /usr/include/c++/9/bits/stl_algobase.h:198
+198	    min(const _Tp& __a, const _Tp& __b)
+203	      if (__b < __a)
+205	      return __a;
+206	    }
+query (t=0x55555556cf60, v=0, tl=0, tr=35, l=0, r=15) at main.cpp:95
+95	  pair<int,int> ql = query(t, v*2+1, tl, tm, l, min(r,tm));
+query (t=0x7ffff7c233c6 <__GI__IO_fflush+134>, v=32767, tl=-136797024, tr=0, l=-1, r=32767) at main.cpp:83
+83	pair<int,int> query(node t[], int v, int tl, int tr, int l, int r) {
+85	  if(l > r)
+88	  if(l <= tl && tr <= r)
+91	  push(t,v);
+#0  query (t=0x55555556cf60, v=1, tl=0, tr=17, l=0, r=15) at main.cpp:91
+91	  push(t,v);
+93	  int tm = (tl+tr)/2;
+#0  query (t=0x55555556cf60, v=1, tl=0, tr=17, l=0, r=15) at main.cpp:93
+93	  int tm = (tl+tr)/2;
+95	  pair<int,int> ql = query(t, v*2+1, tl, tm, l, min(r,tm));
+96	  pair<int,int> qr = query(t, v*2+2, tm+1, tr, max(l,tm+1), r);
+$43 = {first = 6, second = 2814}
+98	  if(ql.second == qr.second)
+$44 = {first = 14, second = 3075}
+t[0] : { key = 23 , val = 1258 , lazy = 0 }
+t[1] : { key = 9 , val = 2056 , lazy = 0 }
+t[2] : { key = 23 , val = 2349 , lazy = 2182 }
+t[3] : { key = 6 , val = 2814 , lazy = 2649 }
+t[4] : { key = 9 , val = 2835 , lazy = 0 }
+t[5] : { key = 23 , val = 1258 , lazy = 1091 }
+t[6] : { key = 28 , val = 1228 , lazy = 1091 }
+t[7] : { key = 1 , val = 767 , lazy = 624 }
+t[8] : { key = 6 , val = 944 , lazy = 779 }
+t[9] : { key = 9 , val = 2991 , lazy = 2805 }
+t[10] : { key = 16 , val = 2956 , lazy = 0 }
+t[11] : { key = 22 , val = 454 , lazy = 312 }
+t[12] : { key = 23 , val = 479 , lazy = 312 }
+t[13] : { key = 28 , val = 1228 , lazy = 1091 }
+t[14] : { key = 35 , val = 1126 , lazy = 936 }
+t[15] : { key = 1 , val = 143 , lazy = 0 }
+t[16] : { key = 4 , val = 40 , lazy = 0 }
+t[17] : { key = 6 , val = 165 , lazy = 0 }
+t[18] : { key = 7 , val = 66 , lazy = 0 }
+t[19] : { key = 9 , val = 186 , lazy = 0 }
+t[20] : { key = 12 , val = 149 , lazy = 0 }
+t[21] : { key = 14 , val = 3075 , lazy = 2961 }
+t[22] : { key = 16 , val = 3112 , lazy = 2961 }
+t[23] : { key = 18 , val = 428 , lazy = 332 }
+t[24] : { key = 22 , val = 454 , lazy = 312 }
+t[25] : { key = 23 , val = 167 , lazy = 0 }
+t[26] : { key = 25 , val = 162 , lazy = 0 }
+t[27] : { key = 28 , val = 1228 , lazy = 1091 }
+t[28] : { key = 31 , val = 1136 , lazy = 936 }
+t[29] : { key = 33 , val = 130 , lazy = 0 }
+t[30] : { key = 35 , val = 190 , lazy = 0 }
+t[31] : { key = 1 , val = 143 , lazy = 0 }
+t[32] : { key = 2 , val = 92 , lazy = 0 }
+t[33] : { key = 3 , val = 16 , lazy = 0 }
+t[34] : { key = 4 , val = 40 , lazy = 0 }
+t[35] : { key = 5 , val = 41 , lazy = 0 }
+t[36] : { key = 6 , val = 165 , lazy = 0 }
+t[37] : { key = 7 , val = 66 , lazy = 0 }
+t[38] : { key = 8 , val = 53 , lazy = 0 }
+t[39] : { key = 9 , val = 186 , lazy = 0 }
+t[40] : { key = 11 , val = 39 , lazy = 0 }
+t[41] : { key = 12 , val = 149 , lazy = 0 }
+t[42] : { key = 13 , val = 85 , lazy = 0 }
+t[43] : { key = 14 , val = 114 , lazy = 0 }
+t[44] : { key = 15 , val = 77 , lazy = 0 }
+t[45] : { key = 16 , val = 307 , lazy = 156 }
+t[46] : { key = 17 , val = 237 , lazy = 176 }
+t[47] : { key = 18 , val = 96 , lazy = 0 }
+t[48] : { key = 20 , val = 55 , lazy = 0 }
+t[49] : { key = 21 , val = 129 , lazy = 0 }
+t[50] : { key = 22 , val = 142 , lazy = 0 }
+t[51] : { key = 23 , val = 167 , lazy = 0 }
+t[52] : { key = 24 , val = 158 , lazy = 0 }
+t[53] : { key = 25 , val = 162 , lazy = 0 }
+t[54] : { key = 26 , val = 79 , lazy = 0 }
+t[55] : { key = 28 , val = 1228 , lazy = 1091 }
+t[56] : { key = 29 , val = 944 , lazy = 936 }
+t[57] : { key = 30 , val = 81 , lazy = 0 }
+t[58] : { key = 31 , val = 200 , lazy = 0 }
+t[59] : { key = 32 , val = 40 , lazy = 0 }
+t[60] : { key = 33 , val = 130 , lazy = 0 }
+t[61] : { key = 34 , val = 12 , lazy = 0 }
+t[62] : { key = 35 , val = 190 , lazy = 0 }
+t[63] : { key = 0 , val = 32 , lazy = 0 }
+t[64] : { key = 1 , val = 143 , lazy = 0 }
+t[65] : { key = -1 , val = -1 , lazy = 0 }
+t[66] : { key = -1 , val = -1 , lazy = 0 }
+t[67] : { key = -1 , val = -1 , lazy = 0 }
+t[68] : { key = -1 , val = -1 , lazy = 0 }
+t[69] : { key = -1 , val = -1 , lazy = 0 }
+t[70] : { key = -1 , val = -1 , lazy = 0 }
+t[71] : { key = -1 , val = -1 , lazy = 0 }
+t[72] : { key = -1 , val = -1 , lazy = 0 }
+t[73] : { key = -1 , val = -1 , lazy = 0 }
+t[74] : { key = -1 , val = -1 , lazy = 0 }
+t[75] : { key = -1 , val = -1 , lazy = 0 }
+t[76] : { key = -1 , val = -1 , lazy = 0 }
+t[77] : { key = -1 , val = -1 , lazy = 0 }
+t[78] : { key = -1 , val = -1 , lazy = 0 }
+t[79] : { key = 9 , val = 186 , lazy = 0 }
+t[80] : { key = 10 , val = 12 , lazy = 0 }
+t[81] : { key = -1 , val = -1 , lazy = 0 }
+t[82] : { key = -1 , val = -1 , lazy = 0 }
+t[83] : { key = -1 , val = -1 , lazy = 0 }
+t[84] : { key = -1 , val = -1 , lazy = 0 }
+t[85] : { key = -1 , val = -1 , lazy = 0 }
+t[86] : { key = -1 , val = -1 , lazy = 0 }
+t[87] : { key = -1 , val = -1 , lazy = 0 }
+t[88] : { key = -1 , val = -1 , lazy = 0 }
+t[89] : { key = -1 , val = -1 , lazy = 0 }
+t[90] : { key = -1 , val = -1 , lazy = 0 }
+t[91] : { key = -1 , val = -1 , lazy = 0 }
+t[92] : { key = -1 , val = -1 , lazy = 0 }
+t[93] : { key = -1 , val = -1 , lazy = 0 }
+t[94] : { key = -1 , val = -1 , lazy = 0 }
+t[95] : { key = 18 , val = 96 , lazy = 0 }
+t[96] : { key = 19 , val = 69 , lazy = 0 }
+t[97] : { key = -1 , val = -1 , lazy = 0 }
+t[98] : { key = -1 , val = -1 , lazy = 0 }
+t[99] : { key = -1 , val = -1 , lazy = 0 }
+t[100] : { key = -1 , val = -1 , lazy = 0 }
+t[101] : { key = -1 , val = -1 , lazy = 0 }
+t[102] : { key = -1 , val = -1 , lazy = 0 }
+t[103] : { key = -1 , val = -1 , lazy = 0 }
+t[104] : { key = -1 , val = -1 , lazy = 0 }
+t[105] : { key = -1 , val = -1 , lazy = 0 }
+t[106] : { key = -1 , val = -1 , lazy = 0 }
+t[107] : { key = -1 , val = -1 , lazy = 0 }
+t[108] : { key = -1 , val = -1 , lazy = 0 }
+t[109] : { key = -1 , val = -1 , lazy = 0 }
+t[110] : { key = -1 , val = -1 , lazy = 0 }
+t[111] : { key = 27 , val = 72 , lazy = 0 }
+t[112] : { key = 28 , val = 137 , lazy = 0 }
+t[113] : { key = -1 , val = -1 , lazy = 0 }
+t[114] : { key = -1 , val = -1 , lazy = 0 }
+t[115] : { key = -1 , val = -1 , lazy = 0 }
+t[116] : { key = -1 , val = -1 , lazy = 0 }
+t[117] : { key = -1 , val = -1 , lazy = 0 }
+t[118] : { key = -1 , val = -1 , lazy = 0 }
+t[119] : { key = -1 , val = -1 , lazy = 0 }
+t[120] : { key = -1 , val = -1 , lazy = 0 }
+t[121] : { key = -1 , val = -1 , lazy = 0 }
+t[122] : { key = -1 , val = -1 , lazy = 0 }
+t[123] : { key = -1 , val = -1 , lazy = 0 }
+t[124] : { key = -1 , val = -1 , lazy = 0 }
+t[125] : { key = -1 , val = -1 , lazy = 0 }
+t[126] : { key = -1 , val = -1 , lazy = 0 }
+t[127] : { key = -1 , val = -1 , lazy = 0 }
+t[128] : { key = -1 , val = -1 , lazy = 0 }
+t[129] : { key = -1 , val = -1 , lazy = 0 }
+t[130] : { key = -1 , val = -1 , lazy = 0 }
+t[131] : { key = -1 , val = -1 , lazy = 0 }
+t[132] : { key = -1 , val = -1 , lazy = 0 }
+t[133] : { key = -1 , val = -1 , lazy = 0 }
+t[134] : { key = -1 , val = -1 , lazy = 0 }
+t[135] : { key = -1 , val = -1 , lazy = 0 }
+t[136] : { key = -1 , val = -1 , lazy = 0 }
+t[137] : { key = -1 , val = -1 , lazy = 0 }
+t[138] : { key = -1 , val = -1 , lazy = 0 }
+t[139] : { key = -1 , val = -1 , lazy = 0 }
+t[140] : { key = -1 , val = -1 , lazy = 0 }
+t[141] : { key = -1 , val = -1 , lazy = 0 }
+t[142] : { key = -1 , val = -1 , lazy = 0 }
+t[143] : { key = -1 , val = -1 , lazy = 0 }
+Continuing.
+
+Breakpoint 3, main (argc=1, argv=0x7fffffffd9b8) at main.cpp:140
+140	      cin >> a;
