@@ -1,5 +1,0 @@
-set $i=0
-while ( $i < 36 )
-print M[$i]
-$i = $i + 1
-end
