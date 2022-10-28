@@ -103,7 +103,7 @@ int main(int argc, char **argv) {
 
   for(int i = 0; i < M; i++) {
     int a, b, c, d, q, x;
-    int A, B;
+    int X, Y;
 
     cin >> x;
 
@@ -115,21 +115,18 @@ int main(int argc, char **argv) {
     if(x == 2){
       cin >> a >> b >> c >> d;
 
-      if( ((a < c) && (a < d) && (b+1 < c) && (b < d)) || ((c < a) && (c < b) && (d+1 < a) && (d < b)) ) {
-	int q1 = query(t,idx,lazy,0,0,N-1,a-1,b-1);
-	int q2 = query(t,idx,lazy,0,0,N-1,c-1,d-1);
-	cout << q1+q2 << endl;
-      } else {
-	if( (a < b) && (c < d) ) {
-	  A = min(a,c);
-	  B = max(b,d);
-	  q = query(t,idx,lazy,0,0,N-1,A-1,B-1);
-	  cout << q << endl;
-	}
+      X = max(a,c);
+      Y = min(b,d);
+
+      int q1 = query(t,idx,lazy,0,0,N-1,a-1,b-1);
+      int q2 = query(t,idx,lazy,0,0,N-1,c-1,d-1);
+      int q3 = query(t,idx,lazy,0,0,N-1,X-1,Y-1);
+
+      cout << ((q1+q2)-q3) << endl;
       }
       
-    }
   }
+  
 
   delete[] V;
   delete[] t;
