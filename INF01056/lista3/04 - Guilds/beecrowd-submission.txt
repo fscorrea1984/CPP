@@ -1,0 +1,18 @@
+
+SUBMISSION # 30534130
+
+Problem:
+    1527 - Guilds 
+Answer:
+    Wrong answer (85%) 
+Language:
+    C++17 (g++ 7.3.0, -std=c++17 -O2 -lm) [+0s] 
+Runtime:
+    1.076s 
+File size:
+    1.87 KB 
+Memory:
+    - 
+Submission:
+    10/25/22, 7:21:18 PM 
+
