@@ -1,0 +1,15 @@
+# BIN = foo
+
+# OBJ = foo.o
+
+# SRC = foo.c
+
+FLAGS = -g -std=c++17 -w
+
+CC = g++
+
+all:
+	$(CC) $(FLAGS) $(SRC) -o $(BIN)
+clean:
+	rm -f $(BIN) $(OBJ) *~
+	clear
