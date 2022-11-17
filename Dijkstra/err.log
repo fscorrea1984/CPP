@@ -1,0 +1,429 @@
+fheap.cpp: In constructor ‘Heap::Heap(int, int)’:
+fheap.cpp:17:3: error: ‘p’ was not declared in this scope
+   17 |   p.at(x) = H;
+      |   ^
+fheap.cpp:18:6: error: ‘Node* Node::parent’ is private within this context
+   18 |   H->parent = H;
+      |      ^~~~~~
+In file included from fheap.cpp:7:
+fheap.h:16:9: note: declared private here
+   16 |   Node *parent;
+      |         ^~~~~~
+fheap.cpp:19:6: error: ‘Node* Node::left’ is private within this context
+   19 |   H->left = H;
+      |      ^~~~
+In file included from fheap.cpp:7:
+fheap.h:17:9: note: declared private here
+   17 |   Node *left;
+      |         ^~~~
+fheap.cpp:20:6: error: ‘Node* Node::right’ is private within this context
+   20 |   H->right = H;
+      |      ^~~~~
+In file included from fheap.cpp:7:
+fheap.h:18:9: note: declared private here
+   18 |   Node *right;
+      |         ^~~~~
+fheap.cpp: At global scope:
+fheap.cpp:27:6: error: ‘bool Heap::isEmpty’ is not a static data member of ‘class Heap’
+   27 | bool Heap::isEmpty {
+      |      ^~~~
+fheap.cpp:28:3: error: expected primary-expression before ‘return’
+   28 |   return (H = nullptr)? true : false;
+      |   ^~~~~~
+fheap.cpp:28:3: error: expected ‘}’ before ‘return’
+fheap.cpp:27:20: note: to match this ‘{’
+   27 | bool Heap::isEmpty {
+      |                    ^
+fheap.cpp:29:1: error: expected declaration before ‘}’ token
+   29 | }
+      | ^
+fheap.cpp: In member function ‘void Heap::insert(int, int)’:
+fheap.cpp:32:19: error: expected type-specifier before ‘node’
+   32 |   Node *aux = new node(x,y);
+      |                   ^~~~
+fheap.cpp:33:8: error: ‘Node* Node::parent’ is private within this context
+   33 |   aux->parent = aux;
+      |        ^~~~~~
+In file included from fheap.cpp:7:
+fheap.h:16:9: note: declared private here
+   16 |   Node *parent;
+      |         ^~~~~~
+fheap.cpp:35:8: error: ‘Node* Node::left’ is private within this context
+   35 |   aux->left = T;
+      |        ^~~~
+In file included from fheap.cpp:7:
+fheap.h:17:9: note: declared private here
+   17 |   Node *left;
+      |         ^~~~
+fheap.cpp:36:8: error: ‘Node* Node::right’ is private within this context
+   36 |   aux->right = T->right;
+      |        ^~~~~
+In file included from fheap.cpp:7:
+fheap.h:18:9: note: declared private here
+   18 |   Node *right;
+      |         ^~~~~
+fheap.cpp:36:19: error: ‘Node* Node::right’ is private within this context
+   36 |   aux->right = T->right;
+      |                   ^~~~~
+In file included from fheap.cpp:7:
+fheap.h:18:9: note: declared private here
+   18 |   Node *right;
+      |         ^~~~~
+fheap.cpp:37:8: error: ‘Node* Node::right’ is private within this context
+   37 |   aux->right->left = aux;
+      |        ^~~~~
+In file included from fheap.cpp:7:
+fheap.h:18:9: note: declared private here
+   18 |   Node *right;
+      |         ^~~~~
+fheap.cpp:37:15: error: ‘Node* Node::left’ is private within this context
+   37 |   aux->right->left = aux;
+      |               ^~~~
+In file included from fheap.cpp:7:
+fheap.h:17:9: note: declared private here
+   17 |   Node *left;
+      |         ^~~~
+fheap.cpp:38:6: error: ‘Node* Node::right’ is private within this context
+   38 |   T->right = aux;
+      |      ^~~~~
+In file included from fheap.cpp:7:
+fheap.h:18:9: note: declared private here
+   18 |   Node *right;
+      |         ^~~~~
+fheap.cpp:40:15: error: ‘int Node::w’ is private within this context
+   40 |   if(minroot->w > aux->w)
+      |               ^
+In file included from fheap.cpp:7:
+fheap.h:15:7: note: declared private here
+   15 |   int w; // weight/distance
+      |       ^
+fheap.cpp:40:24: error: ‘int Node::w’ is private within this context
+   40 |   if(minroot->w > aux->w)
+      |                        ^
+In file included from fheap.cpp:7:
+fheap.h:15:7: note: declared private here
+   15 |   int w; // weight/distance
+      |       ^
+fheap.cpp:42:3: error: ‘p’ was not declared in this scope
+   42 |   p.at(x) = aux;
+      |   ^
+fheap.cpp: In member function ‘int Heap::getmin()’:
+fheap.cpp:45:38: error: ‘int Node::w’ is private within this context
+   45 | int Heap::getmin() { return minroot->w; }
+      |                                      ^
+In file included from fheap.cpp:7:
+fheap.h:15:7: note: declared private here
+   15 |   int w; // weight/distance
+      |       ^
+fheap.cpp: In member function ‘void Heap::meld(Node*, Node*)’:
+fheap.cpp:54:7: error: ‘Node* Node::right’ is private within this context
+   54 |   N1->right->left = N2->left;
+      |       ^~~~~
+In file included from fheap.cpp:7:
+fheap.h:18:9: note: declared private here
+   18 |   Node *right;
+      |         ^~~~~
+fheap.cpp:54:14: error: ‘Node* Node::left’ is private within this context
+   54 |   N1->right->left = N2->left;
+      |              ^~~~
+In file included from fheap.cpp:7:
+fheap.h:17:9: note: declared private here
+   17 |   Node *left;
+      |         ^~~~
+fheap.cpp:54:25: error: ‘Node* Node::left’ is private within this context
+   54 |   N1->right->left = N2->left;
+      |                         ^~~~
+In file included from fheap.cpp:7:
+fheap.h:17:9: note: declared private here
+   17 |   Node *left;
+      |         ^~~~
+fheap.cpp:55:7: error: ‘Node* Node::left’ is private within this context
+   55 |   N2->left->right = N1->right;
+      |       ^~~~
+In file included from fheap.cpp:7:
+fheap.h:17:9: note: declared private here
+   17 |   Node *left;
+      |         ^~~~
+fheap.cpp:55:13: error: ‘Node* Node::right’ is private within this context
+   55 |   N2->left->right = N1->right;
+      |             ^~~~~
+In file included from fheap.cpp:7:
+fheap.h:18:9: note: declared private here
+   18 |   Node *right;
+      |         ^~~~~
+fheap.cpp:55:25: error: ‘Node* Node::right’ is private within this context
+   55 |   N2->left->right = N1->right;
+      |                         ^~~~~
+In file included from fheap.cpp:7:
+fheap.h:18:9: note: declared private here
+   18 |   Node *right;
+      |         ^~~~~
+fheap.cpp:56:7: error: ‘Node* Node::left’ is private within this context
+   56 |   N2->left = N1;
+      |       ^~~~
+In file included from fheap.cpp:7:
+fheap.h:17:9: note: declared private here
+   17 |   Node *left;
+      |         ^~~~
+fheap.cpp:57:7: error: ‘Node* Node::right’ is private within this context
+   57 |   N1->right = N2;
+      |       ^~~~~
+In file included from fheap.cpp:7:
+fheap.h:18:9: note: declared private here
+   18 |   Node *right;
+      |         ^~~~~
+fheap.cpp: In member function ‘void Heap::decreasekey(int, int)’:
+fheap.cpp:61:5: error: request for member ‘at’ in ‘p’, which is of non-class type ‘int’
+   61 |   p.at(p)->w = x;
+      |     ^~
+fheap.cpp:62:17: error: request for member ‘at’ in ‘p’, which is of non-class type ‘int’
+   62 |   Node *aux = p.at(p);
+      |                 ^~
+fheap.cpp:63:19: error: ‘int Node::w’ is private within this context
+   63 |   if(x < minroot->w)
+      |                   ^
+In file included from fheap.cpp:7:
+fheap.h:15:7: note: declared private here
+   15 |   int w; // weight/distance
+      |       ^
+fheap.cpp:65:11: error: ‘Node* Node::parent’ is private within this context
+   65 |   if(aux->parent != aux) {
+      |           ^~~~~~
+In file included from fheap.cpp:7:
+fheap.h:16:9: note: declared private here
+   16 |   Node *parent;
+      |         ^~~~~~
+fheap.cpp:66:13: error: ‘Node* Node::parent’ is private within this context
+   66 |     if(aux->parent->w > aux->w) {
+      |             ^~~~~~
+In file included from fheap.cpp:7:
+fheap.h:16:9: note: declared private here
+   16 |   Node *parent;
+      |         ^~~~~~
+fheap.cpp:66:21: error: ‘int Node::w’ is private within this context
+   66 |     if(aux->parent->w > aux->w) {
+      |                     ^
+In file included from fheap.cpp:7:
+fheap.h:15:7: note: declared private here
+   15 |   int w; // weight/distance
+      |       ^
+fheap.cpp:66:30: error: ‘int Node::w’ is private within this context
+   66 |     if(aux->parent->w > aux->w) {
+      |                              ^
+In file included from fheap.cpp:7:
+fheap.h:15:7: note: declared private here
+   15 |   int w; // weight/distance
+      |       ^
+fheap.cpp:67:22: error: ‘Node* Node::parent’ is private within this context
+   67 |       Node *P = aux->parent;
+      |                      ^~~~~~
+In file included from fheap.cpp:7:
+fheap.h:16:9: note: declared private here
+   16 |   Node *parent;
+      |         ^~~~~~
+fheap.cpp:68:12: error: ‘bool Node::marked’ is private within this context
+   68 |       aux->marked = false;
+      |            ^~~~~~
+In file included from fheap.cpp:7:
+fheap.h:21:8: note: declared private here
+   21 |   bool marked = false;
+      |        ^~~~~~
+fheap.cpp:69:12: error: ‘Node* Node::parent’ is private within this context
+   69 |       aux->parent = aux;
+      |            ^~~~~~
+In file included from fheap.cpp:7:
+fheap.h:16:9: note: declared private here
+   16 |   Node *parent;
+      |         ^~~~~~
+fheap.cpp:70:12: error: ‘Node* Node::left’ is private within this context
+   70 |       aux->left = aux;
+      |            ^~~~
+In file included from fheap.cpp:7:
+fheap.h:17:9: note: declared private here
+   17 |   Node *left;
+      |         ^~~~
+fheap.cpp:71:12: error: ‘Node* Node::right’ is private within this context
+   71 |       aux->right = aux;
+      |            ^~~~~
+In file included from fheap.cpp:7:
+fheap.h:18:9: note: declared private here
+   18 |   Node *right;
+      |         ^~~~~
+fheap.cpp:72:12: error: ‘Node* Node::child’ is private within this context
+   72 |       aux->child = aux;
+      |            ^~~~~
+In file included from fheap.cpp:7:
+fheap.h:19:9: note: declared private here
+   19 |   Node *child;
+      |         ^~~~~
+fheap.cpp:74:10: error: ‘int Node::degree’ is private within this context
+   74 |       P->degree--;
+      |          ^~~~~~
+In file included from fheap.cpp:7:
+fheap.h:22:7: note: declared private here
+   22 |   int degree = 0;
+      |       ^~~~~~
+fheap.cpp:75:20: error: invalid conversion from ‘Node*’ to ‘int’ [-fpermissive]
+   75 |       cascadingcut(P)
+      |                    ^
+      |                    |
+      |                    Node*
+In file included from fheap.cpp:7:
+fheap.h:48:25: note:   initializing argument 1 of ‘void Heap::cascadingcut(int)’
+   48 |   void cascadingcut(int p);
+      |                     ~~~~^
+fheap.cpp:75:22: error: expected ‘;’ before ‘}’ token
+   75 |       cascadingcut(P)
+      |                      ^
+      |                      ;
+   76 |     }
+      |     ~                 
+fheap.cpp: At global scope:
+fheap.cpp:80:6: error: no declaration matches ‘void Heap::cascadingcut(Node*)’
+   80 | void Heap::cascadingcut(Node *p) {
+      |      ^~~~
+In file included from fheap.cpp:7:
+fheap.h:48:8: note: candidate is: ‘void Heap::cascadingcut(int)’
+   48 |   void cascadingcut(int p);
+      |        ^~~~~~~~~~~~
+fheap.h:31:7: note: ‘class Heap’ defined here
+   31 | class Heap {
+      |       ^~~~
+fheap.cpp:98:15: error: no declaration matches ‘std::pair<int, int> Heap::deletemin()’
+   98 | pair<int,int> Heap::deletemin() {
+      |               ^~~~
+In file included from fheap.cpp:7:
+fheap.h:49:7: note: candidate is: ‘int Heap::deletemin()’
+   49 |   int deletemin();
+      |       ^~~~~~~~~
+fheap.h:31:7: note: ‘class Heap’ defined here
+   31 | class Heap {
+      |       ^~~~
+fheap.cpp: In member function ‘void Heap::link(Node*, Node*)’:
+fheap.cpp:129:10: error: ‘int Node::w’ is private within this context
+  129 |   if(N1->w < N2->w) {
+      |          ^
+In file included from fheap.cpp:7:
+fheap.h:15:7: note: declared private here
+   15 |   int w; // weight/distance
+      |       ^
+fheap.cpp:129:18: error: ‘int Node::w’ is private within this context
+  129 |   if(N1->w < N2->w) {
+      |                  ^
+In file included from fheap.cpp:7:
+fheap.h:15:7: note: declared private here
+   15 |   int w; // weight/distance
+      |       ^
+fheap.cpp:130:12: error: ‘Node* Node::child’ is private within this context
+  130 |     if(N1->child = N1) {
+      |            ^~~~~
+In file included from fheap.cpp:7:
+fheap.h:19:9: note: declared private here
+   19 |   Node *child;
+      |         ^~~~~
+fheap.cpp:131:11: error: ‘Node* Node::child’ is private within this context
+  131 |       N1->child = N2;
+      |           ^~~~~
+In file included from fheap.cpp:7:
+fheap.h:19:9: note: declared private here
+   19 |   Node *child;
+      |         ^~~~~
+fheap.cpp:132:11: error: ‘Node* Node::parent’ is private within this context
+  132 |       N2->parent = N1;
+      |           ^~~~~~
+In file included from fheap.cpp:7:
+fheap.h:16:9: note: declared private here
+   16 |   Node *parent;
+      |         ^~~~~~
+fheap.cpp:133:11: error: ‘int Node::degree’ is private within this context
+  133 |       N1->degree++;
+      |           ^~~~~~
+In file included from fheap.cpp:7:
+fheap.h:22:7: note: declared private here
+   22 |   int degree = 0;
+      |       ^~~~~~
+fheap.cpp:136:11: error: ‘int Node::degree’ is private within this context
+  136 |       N1->degree++;
+      |           ^~~~~~
+In file included from fheap.cpp:7:
+fheap.h:22:7: note: declared private here
+   22 |   int degree = 0;
+      |       ^~~~~~
+fheap.cpp:137:11: error: ‘Node* Node::parent’ is private within this context
+  137 |       N2->parent = N1;
+      |           ^~~~~~
+In file included from fheap.cpp:7:
+fheap.h:16:9: note: declared private here
+   16 |   Node *parent;
+      |         ^~~~~~
+fheap.cpp:138:23: error: ‘Node* Node::child’ is private within this context
+  138 |       Node *aux = N1->child;
+      |                       ^~~~~
+In file included from fheap.cpp:7:
+fheap.h:19:9: note: declared private here
+   19 |   Node *child;
+      |         ^~~~~
+fheap.cpp:143:12: error: ‘Node* Node::child’ is private within this context
+  143 |     if(N2->child = N2) {
+      |            ^~~~~
+In file included from fheap.cpp:7:
+fheap.h:19:9: note: declared private here
+   19 |   Node *child;
+      |         ^~~~~
+fheap.cpp:144:11: error: ‘Node* Node::child’ is private within this context
+  144 |       N2->child = N1;
+      |           ^~~~~
+In file included from fheap.cpp:7:
+fheap.h:19:9: note: declared private here
+   19 |   Node *child;
+      |         ^~~~~
+fheap.cpp:145:11: error: ‘Node* Node::parent’ is private within this context
+  145 |       N1->parent = N2;
+      |           ^~~~~~
+In file included from fheap.cpp:7:
+fheap.h:16:9: note: declared private here
+   16 |   Node *parent;
+      |         ^~~~~~
+fheap.cpp:146:11: error: ‘int Node::degree’ is private within this context
+  146 |       N2->degree++;
+      |           ^~~~~~
+In file included from fheap.cpp:7:
+fheap.h:22:7: note: declared private here
+   22 |   int degree = 0;
+      |       ^~~~~~
+fheap.cpp:149:11: error: ‘int Node::degree’ is private within this context
+  149 |       N2->degree++;
+      |           ^~~~~~
+In file included from fheap.cpp:7:
+fheap.h:22:7: note: declared private here
+   22 |   int degree = 0;
+      |       ^~~~~~
+fheap.cpp:150:11: error: ‘Node* Node::parent’ is private within this context
+  150 |       N1->parent = N2;
+      |           ^~~~~~
+In file included from fheap.cpp:7:
+fheap.h:16:9: note: declared private here
+   16 |   Node *parent;
+      |         ^~~~~~
+fheap.cpp:151:23: error: ‘Node* Node::child’ is private within this context
+  151 |       Node *aux = N2->child;
+      |                       ^~~~~
+In file included from fheap.cpp:7:
+fheap.h:19:9: note: declared private here
+   19 |   Node *child;
+      |         ^~~~~
+dijkstra.cpp: In function ‘int main(int, char**)’:
+dijkstra.cpp:31:28: error: variable ‘std::stringstream linestr’ has initializer but incomplete type
+   31 |   stringstream linestr(line);
+      |                            ^
+dijkstra.cpp:40:15: error: expected initializer before ‘<’ token
+   40 |   while(int i < E) {
+      |               ^
+dijkstra.cpp:40:14: error: expected ‘)’ before ‘<’ token
+   40 |   while(int i < E) {
+      |        ~     ^~
+      |              )
+dijkstra.cpp:40:15: error: expected primary-expression before ‘<’ token
+   40 |   while(int i < E) {
+      |               ^
+make: *** [Makefile:2: all] Error 1

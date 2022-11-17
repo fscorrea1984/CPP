@@ -19,6 +19,7 @@ struct adj {
 int main(int argc, char **argv) {
 
   int V, E; // Vertices and Edges
+  vector<Node *> p(V,nullptr);
   
   int s = static_cast<int>(strtol(argv[1],nullptr,10)); // source
   int t = static_cast<int>(strtol(argv[1],nullptr,10)); // destiny
@@ -33,7 +34,8 @@ int main(int argc, char **argv) {
   vector<adj *> adj_list(V,nullptr);
   vector<adj *> last_adj(V,nullptr);
 
-  PriorityQueue PQ();
+  //PriorityQueue PQ();
+  Heap H(s,0); // insert into priority queue vertex s with distance=priority of zero
   
   while(int i < E) {
     getline(cin,line);
@@ -55,15 +57,13 @@ int main(int argc, char **argv) {
 	last_adj.at(a)->w = c;
 	last_adj.at(a)->next = nullptr;
       }
-      if(i == s)
-	Heap H(s,0); // insert into priority queue vertex s with distance=priority of zero
-      else
+      if(i != s)
 	H.insert(i,inf); // insert into priority queue vertex i != s with distance=priority of positive infinite;
-      
       ++i;
     }
     while(!H.isEmpty()) {
-      Node n = PQ.deletemin();
+      //Node n = PQ.deletemin();
+      Node n = H.deletemin();
       int u = n.v;
       int du = n.w;
       if(u = t) {

@@ -7,48 +7,50 @@
 
 using namespace std;
 
+class FHeap;
+
 class Node {
 
-  static count = 0;
-  int id;
+  friend class FHeap;
+
   int v; // vertex number associated to edge
   int w; // weight/distance
+  
   Node *parent;
   Node *left;
   Node *right;
   Node *child;
-  bool visited = false;
-  bool marked = false;
-  int degree = 0;
+  
+  bool marked;
+  int degree;
 
 public:
   
-  Node::Node(int v, int w);
-  Node::~Node();
+  Node(int,int);
+  ~Node();
   
 };
 
-class Heap {
+class FHeap {
 
-  int V;
   Node *H = nullptr;
   Node *T = nullptr;
-  vector<Node *> p(V,nullptr);
   Node *minroot = nullptr;
   int maxdegree;
+  vector<Node *> *pos;
 
 public:
 
-  Heap::Heap(int v, int w);
-  Heap::~Heap();
+  Heap(int);
+  ~Heap();
   bool isEmpty();
-  void insert(int v, int w);
+  void insert(int,int);
   int getmin();
-  void delete(int p);
-  void meld(Node N1, Node N2);
-  void decreasekey(int p, int x);
-  void cascadingcut(int p);
-  int deletemin();
-  void link(Node N1, Node N2);
+  void deleteH(int);
+  void meld(Node *,Node *);
+  void decreasekey(int,int);
+  void cascadingcut(int);
+  pair<int,int> deletemin();
+  void link(Node *,Node *);
 };
 
