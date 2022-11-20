@@ -1,0 +1,268 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{latexsym}
+% \usepackage{accents}
+\usepackage{lipsum}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+% \usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage[shortlabels]{enumitem}
+
+\usetikzlibrary{positioning}
+\usetikzlibrary{patterns}
+\usetikzlibrary{patterns.meta}
+
+\usepackage[noline,noend,linesnumbered]{algorithm2e}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+
+\algnewcommand\Input{\item[\textbf{Input:}] }
+\algnewcommand\Output{\item[\textbf{Output:}] }
+\algnewcommand\algorithmicwith{\textbf{with}}
+\algdef{SE}[WHILE]{With}{EndWith}[1]{\algorithmicwith\ #1\ \algorithmicdo}{\algorithmicend}%
+\algrenewcommand\Return{\State\algorithmicreturn{} }
+\algrenewcommand\algorithmicindent{1.0em}
+\algnewcommand\algorithmicforeach{\textbf{for each}}
+\algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
+
+\begin{document}
+
+\newpage
+
+\begin{algorithm}[h!]
+  \DontPrintSemicolon
+  \SetKwFunction{FMakeFibonacciHeap}{Make-Fibonacci-Heap}
+  \SetKwProg{Fn}{Function}{}{}
+
+  \Fn{\FMakeFibonacciHeap{}}{
+    $n[H] := 0$\;
+    $min[H] := NIL$\;
+    \KwRet{$H$}\;
+  }
+  
+  \smallskip
+\end{algorithm}
+
+\begin{algorithm}[h!]
+  \DontPrintSemicolon
+  \SetKwFunction{FFibonacciHeapMinimum}{Fibonacci-Heap-Minimum}
+  \SetKwProg{Fn}{Function}{}{}
+
+  \Fn{\FFibonacciHeapMinimum{$H$}}{
+    \KwRet{$min[H]$}\;
+  }
+  
+  \smallskip
+\end{algorithm}
+
+\begin{algorithm}[h!]
+  \DontPrintSemicolon
+  \SetKwFunction{FFibonacciHeapLink}{Fibonacci-Heap-Link}
+  \SetKwProg{Fn}{Function}{}{}
+
+  \Fn{\FFibonacciHeapLink{$H,y,x$}}{
+    remove $y$ from the root list of $H$\;
+    make $y$ a child of $x$\;
+    $degree[x] := degree[x] + 1$\;
+    $mark[y] := FALSE$\;
+  }
+  
+  \smallskip
+\end{algorithm}
+
+\newpage
+
+\begin{algorithm}[h!]
+  \DontPrintSemicolon
+  \SetKwFunction{FConsolidate}{Consolidate}
+  \SetKwProg{Fn}{Function}{}{}
+
+  \Fn{\FConsolidate{$H$}}{
+    \For{$i : 0$ \KwTo $D(n[H])$} {
+      $A[i] := NIL$\;
+    }
+    \ForEach{node $x$ in the root list of $H$} {
+      $x := w$\;
+      $d := degree[x]$\;
+      \While{$A[i] <> NIL$} {
+        $y := A[d]$\;
+        \If{$key[x] > key[y]$} {
+          exchange $x \longleftrightarrow y $\;
+        }
+        Fibonacci-Heap-Link($H,y,x$)\;
+        $A[d] := NIL$\;
+        $d := d + 1$\;
+      }
+      $A[d] := x$\;
+    }
+    $min[H] := NIL$\;
+    \For{$i := 0$ \KwTo $D(n[H])$} {
+      \If{$A[i] <> NIL$} {
+        add $A[i]$ to the root list of $H$\;
+        \If{$min[H] = NIL$ or $key[A[i]] < key[min[H]]$} {
+          $min[H] := A[i]$\;
+        }
+      }
+    }
+  }
+  
+  \smallskip
+\end{algorithm}
+
+\begin{algorithm}[h!]
+  \DontPrintSemicolon
+  \SetKwFunction{FFibonacciHeapUnion}{Fibonacci-Heap-Union}
+  \SetKwProg{Fn}{Function}{}{}
+
+  \Fn{\FFibonacciHeapUnion{$H1,H2$}}{
+    $H :=$ Make-Fibonacci-Heap()\;
+    $min[H] := min[H1]$\;
+    Concatenate the root list of $H2$ with the root list of $H$\;
+    \If{$(min[H1] = NIL)$ or $(min[H2] <> NIL$ and $min[H2] < min[H1])$} {
+      $min[H] := min[H2]$\;
+    }
+    $n[H] := n[H1] + n[H2]$\;
+    free the objects $H1$ and $H2$\;
+    \KwRet{$H$}
+  }
+  
+  \smallskip
+\end{algorithm}
+
+\newpage
+
+\begin{algorithm}[h!]
+  \DontPrintSemicolon
+  \SetKwFunction{FFibonacciHeapInsert}{Fibonacci-Heap-Insert}
+  \SetKwProg{Fn}{Function}{}{}
+
+  \Fn{\FFibonacciHeapInsert{$H,x$}}{
+    $degree[x] := 0$\;
+    $p[x] := NIL$\;
+    $child[x] := NIL$\;
+    $left[x] := x$\;
+    $right[x] := x$\;
+    $mark[x] := FALSE$\;
+    concatenate the root list containing $x$ with root list $H$\;
+    \If{$min[H] = NIL$ or $key[x] < key[min[H]]$} {
+      $min[H] := x$\;
+    }
+    $n[H] = n[H] + 1$
+  }
+  
+  \smallskip
+\end{algorithm}
+
+\begin{algorithm}[h!]
+  \DontPrintSemicolon
+  \SetKwFunction{FFibonacciHeapExtractMin}{Fibonacci-Heap-Extract-Min}
+  \SetKwProg{Fn}{Function}{}{}
+
+  \Fn{\FFibonacciHeapExtractMin{$H$}}{
+    $z := min[H]$\;
+    \If{$x <> NIL$} {
+      \ForEach{child $x$ of $z$} {
+        add $x$ to the root list of $H$\;
+        $p[x] := NIL$\;
+      }
+      remove $z$ from the root list of $H$\;
+      \If{$z = right[z]$} {
+        $min[H] := NIL$\;
+      }
+      \Else{
+        $min[H] := right[z]$\;
+        Consolidate($H$)\;
+      }
+      $n[H] := n[H] - 1$\;
+    }
+    \KwRet{$z$}\;
+  }
+  
+  \smallskip
+\end{algorithm}
+
+\begin{algorithm}[h!]
+  \DontPrintSemicolon
+  \SetKwFunction{FFibonacciHeapDecreaseKey}{Fibonacci-Heap-Decrease-Key}
+  \SetKwProg{Fn}{Function}{}{}
+
+  \Fn{\FFibonacciHeapDecreaseKey{$H,x,k$}}{
+    \If{$k > key[x]$} {
+      error ``new key is greater than the current key''\;
+    }
+    $key[x] := k$\;
+    $y := p[x]$\;
+    \If{$y <> NIL$ and $key[x] < key[y]$} {
+      Cut($H,x,y$)\;
+      Cascading-Cut($H,y$)\;
+    }
+    \If{$key[x] < key[min[H]]$} {
+      $min[H] := x$\;
+    }
+  }
+  
+  \smallskip
+\end{algorithm}
+
+\newpage
+
+\begin{algorithm}[h!]
+  \DontPrintSemicolon
+  \SetKwFunction{FCut}{Cut}
+  \SetKwProg{Fn}{Function}{}{}
+
+  \Fn{\FCut{$H,x,y$}}{
+    remove $x$ from the root list of $y$, decrementing $degree[y]$\;
+    add $x$ to the root list of $H$\;
+    $p[x] := NIL$\;
+    $mark[x] := FALSE$\;
+  }
+  
+  \smallskip
+\end{algorithm}
+
+\begin{algorithm}[h!]
+  \DontPrintSemicolon
+  \SetKwFunction{FCascadingCut}{CascadingCut}
+  \SetKwProg{Fn}{Function}{}{}
+
+  \Fn{\FCascadingCut{$H,y$}}{
+    $z := p[y]$\;
+    \If{$z <> NIL$} {
+      \If{$mark[y] = FALSE$} {
+        $mark[y] := TRUE$\;
+      }
+      \Else{
+        Cut($H,y,z$)\;
+        Cascading-Cut($H,z$)\;
+      }
+    }
+  }
+  
+  \smallskip
+\end{algorithm}
+
+\begin{algorithm}[h!]
+  \DontPrintSemicolon
+  \SetKwFunction{FFibonacciHeapDelete}{Fibonacci-Heap-Delete}
+  \SetKwProg{Fn}{Function}{}{}
+
+  \Fn{\FFibonacciHeapDelete{$H,x$}}{
+    Fibonacci-Heap-Decrease-Key($H,x,-\infty$)\;
+    Fibonacci-Heap-Extract-Min($H$)\;
+  }
+  
+  \smallskip
+\end{algorithm}
+\end{document}

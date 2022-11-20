@@ -1,6 +1,15 @@
-all:
-	g++ -ggdb3 -std=c++17 -w fheap.cpp dijkstra.cpp -o dijkstra
+BIN = dijkstra
 
+OBJ = fheap.o dijkstra.o
+
+SRC = fheap.cpp dijkstra.cpp
+
+FLAGS = -ggdb3 -std=c++17 -w
+
+CC = g++
+
+all: fheap.cpp dijkstra.cpp
+	$(CC) $(FLAGS) $(SRC) -o $(BIN) -lm
 clean:
-	rm -rf dijkstra *~
+	rm -f $(BIN) $(OBJ) *~
 	clear

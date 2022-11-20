@@ -1,0 +1,64 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{latexsym}
+% \usepackage{accents}
+\usepackage{lipsum}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+% \usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage[shortlabels]{enumitem}
+
+\usetikzlibrary{positioning}
+\usetikzlibrary{patterns}
+\usetikzlibrary{patterns.meta}
+
+\usepackage[noline,noend,linesnumbered]{algorithm2e}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+
+\algnewcommand\Input{\item[\textbf{Input:}] }
+\algnewcommand\Output{\item[\textbf{Output:}] }
+\algnewcommand\algorithmicwith{\textbf{with}}
+\algdef{SE}[WHILE]{With}{EndWith}[1]{\algorithmicwith\ #1\ \algorithmicdo}{\algorithmicend}%
+\algrenewcommand\Return{\State\algorithmicreturn{} }
+\algrenewcommand\algorithmicindent{1.0em}
+\algnewcommand\algorithmicforeach{\textbf{for each}}
+\algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
+
+\begin{document}
+
+\newpage
+
+\begin{algorithm}[h!]
+  \DontPrintSemicolon
+  \SetKwFunction{FFibonacciHeapInsert}{FibonacciHeapInsert}
+  \SetKwProg{Fn}{Function}{}{}
+
+  \Fn{\FFibonacciHeapInsert{$H,x$}}{
+    $degree[x] := 0$\;
+    $p[x] := NIL$\;
+    $child[x] := NIL$\;
+    $left[x] := x$\;
+    $right[x] := x$\;
+    $mark[x] := FALSE$\;
+    concatenate the root list containing $x$ with root list $H$\;
+    \If{$min[H] = NIL$ or $key[x] < key[min[H]]$} {
+      $min[H] := x$\;
+    }
+    $n[H] = n[H] + 1$
+  }
+  
+  \smallskip
+\end{algorithm}
+\end{document}

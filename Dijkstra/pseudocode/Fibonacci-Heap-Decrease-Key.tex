@@ -1,0 +1,65 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{latexsym}
+% \usepackage{accents}
+\usepackage{lipsum}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+% \usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage[shortlabels]{enumitem}
+
+\usetikzlibrary{positioning}
+\usetikzlibrary{patterns}
+\usetikzlibrary{patterns.meta}
+
+\usepackage[noline,noend,linesnumbered]{algorithm2e}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+
+\algnewcommand\Input{\item[\textbf{Input:}] }
+\algnewcommand\Output{\item[\textbf{Output:}] }
+\algnewcommand\algorithmicwith{\textbf{with}}
+\algdef{SE}[WHILE]{With}{EndWith}[1]{\algorithmicwith\ #1\ \algorithmicdo}{\algorithmicend}%
+\algrenewcommand\Return{\State\algorithmicreturn{} }
+\algrenewcommand\algorithmicindent{1.0em}
+\algnewcommand\algorithmicforeach{\textbf{for each}}
+\algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
+
+\begin{document}
+
+\newpage
+
+\begin{algorithm}[h!]
+  \DontPrintSemicolon
+  \SetKwFunction{FFibonacciHeapDecreaseKey}{FibonacciHeapDecreaseKey}
+  \SetKwProg{Fn}{Function}{}{}
+
+  \Fn{\FFibonacciHeapDecreaseKey{$H,x,k$}}{
+    \If{$k > key[x]$} {
+      error ``new key is greater than the current key''\;
+    }
+    $key[x] := k$\;
+    $y := p[x]$\;
+    \If{$y <> NIL$ and $key[x] < key[y]$} {
+      $Cut(H,x,y)$\;
+      $Cascading-Cut(H,y)$\;
+    }
+    \If{$key[x] < key[min[H]]$} {
+      $min[H] := x$\;
+    }
+  }
+  
+  \smallskip
+\end{algorithm}
+\end{document}

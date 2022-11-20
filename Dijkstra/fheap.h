@@ -1,56 +1,59 @@
 #include<iostream>
-#include<cstdio>
-#include<cstdlib>
 #include<limits>
 #include<utility>
 #include<vector>
 
 using namespace std;
 
-class FHeap;
+const int inf = std::numeric_limits<int>::max();
+const int neg_inf = std::numeric_limits<int>::min();
+
+class Heap;
 
 class Node {
 
-  friend class FHeap;
+  friend class Heap;
 
-  int v; // vertex number associated to edge
-  int w; // weight/distance
-  
   Node *parent;
+  Node *child;
   Node *left;
   Node *right;
-  Node *child;
-  
+
   bool marked;
+
   int degree;
 
-public:
+ public:
+  
+  int v, w;
   
   Node(int,int);
   ~Node();
   
 };
 
-class FHeap {
+class Heap {
 
-  Node *H = nullptr;
-  Node *T = nullptr;
-  Node *minroot = nullptr;
-  int maxdegree;
+  Node *H;
+  int n; // total number of nodes
+
+ public:
+
   vector<Node *> *pos;
-
-public:
-
+  
   Heap(int);
   ~Heap();
-  bool isEmpty();
-  void insert(int,int);
-  int getmin();
-  void deleteH(int);
-  void meld(Node *,Node *);
-  void decreasekey(int,int);
-  void cascadingcut(int);
-  pair<int,int> deletemin();
-  void link(Node *,Node *);
-};
 
+  pair<int,int> FibonacciHeapMinimum();
+  void FibonacciHeapLink(Node *,Node *);
+  void Consolidate();
+  // Node * Fibonacci-Heap-Union(Node *,Node *);
+  void FibonacciHeapInsert(Node *);
+  pair<int,int> FibonacciHeapExtractMin();
+  void FibonacciHeapDecreaseKey(Node *,int);
+  void Cut(Node *,Node *);
+  void CascadingCut(Node *);
+  void FibonacciHeapDelete(Node *);
+  void display();
+  bool isEmpty();
+};

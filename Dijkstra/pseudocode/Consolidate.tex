@@ -1,0 +1,79 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{latexsym}
+% \usepackage{accents}
+\usepackage{lipsum}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+% \usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage[shortlabels]{enumitem}
+
+\usetikzlibrary{positioning}
+\usetikzlibrary{patterns}
+\usetikzlibrary{patterns.meta}
+
+\usepackage[noline,noend,linesnumbered]{algorithm2e}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+
+\algnewcommand\Input{\item[\textbf{Input:}] }
+\algnewcommand\Output{\item[\textbf{Output:}] }
+\algnewcommand\algorithmicwith{\textbf{with}}
+\algdef{SE}[WHILE]{With}{EndWith}[1]{\algorithmicwith\ #1\ \algorithmicdo}{\algorithmicend}%
+\algrenewcommand\Return{\State\algorithmicreturn{} }
+\algrenewcommand\algorithmicindent{1.0em}
+\algnewcommand\algorithmicforeach{\textbf{for each}}
+\algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
+
+\begin{document}
+
+\newpage
+
+\begin{algorithm}[h!]
+  \DontPrintSemicolon
+  \SetKwFunction{FConsolidate}{Consolidate}
+  \SetKwProg{Fn}{Function}{}{}
+
+  \Fn{\FConsolidate{$H$}}{
+    \For{$i : 0$ \KwTo $D(n[H])$} {
+      $A[i] := NIL$\;
+    }
+    \ForEach{node $x$ in the root list of $H$} {
+      $x := w$\;
+      $d := degree[x]$\;
+      \While{$A[i] <> NIL$} {
+        $y := A[d]$\;
+        \If{$key[x] > key[y]$} {
+          $exchange x \leftrightarrow y $\;
+        }
+        $Fibonacci-Heap-Link(H,y,x)$\;
+        $A[d] := NIL$\;
+        $d := d + 1$\;
+      }
+      $A[d] := x$\;
+    }
+    $min[H] := NIL$\;
+    \For{$i := 0$ \KwTo $D(n[H])$} {
+      \If{$A[i] <> NIL$} {
+        add $A[i]$ to the root list of $H$\;
+        \lIf{$min[H] = NIL$ or $key[A[i]] < key[min[H]]$} {
+          $min[H] := A[i]$\;
+        }
+      }
+    }
+  }
+  
+  \smallskip
+\end{algorithm}
+\end{document}

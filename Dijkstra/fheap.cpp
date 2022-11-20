@@ -1,6 +1,5 @@
 #include<iostream>
-#include<cstdio>
-#include<cstdlib>
+#include<cmath>
 #include<limits>
 #include<utility>
 #include<vector>
@@ -8,9 +7,9 @@
 
 using namespace std;
 
-Node::Node(int x, int y) : v(x), w(y) {
-  parent = this;
-  child = this;
+Node::Node(int a, int b): v(a), w(b) {
+  parent = nullptr;
+  child = nullptr;
   left = this;
   right = this;
   marked = false;
@@ -20,177 +19,250 @@ Node::Node(int x, int y) : v(x), w(y) {
 Node::~Node() {}
 
 Heap::Heap(int V) {
-  pos = new vector<Node *> (V,nullptr);
-  maxdegree = 0;
+  H = nullptr;
+  pos = new vector<Node *>(V,nullptr);
+  n = 0;
 }
 
 Heap::~Heap() { delete(pos); }
 
-bool Heap::isEmpty {
-  return (H = nullptr)? true : false;
+pair<int,int> Heap::FibonacciHeapMinimum() { return make_pair(H->v,H->w); }
+
+void Heap::FibonacciHeapLink(Node *y,Node *x) {
+  (y->left)->right = y->right;
+   (y->right)->left = y->left;
+
+   if(x->right == x)
+     H = x;
+   
+  y->left = y;
+  y->right = y;
+  y->parent = x;
+
+  if(x->child == nullptr)
+    x->child = y;
+  
+    y->right = x->child;
+    y->left = (x->child)->left;
+    ((x->child)->left)->right = y;
+    (x->child)->left = y;
+
+    if(y->w < (x->child)->w)
+      x->child = y;
+
+    x->degree++;    
 }
 
-void Heap::insert(int x, int y) {
-  if(H == nullptr) {
-    H = new node(x,y);
-    T = H;
-    minroot = H;
-    pos->at(x) = H;
-  }
-  else {
-    Node *aux = new node(x,y);
-    // aux->parent = aux;
-    // meld (T,aux)
-    aux->left = T;
-    aux->right = T->right;
-    aux->right->left = aux;
-    T->right = aux;
-    T = aux;
-    if(minroot->w > aux->w)
-      minroot = aux;
-    pos->at(x) = aux;
-  }
-}
+void Heap::Consolidate() {
+  int d;
+  double dd = log(n)/log(2);
+  int Dn = static_cast<int>(dd);
+  vector<Node *> A(Dn+1,nullptr);
 
-int Heap::getmin() { return minroot->w; }
+  Node *n1 = H;
+  Node *n2;
+  Node *n3;
+  Node *n4 = n1;
 
-void Heap::deleteH(int p) {
-  int x = std::numeric_limits<int>::min();
-    decreasekey(p,x);
-    deletemin();
-}
+  do {
+    n4 = n4->right;
+    d = n1->degree;
 
-void Heap::meld(Node *N1, Node *N2) {
-  N1->right->left = N2->left;
-  N2->left->right = N1->right;
-  N2->left = N1;
-  N1->right = N2;
-}
+    while(A.at(d) != nullptr) {
+      n2 = A.at(d);
 
-void Heap::decreasekey(int p, int x) {
-  p.at(p)->w = x;
-  Node *aux = p.at(p);
-  if(x < minroot->w)
-    minroot = aux;
-  if(aux->parent != aux) {
-    if(aux->parent->w > aux->w) {
-      Node *P = aux->parent;
-      aux->marked = false;
-      aux->parent = aux;
-      aux->left = aux;
-      aux->right = aux;
-      aux->child = aux;
-      meld(T,aux);
-      P->degree--;
-      cascadingcut(P)
+      if(n1->w > n2->w) {
+	n3 = n1;
+	n1 = n2;
+	n2 = n3;
+      }
+      
+      if(n2 == H)
+	H = n1;
+      
+      FibonacciHeapLink(n2,n1);
+      
+      if(n1->right == n1)
+	H = n1;
+      
+      A.at(d) = nullptr;
+      d++;
+    }
+    A.at(d) = n1;
+    n1 = n1->right;
+  } while(n1 != H);
+  
+  H = nullptr;
+  
+  for(int i = 0; i <= Dn; i++) {
+    if(A.at(i) != nullptr) {
+      A.at(i)->left = A.at(i);
+      A.at(i)->right = A.at(i);
+
+      if(H != nullptr) {
+	(H->left)->right = A.at(i);
+	A.at(i)->right = H;
+	A.at(i)->left = H->left;
+	H->left = A.at(i);
+	
+	if(A.at(i)->w < H->w)
+	  H = A.at(i);
+      }
+      else 
+	H = A.at(i);
+      
+      if( (H == nullptr) || (A.at(i)->w < H->w) )
+	H = A.at(i);
     }
   }
 }
 
-void Heap::cascadingcut(Node *p) {
-  if(p->parent = p)
-    return;
-  if(p->marked == false)
-    p->marked = true;
+// Node * Heap::Fibonacci-Heap-Union(Node *N1,Node *N2) {}
+
+void Heap::FibonacciHeapInsert(Node *x) {
+  if(H == nullptr)
+    H = x;
+
   else {
-    Node *P = p->parent;
-      p->marked = false;
-      p->parent = p;
-      p->left = p;
-      p->right = p;
-      aux->child = p;
-      meld(T,p);
-      P->degree--;
-      cascadingcut(P)
+  (H->left)->right = x;
+  x->left = H->left;
+  H->left = x;
+  x->right = H;
   }
+
+  if(x->w < H->w)
+    H = x;
+
+  ++n;
+
+  pos->at(x->v) = x;
 }
 
-pair<int,int> Heap::deletemin() {
+pair<int,int> Heap::FibonacciHeapExtractMin() {
+  Node *z = H;
+  Node *x = nullptr;
+  Node *aux = z;
+  pos->at(z->v) = nullptr;
+  pair<int,int> res = make_pair(z->v,z->w);
 
-  if(H == minroot)
-    H = H->right;
-  if(T == minroot)
-    T = T->left;
-  
-  minroot->left->right = minroot->right;
-  minroot->right->left = minroot->left;
+  if(z->child != nullptr) {
+    x = z->child;
+    do {
+      aux = x->right;
 
-  if(minroot->child != minroot) {
-    Node * h2 = minroot->child;
-    minroot->child = minroot;
-    meld(T,h2);
+      (H->left)->right = x;
+      x->right = H;
+      x->left = H->left;
+      H->left = x;
+
+      if(x->w < H->w)
+	H = x;
+
+      x->parent = nullptr;
+      x = aux;
+    } while(aux != z->child);
   }
-  
-  vector<Node *> A(maxdegree, nullptr);
 
-  Node *temp = H;
 
-  do {
-  if(A.at(temp->degree) == nullptr)
-    A.at(temp->degree) = temp;
-  else
-    link(A.at(temp->degree),temp);
 
-  temp = temp->right;
   
-  } while(temp != H);
+  (z->left)->right = z->right;
+  (z->right)->left = z->left;
+  H = z->right;
 
-  int a = minroot->v;
-  int b = minroot->w;
+  if( (z == z->right) && (z->child == nullptr) )
+    H = nullptr;
+  else {
+    H = z->right;
+    Consolidate();
+  }
 
-  Node *p_min = minroot;
-  minroot = H;
-  delete(p_min);
+  --n;
   
-  Node *M = H;
+  delete(z);
   
-  do {
-    minroot = (minroot->w < M->w)? minroot : M;
-    M = M->right;
-  } while(M != H)
-    
-  return make_pair(a,b);
-  
+  return res;
 }
 
-void Heap::link(Node* N1, Node* N2) {
-  if(N1->w < N2->w) {
-    if(H == N2)
-      H = H->right;
-    if(T == N2)
-      T = T->left;
-      N2->left->right = N2->right;
-      N2->right->left = N2->left;
-      if(N1->child = N1) {
-	N1->child = N2;
-	N2->parent = N1;
-	N1->degree++;
-      }
-      else {
-	N1->degree++;
-	N2->parent = N1;
-	Node *aux = N1->child;
-	meld(aux,N2);
-      }
+void Heap::FibonacciHeapDecreaseKey(Node *x, int k) {
+  x->w = k;
+
+  Node *y = x->parent;
+
+  if( (y != nullptr) && (x->w < y->w) ) {
+    Cut(x,y);
+    CascadingCut(y);
   }
-  else {
-    if(H == N1)
-      H = H->right;
-    if(T == N1)
-      T = T->left;
-    N1->left->right = N1->right;
-    N1->right->left = N1->left;
-    if(N2->child = N2) {
-      N2->child = N1;
-      N1->parent = N2;
-      N2->degree++;
-    }
+
+  if(x->w < H->w)
+    H = x;
+}
+
+void Heap::Cut(Node *y,Node *x) {
+  if(y == y->right)
+    x->child = nullptr;
+
+  (y->left)->right = y->right;
+  (y->right)->left = y->left;
+
+  if(y == x->child)
+    x->child = y->right;
+
+  x->degree--;
+
+  y->right = y;
+  y->left = y;
+  (H->left)->right = y;
+  y->right = H;
+  y->left = H->left;
+  H->left = y;
+  
+  y->parent = nullptr;
+  y->marked = false;
+}
+
+void Heap::CascadingCut(Node *y) {
+  Node *z = y->parent;
+
+  if(z != nullptr) {
+    if(y->marked == false)
+      y->marked = true;
     else {
-      N2->degree++;
-      N1->parent = N2;
-      Node *aux = N2->child;
-      meld(aux,N1);
+      Cut(y,z);
+      CascadingCut(z);
     }
   }
 }
 
+void Heap::FibonacciHeapDelete(Node *x) {
+  FibonacciHeapDecreaseKey(x,neg_inf);
+  FibonacciHeapExtractMin();
+}
+
+void Heap::display() {
+  Node *aux = H;
+
+  if(aux == nullptr)
+    cout << "The Heap is Empty" << endl;
+  else {
+    cout << "The root nodes of Heap are: " << endl;
+
+    do {
+      cout << "<" << aux->v << "," << aux->w << ">" << endl;
+
+      aux = aux->right;
+
+      if(aux != H)
+	cout << "--->";
+
+    } while( (aux != H) && (aux->right != nullptr) );
+
+    cout << endl
+	 << "The heap has " << n << " nodes" << endl
+	 << endl;
+  }
+}
+
+bool Heap::isEmpty() {
+  return (H == nullptr)? true : false;
+}

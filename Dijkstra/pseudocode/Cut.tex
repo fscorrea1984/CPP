@@ -1,0 +1,57 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{latexsym}
+% \usepackage{accents}
+\usepackage{lipsum}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+% \usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage[shortlabels]{enumitem}
+
+\usetikzlibrary{positioning}
+\usetikzlibrary{patterns}
+\usetikzlibrary{patterns.meta}
+
+\usepackage[noline,noend,linesnumbered]{algorithm2e}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+
+\algnewcommand\Input{\item[\textbf{Input:}] }
+\algnewcommand\Output{\item[\textbf{Output:}] }
+\algnewcommand\algorithmicwith{\textbf{with}}
+\algdef{SE}[WHILE]{With}{EndWith}[1]{\algorithmicwith\ #1\ \algorithmicdo}{\algorithmicend}%
+\algrenewcommand\Return{\State\algorithmicreturn{} }
+\algrenewcommand\algorithmicindent{1.0em}
+\algnewcommand\algorithmicforeach{\textbf{for each}}
+\algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
+
+\begin{document}
+
+\newpage
+
+\begin{algorithm}[h!]
+  \DontPrintSemicolon
+  \SetKwFunction{FCut}{Cut}
+  \SetKwProg{Fn}{Function}{}{}
+
+  \Fn{\FCut{$H,x,y$}}{
+    remove $x$ from the root list of $y$, decrementing $degree[y]$\;
+    add $x$ to the root list of $H$\;
+    $p[x] := NIL$\;
+    $mark[x] := FALSE$\;
+  }
+  
+  \smallskip
+\end{algorithm}
+\end{document}
